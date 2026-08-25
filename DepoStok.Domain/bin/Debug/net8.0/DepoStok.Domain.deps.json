@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "DepoStok.Domain/1.0.0": {
+        "runtime": {
+          "DepoStok.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DepoStok.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

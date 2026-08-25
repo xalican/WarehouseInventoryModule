@@ -1,0 +1,17 @@
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Application\obj\Debug\net8.0\DepoStok.Application.csproj.AssemblyReference.cache
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Application\obj\Debug\net8.0\DepoStok.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Application\obj\Debug\net8.0\DepoStok.Application.AssemblyInfoInputs.cache
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Application\obj\Debug\net8.0\DepoStok.Application.AssemblyInfo.cs
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Application\obj\Debug\net8.0\DepoStok.Application.csproj.CoreCompileInputs.cache
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Application\bin\Debug\net8.0\DepoStok.Application.deps.json
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Application\bin\Debug\net8.0\DepoStok.Application.dll
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Application\bin\Debug\net8.0\DepoStok.Application.pdb
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Application\bin\Debug\net8.0\DepoStok.Domain.dll
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Application\bin\Debug\net8.0\DepoStok.Infrastructure.dll
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Application\bin\Debug\net8.0\DepoStok.Domain.pdb
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Application\bin\Debug\net8.0\DepoStok.Infrastructure.pdb
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Application\obj\Debug\net8.0\DepoStok.6A290D85.Up2Date
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Application\obj\Debug\net8.0\DepoStok.Application.dll
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Application\obj\Debug\net8.0\refint\DepoStok.Application.dll
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Application\obj\Debug\net8.0\DepoStok.Application.pdb
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Application\obj\Debug\net8.0\ref\DepoStok.Application.dll

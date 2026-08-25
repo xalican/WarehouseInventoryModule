@@ -1,0 +1,11 @@
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Domain\bin\Debug\net8.0\DepoStok.Domain.deps.json
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Domain\bin\Debug\net8.0\DepoStok.Domain.dll
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Domain\bin\Debug\net8.0\DepoStok.Domain.pdb
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Domain\obj\Debug\net8.0\DepoStok.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Domain\obj\Debug\net8.0\DepoStok.Domain.AssemblyInfoInputs.cache
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Domain\obj\Debug\net8.0\DepoStok.Domain.AssemblyInfo.cs
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Domain\obj\Debug\net8.0\DepoStok.Domain.csproj.CoreCompileInputs.cache
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Domain\obj\Debug\net8.0\DepoStok.Domain.dll
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Domain\obj\Debug\net8.0\refint\DepoStok.Domain.dll
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Domain\obj\Debug\net8.0\DepoStok.Domain.pdb
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Domain\obj\Debug\net8.0\ref\DepoStok.Domain.dll

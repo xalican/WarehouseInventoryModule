@@ -1,0 +1,6 @@
+@DepoStok.API_HostAddress = http://localhost:5230
+
+GET {{DepoStok.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

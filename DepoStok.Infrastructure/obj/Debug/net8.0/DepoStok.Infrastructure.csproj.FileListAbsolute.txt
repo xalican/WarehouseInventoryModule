@@ -1,0 +1,15 @@
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Infrastructure\obj\Debug\net8.0\DepoStok.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Infrastructure\obj\Debug\net8.0\DepoStok.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Infrastructure\obj\Debug\net8.0\DepoStok.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Infrastructure\obj\Debug\net8.0\DepoStok.Infrastructure.AssemblyInfo.cs
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Infrastructure\obj\Debug\net8.0\DepoStok.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Infrastructure\bin\Debug\net8.0\DepoStok.Infrastructure.deps.json
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Infrastructure\bin\Debug\net8.0\DepoStok.Infrastructure.dll
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Infrastructure\bin\Debug\net8.0\DepoStok.Infrastructure.pdb
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Infrastructure\bin\Debug\net8.0\DepoStok.Domain.dll
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Infrastructure\bin\Debug\net8.0\DepoStok.Domain.pdb
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Infrastructure\obj\Debug\net8.0\DepoStok.A1C9A262.Up2Date
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Infrastructure\obj\Debug\net8.0\DepoStok.Infrastructure.dll
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Infrastructure\obj\Debug\net8.0\refint\DepoStok.Infrastructure.dll
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Infrastructure\obj\Debug\net8.0\DepoStok.Infrastructure.pdb
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Infrastructure\obj\Debug\net8.0\ref\DepoStok.Infrastructure.dll

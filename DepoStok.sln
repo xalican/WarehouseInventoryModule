@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DepoStok.Domain", "DepoStok.Domain\DepoStok.Domain.csproj", "{6CDFBCCA-7E9B-4517-BF9A-10CBCAF0667E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DepoStok.Infrastructure", "DepoStok.Infrastructure\DepoStok.Infrastructure.csproj", "{39009EB8-DCDE-4E1E-94D9-ABECABFB1172}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DepoStok.Application", "DepoStok.Application\DepoStok.Application.csproj", "{A86AB537-245D-4EC2-8B9B-679906991E5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DepoStok.API", "DepoStok.API\DepoStok.API.csproj", "{04B65299-3827-4BCB-B0C7-11ECFBA506A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6CDFBCCA-7E9B-4517-BF9A-10CBCAF0667E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CDFBCCA-7E9B-4517-BF9A-10CBCAF0667E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CDFBCCA-7E9B-4517-BF9A-10CBCAF0667E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CDFBCCA-7E9B-4517-BF9A-10CBCAF0667E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39009EB8-DCDE-4E1E-94D9-ABECABFB1172}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39009EB8-DCDE-4E1E-94D9-ABECABFB1172}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39009EB8-DCDE-4E1E-94D9-ABECABFB1172}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39009EB8-DCDE-4E1E-94D9-ABECABFB1172}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A86AB537-245D-4EC2-8B9B-679906991E5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A86AB537-245D-4EC2-8B9B-679906991E5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A86AB537-245D-4EC2-8B9B-679906991E5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A86AB537-245D-4EC2-8B9B-679906991E5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04B65299-3827-4BCB-B0C7-11ECFBA506A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04B65299-3827-4BCB-B0C7-11ECFBA506A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04B65299-3827-4BCB-B0C7-11ECFBA506A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04B65299-3827-4BCB-B0C7-11ECFBA506A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

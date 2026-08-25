@@ -1,0 +1,17 @@
+# Node / React Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/npm-debug.log*
+
+# .NET Backend
+DepoStok.API/bin/
+DepoStok.API/obj/
+*.user
+*.suo
+.vs/
+.vscode/
+
+# System / OS
+.DS_Store
+Thumbs.db
