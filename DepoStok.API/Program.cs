@@ -32,6 +32,9 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 // 3. Application Services
 builder.Services.AddScoped<AuthService>();
 builder.Services.AddScoped<StokService>();
+builder.Services.AddScoped<DepoService>();
+builder.Services.AddScoped<MalzemeService>();
+builder.Services.AddScoped<BirimService>();
 
 // 4. JWT Authentication
 var secretKey = builder.Configuration["Jwt:SecretKey"] ?? "SUPER_SECRET_KEY_DEPO_STOK_MODULU_2026_ERP_SECURE_KEYS_MUST_BE_LONG";

@@ -1,12 +1,10 @@
+using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using DepoStok.Application;
 using DepoStok.Domain;
-using DepoStok.Infrastructure;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace DepoStok.API.Controllers
 {
@@ -15,59 +13,52 @@ namespace DepoStok.API.Controllers
     [Authorize]
     public class DepolarController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        private readonly DepoService _depoService;
 
-        public DepolarController(AppDbContext context)
+        public DepolarController(DepoService depoService)
         {
-            _context = context;
+            _depoService = depoService;
         }
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<DepoDto>>> GetDepolar()
         {
-            var list = await _context.Depolar.AsNoTracking().OrderBy(d => d.Kod).ToListAsync();
-            return Ok(list.Select(d => new DepoDto(d.Id, d.Kod, d.Ad, d.Sorumlu, string.IsNullOrWhiteSpace(d.Bolge) ? "Marmara Bölgesi" : d.Bolge, d.IsActive)));
+            var result = await _depoService.GetDepolarAsync();
+            return Ok(result);
         }
 
         [HttpPost]
         [Authorize(Roles = RoleConstants.AdminCode + "," + RoleConstants.DepoSorumlusuCode)]
         public async Task<ActionResult<DepoDto>> Create([FromBody] CreateDepoDto dto)
         {
-            if (await _context.Depolar.AnyAsync(d => d.Kod == dto.Kod))
-                return BadRequest(new { message = string.Format(OperationMessages.Warehouse.AlreadyExists, dto.Kod) });
-
-            var depo = new Depo
+            try
             {
-                Kod = dto.Kod,
-                Ad = dto.Ad,
-                Sorumlu = dto.Sorumlu,
-                Bolge = string.IsNullOrWhiteSpace(dto.Bolge) ? "Marmara Bölgesi" : dto.Bolge,
-                IsActive = true
-            };
-
-            _context.Depolar.Add(depo);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction(nameof(GetDepolar), new { id = depo.Id }, new DepoDto(
-                depo.Id, depo.Kod, depo.Ad, depo.Sorumlu, depo.Bolge, depo.IsActive
-            ));
+                var result = await _depoService.CreateDepoAsync(dto);
+                return CreatedAtAction(nameof(GetDepolar), new { id = result.Id }, result);
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
         }
 
         [HttpPut("{id}")]
         [Authorize(Roles = RoleConstants.AdminCode + "," + RoleConstants.DepoSorumlusuCode)]
         public async Task<IActionResult> Update(int id, [FromBody] UpdateDepoDto dto)
         {
-            var d = await _context.Depolar.FindAsync(id);
-            if (d == null) return NotFound(new { message = OperationMessages.Warehouse.NotFound });
-
-            d.Kod = dto.Kod;
-            d.Ad = dto.Ad;
-            d.Sorumlu = dto.Sorumlu;
-            d.Bolge = string.IsNullOrWhiteSpace(dto.Bolge) ? "Marmara Bölgesi" : dto.Bolge;
-            d.IsActive = dto.IsActive;
-
-            await _context.SaveChangesAsync();
-            return NoContent();
+            try
+            {
+                await _depoService.UpdateDepoAsync(id, dto);
+                return NoContent();
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(new { message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
         }
     }
 }
