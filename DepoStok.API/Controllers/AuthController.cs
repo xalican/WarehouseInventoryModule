@@ -2,6 +2,7 @@ using System;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using DepoStok.Application;
+using DepoStok.Domain;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -24,7 +25,7 @@ namespace DepoStok.API.Controllers
             var result = await _authService.LoginAsync(dto);
             if (result == null)
             {
-                return Unauthorized(new { message = "Geçersiz kullanıcı adı veya parola!" });
+                return Unauthorized(new { message = OperationMessages.Auth.InvalidCredentials });
             }
             return Ok(result);
         }
@@ -37,7 +38,7 @@ namespace DepoStok.API.Controllers
             int userId = int.Parse(userIdClaim ?? "0");
 
             var profile = await _authService.GetProfileAsync(userId);
-            if (profile == null) return NotFound(new { message = "Kullanıcı bulunamadı." });
+            if (profile == null) return NotFound(new { message = OperationMessages.Auth.UserNotFound });
 
             return Ok(profile);
         }
@@ -52,7 +53,7 @@ namespace DepoStok.API.Controllers
                 int userId = int.Parse(userIdClaim ?? "0");
 
                 await _authService.UpdateProfileAsync(userId, dto);
-                return Ok(new { message = "Profil bilgileriniz başarıyla güncellendi." });
+                return Ok(new { message = OperationMessages.Auth.ProfileUpdatedSuccess });
             }
             catch (Exception ex)
             {
@@ -70,7 +71,7 @@ namespace DepoStok.API.Controllers
                 int userId = int.Parse(userIdClaim ?? "0");
 
                 await _authService.ChangePasswordAsync(userId, dto);
-                return Ok(new { message = "Parolanız başarıyla güncellendi." });
+                return Ok(new { message = OperationMessages.Auth.PasswordChangedSuccess });
             }
             catch (InvalidOperationException ex)
             {
@@ -78,7 +79,7 @@ namespace DepoStok.API.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { message = "İşlem sırasında bir hata oluştu.", detail = ex.Message });
+                return StatusCode(500, new { message = OperationMessages.Auth.SystemError, detail = ex.Message });
             }
         }
     }

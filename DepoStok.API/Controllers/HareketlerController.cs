@@ -41,13 +41,13 @@ namespace DepoStok.API.Controllers
         public async Task<ActionResult<HareketBaslikDto>> GetById(int id)
         {
             var item = await _stokService.GetHareketByIdAsync(id);
-            if (item == null) return NotFound();
+            if (item == null) return NotFound(new { message = OperationMessages.StockMovement.VoucherNotFound });
             return Ok(item);
         }
 
         // 3. Fiş / Stok Hareketi Ekleme
         [HttpPost]
-        [Authorize(Roles = "Admin,DepoSorumlusu,DepoPersoneli")]
+        [Authorize(Roles = RoleConstants.AdminCode + "," + RoleConstants.DepoSorumlusuCode + "," + RoleConstants.DepoPersoneliCode)]
         public async Task<ActionResult<HareketBaslikDto>> Create([FromBody] CreateHareketDto dto)
         {
             try
@@ -68,13 +68,13 @@ namespace DepoStok.API.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { message = "İşlem sırasında bir hata oluştu.", detail = ex.Message });
+                return StatusCode(500, new { message = OperationMessages.Auth.SystemError, detail = ex.Message });
             }
         }
 
         // 4. Hareket İptali
         [HttpPost("{id}/iptal")]
-        [Authorize(Roles = "Admin,DepoSorumlusu")]
+        [Authorize(Roles = RoleConstants.AdminCode + "," + RoleConstants.DepoSorumlusuCode)]
         public async Task<IActionResult> IptalEt(int id, [FromBody] IptalHareketDto dto)
         {
             try

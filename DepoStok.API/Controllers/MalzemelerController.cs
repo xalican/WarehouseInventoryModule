@@ -120,7 +120,7 @@ namespace DepoStok.API.Controllers
         }
 
         [HttpPost("gruplar")]
-        [Authorize(Roles = "Admin,DepoSorumlusu")]
+        [Authorize(Roles = RoleConstants.AdminCode + "," + RoleConstants.DepoSorumlusuCode)]
         public async Task<ActionResult<MalzemeGrubuDto>> CreateGrup([FromBody] CreateMalzemeGrubuDto dto)
         {
             if (string.IsNullOrWhiteSpace(dto.Ad))
@@ -142,11 +142,14 @@ namespace DepoStok.API.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "Admin,DepoSorumlusu")]
+        [Authorize(Roles = RoleConstants.AdminCode + "," + RoleConstants.DepoSorumlusuCode)]
         public async Task<ActionResult<MalzemeDto>> Create([FromBody] CreateMalzemeDto dto)
         {
             if (await _context.Malzemeler.AnyAsync(m => m.Kod == dto.Kod))
-                return BadRequest(new { message = $"'{dto.Kod}' kodlu malzeme zaten mevcut." });
+                return BadRequest(new { message = string.Format(OperationMessages.Material.AlreadyExists, dto.Kod) });
+
+            if (dto.MaxStokSeviyesi > 0 && dto.MaxStokSeviyesi < dto.KritikStokSeviyesi)
+                return BadRequest(new { message = string.Format(OperationMessages.Material.MaxStockInvalid, dto.MaxStokSeviyesi, dto.KritikStokSeviyesi) });
 
             var malzeme = new Malzeme
             {
@@ -184,11 +187,11 @@ namespace DepoStok.API.Controllers
         }
 
         [HttpPut("{id}")]
-        [Authorize(Roles = "Admin,DepoSorumlusu")]
+        [Authorize(Roles = RoleConstants.AdminCode + "," + RoleConstants.DepoSorumlusuCode)]
         public async Task<IActionResult> Update(int id, [FromBody] UpdateMalzemeDto dto)
         {
             var m = await _context.Malzemeler.FindAsync(id);
-            if (m == null) return NotFound();
+            if (m == null) return NotFound(new { message = OperationMessages.Material.NotFound });
 
             if (!string.IsNullOrWhiteSpace(dto.Birim)) m.Birim = dto.Birim;
             m.MalzemeGrubuId = dto.MalzemeGrubuId;

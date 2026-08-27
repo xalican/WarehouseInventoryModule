@@ -30,11 +30,11 @@ namespace DepoStok.API.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "Admin,DepoSorumlusu")]
+        [Authorize(Roles = RoleConstants.AdminCode + "," + RoleConstants.DepoSorumlusuCode)]
         public async Task<ActionResult<DepoDto>> Create([FromBody] CreateDepoDto dto)
         {
             if (await _context.Depolar.AnyAsync(d => d.Kod == dto.Kod))
-                return BadRequest(new { message = $"'{dto.Kod}' kodlu depo zaten mevcut." });
+                return BadRequest(new { message = string.Format(OperationMessages.Warehouse.AlreadyExists, dto.Kod) });
 
             var depo = new Depo
             {
@@ -54,11 +54,11 @@ namespace DepoStok.API.Controllers
         }
 
         [HttpPut("{id}")]
-        [Authorize(Roles = "Admin,DepoSorumlusu")]
+        [Authorize(Roles = RoleConstants.AdminCode + "," + RoleConstants.DepoSorumlusuCode)]
         public async Task<IActionResult> Update(int id, [FromBody] UpdateDepoDto dto)
         {
             var d = await _context.Depolar.FindAsync(id);
-            if (d == null) return NotFound();
+            if (d == null) return NotFound(new { message = OperationMessages.Warehouse.NotFound });
 
             d.Kod = dto.Kod;
             d.Ad = dto.Ad;

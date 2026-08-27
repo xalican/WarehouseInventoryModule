@@ -35,7 +35,7 @@ namespace DepoStok.API.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "Admin,DepoSorumlusu")]
+        [Authorize(Roles = RoleConstants.AdminCode + "," + RoleConstants.DepoSorumlusuCode)]
         public async Task<ActionResult<BirimDto>> Create([FromBody] CreateBirimDto dto)
         {
             if (string.IsNullOrWhiteSpace(dto.Ad))

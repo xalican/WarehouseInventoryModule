@@ -77,8 +77,6 @@ namespace DepoStok.Application
                     bool hasGiris = girisler.TryGetValue((malz.Id, depo.Id), out decimal girisMiktari);
                     bool hasCikis = cikislar.TryGetValue((malz.Id, depo.Id), out decimal cikisMiktari);
 
-                    // EĞER BU DEPO İÇİN BU MALZEMEDEN HİÇBİR HAREKET (GİRİŞ/ÇIKIŞ) OLMAMIŞSA LİSTEYE EKLEME!
-                    // Yeni açılan depoları gereksiz 0 adet ve sahte kritik uyarı ile doldurmayı engeller.
                     if (!hasGiris && !hasCikis)
                         continue;
 
@@ -140,33 +138,31 @@ namespace DepoStok.Application
         public async Task<HareketBaslikDto> CreateHareketAsync(CreateHareketDto dto, int userId)
         {
             if (dto.Kalemler == null || dto.Kalemler.Count == 0)
-                throw new ArgumentException("En az bir hareket kalemi girilmelidir.");
+                throw new ArgumentException(OperationMessages.StockMovement.AtLeastOneItemRequired);
 
             using var transaction = await _context.Database.BeginTransactionAsync();
 
             try
             {
                 if (dto.HareketTipi == HareketTipiEnum.Giris && !dto.HedefDepoId.HasValue)
-                    throw new ArgumentException("Giriş hareketinde hedef depo seçilmesi zorunludur.");
+                    throw new ArgumentException(OperationMessages.StockMovement.InboundTargetRequired);
 
                 if (dto.HareketTipi == HareketTipiEnum.Cikis && !dto.KaynakDepoId.HasValue)
-                    throw new ArgumentException("Çıkış hareketinde kaynak depo seçilmesi zorunludur.");
+                    throw new ArgumentException(OperationMessages.StockMovement.OutboundSourceRequired);
 
                 if (dto.HareketTipi == HareketTipiEnum.Transfer)
                 {
                     if (!dto.KaynakDepoId.HasValue || !dto.HedefDepoId.HasValue)
-                        throw new ArgumentException("Transfer hareketinde kaynak ve hedef depo seçilmesi zorunludur.");
+                        throw new ArgumentException(OperationMessages.StockMovement.TransferWarehousesRequired);
                     if (dto.KaynakDepoId == dto.HedefDepoId)
-                        throw new ArgumentException("Kaynak depo ile hedef depo aynı olamaz.");
+                        throw new ArgumentException(OperationMessages.StockMovement.SameWarehouseTransferError);
                 }
 
-                // Çıkış veya Transfer ise stok yeterlilik ve Hurda kontrolü
                 if (dto.HareketTipi == HareketTipiEnum.Cikis || dto.HareketTipi == HareketTipiEnum.Transfer)
                 {
                     int kaynakDepoId = dto.KaynakDepoId!.Value;
                     var malzemeIds = dto.Kalemler.Select(k => k.MalzemeId).Distinct().ToList();
 
-                    // BATCH FETCH ALL MATERIAL NAMES & BALANCES (Eliminates N+1 Queries)
                     var malzemeDict = await _context.Malzemeler
                         .AsNoTracking()
                         .Where(m => malzemeIds.Contains(m.Id))
@@ -178,13 +174,13 @@ namespace DepoStok.Application
 
                         if (kalem.MalzemeDurumu == MalzemeDurumuEnum.Hurda)
                         {
-                            throw new InvalidOperationException($"Hurda Stok Kullanılamaz! '{malzemeAdi}' hurda durumunda olduğu için çıkış veya transfer edilemez.");
+                            throw new InvalidOperationException(string.Format(OperationMessages.StockMovement.ScrapActionProhibited, malzemeAdi));
                         }
 
                         var mevcutBakiye = await GetAnlikBakiyeAsync(kalem.MalzemeId, kaynakDepoId);
                         if (mevcutBakiye < kalem.Miktar)
                         {
-                            throw new InvalidOperationException($"Yetersiz Stok! '{malzemeAdi}' için mevcut bakiye: {mevcutBakiye}, istenen çıkış: {kalem.Miktar}");
+                            throw new InvalidOperationException(string.Format(OperationMessages.StockMovement.InsufficientBalance, malzemeAdi, mevcutBakiye, kalem.Miktar));
                         }
                     }
                 }
@@ -228,7 +224,7 @@ namespace DepoStok.Application
                 await _context.SaveChangesAsync();
                 await transaction.CommitAsync();
 
-                return await GetHareketByIdAsync(baslik.Id) ?? throw new Exception("Kayıt oluşturuldu fakat getirilemedi.");
+                return await GetHareketByIdAsync(baslik.Id) ?? throw new Exception(OperationMessages.StockMovement.VoucherNotFound);
             }
             catch
             {
@@ -309,8 +305,8 @@ namespace DepoStok.Application
                     .Include(b => b.Kalemler)
                     .FirstOrDefaultAsync(b => b.Id == id);
 
-                if (baslik == null) throw new KeyNotFoundException("Hareket kaydı bulunamadı.");
-                if (baslik.IsIptal) throw new InvalidOperationException("Bu fiş zaten iptal edilmiştir.");
+                if (baslik == null) throw new KeyNotFoundException(OperationMessages.StockMovement.VoucherNotFound);
+                if (baslik.IsIptal) throw new InvalidOperationException(OperationMessages.StockMovement.AlreadyCancelled);
 
                 if (baslik.HareketTipi == HareketTipiEnum.Giris || baslik.HareketTipi == HareketTipiEnum.Transfer)
                 {
@@ -320,7 +316,7 @@ namespace DepoStok.Application
                         var mevcubBakiye = await GetAnlikBakiyeAsync(kalem.MalzemeId, hedefDepoId);
                         if (mevcubBakiye < kalem.Miktar)
                         {
-                            throw new InvalidOperationException($"İptal Edilemez! Giriş iptal edildiğinde depodaki bakiye eksiye düşecektir.");
+                            throw new InvalidOperationException(OperationMessages.StockMovement.CancelBlockedNegativeStock);
                         }
                     }
                 }

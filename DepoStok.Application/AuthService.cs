@@ -42,7 +42,7 @@ namespace DepoStok.Application
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey));
             var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
-            var roleCode = user.Role?.Kod ?? "Goruntuleyici";
+            var roleCode = user.Role?.Kod ?? RoleConstants.GetRoleCode(user.RoleId);
 
             var claims = new[]
             {
@@ -71,10 +71,10 @@ namespace DepoStok.Application
         public async Task<bool> ChangePasswordAsync(int userId, ChangePasswordDto dto)
         {
             var user = await _context.Users.FindAsync(userId);
-            if (user == null) throw new KeyNotFoundException("Kullanıcı bulunamadı.");
+            if (user == null) throw new KeyNotFoundException(OperationMessages.Auth.UserNotFound);
 
             bool isMevcutValid = BCrypt.Net.BCrypt.Verify(dto.MevcutParola, user.ParolaHash);
-            if (!isMevcutValid) throw new InvalidOperationException("Mevcut parolanız hatalıdır.");
+            if (!isMevcutValid) throw new InvalidOperationException(OperationMessages.Auth.InvalidCurrentPassword);
 
             user.ParolaHash = BCrypt.Net.BCrypt.HashPassword(dto.YeniParola);
             await _context.SaveChangesAsync();
@@ -96,15 +96,16 @@ namespace DepoStok.Application
                 user.Email,
                 user.CreatedAt,
                 user.IsActive,
-                Rol = user.Role?.Kod,
-                RolAd = user.Role?.Ad
+                RolId = user.RoleId,
+                Rol = user.Role?.Kod ?? RoleConstants.GetRoleCode(user.RoleId),
+                RolAd = user.Role?.Ad ?? RoleConstants.GetRoleName(user.RoleId)
             };
         }
 
         public async Task<bool> UpdateProfileAsync(int userId, UpdateProfileDto dto)
         {
             var user = await _context.Users.FindAsync(userId);
-            if (user == null) throw new KeyNotFoundException("Kullanıcı bulunamadı.");
+            if (user == null) throw new KeyNotFoundException(OperationMessages.Auth.UserNotFound);
 
             if (!string.IsNullOrWhiteSpace(dto.AdSoyad))
             {

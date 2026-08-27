@@ -118,15 +118,15 @@ namespace DepoStok.Infrastructure
             }
             catch { }
 
-            // 1. Seed Roles (Dinamik Tablo)
+            // 1. Seed Roles (Dinamik Tablo & RoleConstants)
             if (!context.Roles.Any())
             {
                 var roles = new List<Role>
                 {
-                    new Role { Id = 1, Kod = "Admin", Ad = "Yönetici", Aciklama = "Tam Sistem Yönetimi Yetkisi" },
-                    new Role { Id = 2, Kod = "DepoSorumlusu", Ad = "Depo Sorumlusu", Aciklama = "Tanım ve Fiş Yönetim Yetkisi" },
-                    new Role { Id = 3, Kod = "DepoPersoneli", Ad = "Depo Personeli", Aciklama = "Stok Giriş ve Çıkış Yetkisi" },
-                    new Role { Id = 4, Kod = "Goruntuleyici", Ad = "Görüntüleyici", Aciklama = "Salt Okunur Raporlama Yetkisi" }
+                    new Role { Id = RoleConstants.AdminId, Kod = RoleConstants.AdminCode, Ad = RoleConstants.AdminName, Aciklama = "Tam Sistem Yönetimi Yetkisi" },
+                    new Role { Id = RoleConstants.DepoSorumlusuId, Kod = RoleConstants.DepoSorumlusuCode, Ad = RoleConstants.DepoSorumlusuName, Aciklama = "Tanım ve Fiş Yönetim Yetkisi" },
+                    new Role { Id = RoleConstants.DepoPersoneliId, Kod = RoleConstants.DepoPersoneliCode, Ad = RoleConstants.DepoPersoneliName, Aciklama = "Stok Giriş ve Çıkış Yetkisi" },
+                    new Role { Id = RoleConstants.GoruntuleyiciId, Kod = RoleConstants.GoruntuleyiciCode, Ad = RoleConstants.GoruntuleyiciName, Aciklama = "Salt Okunur Raporlama Yetkisi" }
                 };
                 context.Roles.AddRange(roles);
                 context.SaveChanges();
@@ -135,17 +135,12 @@ namespace DepoStok.Infrastructure
             // 2. Seed Users
             if (!context.Users.Any())
             {
-                var roleAdmin = context.Roles.First(r => r.Kod == "Admin").Id;
-                var roleSorumlu = context.Roles.First(r => r.Kod == "DepoSorumlusu").Id;
-                var rolePersonel = context.Roles.First(r => r.Kod == "DepoPersoneli").Id;
-                var roleGoruntuleyici = context.Roles.First(r => r.Kod == "Goruntuleyici").Id;
-
                 var users = new List<User>
                 {
-                    new User { AdSoyad = "Sistem Yöneticisi", KullaniciAdi = "admin", ParolaHash = BCrypt.Net.BCrypt.HashPassword("Admin123!"), RoleId = roleAdmin },
-                    new User { AdSoyad = "Ahmet Sorumlu", KullaniciAdi = "sorumlu", ParolaHash = BCrypt.Net.BCrypt.HashPassword("Sorumlu123!"), RoleId = roleSorumlu },
-                    new User { AdSoyad = "Mehmet Personel", KullaniciAdi = "personel", ParolaHash = BCrypt.Net.BCrypt.HashPassword("Personel123!"), RoleId = rolePersonel },
-                    new User { AdSoyad = "Ayşe Gözlemci", KullaniciAdi = "goruntuleyici", ParolaHash = BCrypt.Net.BCrypt.HashPassword("Goruntuleyici123!"), RoleId = roleGoruntuleyici }
+                    new User { AdSoyad = "Sistem Yöneticisi", KullaniciAdi = "admin", ParolaHash = BCrypt.Net.BCrypt.HashPassword("Admin123!"), RoleId = RoleConstants.AdminId },
+                    new User { AdSoyad = "Ahmet Sorumlu", KullaniciAdi = "sorumlu", ParolaHash = BCrypt.Net.BCrypt.HashPassword("Sorumlu123!"), RoleId = RoleConstants.DepoSorumlusuId },
+                    new User { AdSoyad = "Mehmet Personel", KullaniciAdi = "personel", ParolaHash = BCrypt.Net.BCrypt.HashPassword("Personel123!"), RoleId = RoleConstants.DepoPersoneliId },
+                    new User { AdSoyad = "Ayşe Gözlemci", KullaniciAdi = "goruntuleyici", ParolaHash = BCrypt.Net.BCrypt.HashPassword("Goruntuleyici123!"), RoleId = RoleConstants.GoruntuleyiciId }
                 };
                 context.Users.AddRange(users);
                 context.SaveChanges();
