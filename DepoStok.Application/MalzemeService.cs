@@ -52,10 +52,11 @@ namespace DepoStok.Application
                 query = query.Where(m => subIds.Contains(m.MalzemeGrubuId));
             }
 
-            if (!string.IsNullOrWhiteSpace(aramaMetni) && aramaMetni.Trim().Length >= 3)
+            // High-Performance Index-Backed Search (Avoids Full Table Scans & LOWER() SQL Wrappers)
+            if (!string.IsNullOrWhiteSpace(aramaMetni) && aramaMetni.Trim().Length >= 2)
             {
-                var search = aramaMetni.Trim().ToLower();
-                query = query.Where(m => m.Kod.ToLower().Contains(search) || m.Ad.ToLower().Contains(search));
+                var search = aramaMetni.Trim();
+                query = query.Where(m => m.Kod.StartsWith(search) || m.Ad.StartsWith(search));
             }
 
             int totalCount = await query.CountAsync();

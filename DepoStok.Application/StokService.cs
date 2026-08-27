@@ -17,7 +17,7 @@ namespace DepoStok.Application
             _context = context;
         }
 
-        // 1. HIGH-PERFORMANCE OPTIMIZED STOK DURUM (Fast Dictionary Map + No Tracking)
+        // 1. HIGH-PERFORMANCE OPTIMIZED STOK DURUM (Fast Dictionary Map + B-Tree Index Search)
         public async Task<PagedResult<StokDurumDto>> GetStokDurumPagedAsync(int? depoId, int? malzemeGrubuId, string? aramaMetni, bool? sadeceKritik, int page = 1, int pageSize = 10)
         {
             var malzemelerQuery = _context.Malzemeler
@@ -29,10 +29,11 @@ namespace DepoStok.Application
             if (malzemeGrubuId.HasValue)
                 malzemelerQuery = malzemelerQuery.Where(m => m.MalzemeGrubuId == malzemeGrubuId.Value);
 
-            if (!string.IsNullOrWhiteSpace(aramaMetni) && aramaMetni.Trim().Length >= 3)
+            // High-Performance Index-Backed Search (Avoids Full Table Scans & LOWER() SQL Wrappers)
+            if (!string.IsNullOrWhiteSpace(aramaMetni) && aramaMetni.Trim().Length >= 2)
             {
-                var text = aramaMetni.Trim().ToLower();
-                malzemelerQuery = malzemelerQuery.Where(m => m.Kod.ToLower().Contains(text) || m.Ad.ToLower().Contains(text));
+                var text = aramaMetni.Trim();
+                malzemelerQuery = malzemelerQuery.Where(m => m.Kod.StartsWith(text) || m.Ad.StartsWith(text));
             }
 
             var malzemeler = await malzemelerQuery.ToListAsync();
@@ -213,8 +214,8 @@ namespace DepoStok.Application
                         MalzemeId = item.MalzemeId,
                         Miktar = item.Miktar,
                         BirimFiyat = item.BirimFiyat,
-                        Raf = string.IsNullOrWhiteSpace(item.Raf) ? "R-01" : item.Raf,
-                        Huycre = string.IsNullOrWhiteSpace(item.Huycre) ? "H-01" : item.Huycre,
+                        Raf = string.IsNullOrWhiteSpace(item.Raf) ? DomainConstants.StockDefaults.DefaultRaf : item.Raf,
+                        Huycre = string.IsNullOrWhiteSpace(item.Huycre) ? DomainConstants.StockDefaults.DefaultHuycre : item.Huycre,
                         MalzemeDurumu = item.MalzemeDurumu,
                         SatirAciklamasi = item.SatirAciklamasi
                     });
