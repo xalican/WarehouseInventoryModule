@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Security.Claims;
 using System.Threading.Tasks;
 using DepoStok.Application;
 using DepoStok.Domain;
@@ -52,8 +51,7 @@ namespace DepoStok.API.Controllers
         {
             try
             {
-                var userIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                int userId = int.Parse(userIdClaim ?? "1");
+                int userId = User.GetUserId();
 
                 var result = await _stokService.CreateHareketAsync(dto, userId);
                 return CreatedAtAction(nameof(GetById), new { id = result.Id }, result);
@@ -79,8 +77,7 @@ namespace DepoStok.API.Controllers
         {
             try
             {
-                var userIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                int userId = int.Parse(userIdClaim ?? "1");
+                int userId = User.GetUserId();
 
                 await _stokService.IptalEtAsync(id, dto.IptalNedeni, userId);
                 return NoContent();

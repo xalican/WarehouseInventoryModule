@@ -1,5 +1,4 @@
 using System;
-using System.Security.Claims;
 using System.Threading.Tasks;
 using DepoStok.Application;
 using DepoStok.Domain;
@@ -34,8 +33,7 @@ namespace DepoStok.API.Controllers
         [Authorize]
         public async Task<IActionResult> GetMe()
         {
-            var userIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            int userId = int.Parse(userIdClaim ?? "0");
+            int userId = User.GetUserId();
 
             var profile = await _authService.GetProfileAsync(userId);
             if (profile == null) return NotFound(new { message = OperationMessages.Auth.UserNotFound });
@@ -49,8 +47,7 @@ namespace DepoStok.API.Controllers
         {
             try
             {
-                var userIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                int userId = int.Parse(userIdClaim ?? "0");
+                int userId = User.GetUserId();
 
                 await _authService.UpdateProfileAsync(userId, dto);
                 return Ok(new { message = OperationMessages.Auth.ProfileUpdatedSuccess });
@@ -67,8 +64,7 @@ namespace DepoStok.API.Controllers
         {
             try
             {
-                var userIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                int userId = int.Parse(userIdClaim ?? "0");
+                int userId = User.GetUserId();
 
                 await _authService.ChangePasswordAsync(userId, dto);
                 return Ok(new { message = OperationMessages.Auth.PasswordChangedSuccess });
