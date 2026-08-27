@@ -8815,3 +8815,72 @@ SELECT EXISTS (
 2026-08-27 18:45:04.842 +03:00 [INF] Application started. Press Ctrl+C to shut down.
 2026-08-27 18:45:04.842 +03:00 [INF] Hosting environment: Development
 2026-08-27 18:45:04.843 +03:00 [INF] Content root path: C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.API
+2026-08-27 18:59:58.240 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM information_schema.tables
+WHERE table_type = 'BASE TABLE' AND table_schema = 'DepoStokDb'
+2026-08-27 18:59:58.412 +03:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2026-08-27 18:59:58.515 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `r`.`Id`, `r`.`Aciklama`, `r`.`Ad`, `r`.`Kod`
+FROM `Roles` AS `r`
+LIMIT 1
+2026-08-27 18:59:58.560 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+                    CREATE TABLE IF NOT EXISTS `Birimler` (
+                        `Id` int NOT NULL AUTO_INCREMENT,
+                        `Ad` longtext NOT NULL,
+                        `Sembol` longtext NOT NULL,
+                        `IsActive` tinyint(1) NOT NULL DEFAULT 1,
+                        PRIMARY KEY (`Id`)
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+2026-08-27 18:59:58.576 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Roles` AS `r`)
+2026-08-27 18:59:58.579 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Users` AS `u`)
+2026-08-27 18:59:58.583 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `MalzemeGruplari` AS `m`)
+2026-08-27 18:59:58.603 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `MalzemeGruplari` AS `m`
+    WHERE `m`.`Kod` = 'GRP-YAPI')
+2026-08-27 18:59:58.606 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Depolar` AS `d`)
+2026-08-27 18:59:58.608 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+                    CREATE TABLE IF NOT EXISTS `Birimler` (
+                        `Id` int NOT NULL AUTO_INCREMENT,
+                        `Ad` longtext NOT NULL,
+                        `Sembol` longtext NOT NULL,
+                        `IsActive` tinyint(1) NOT NULL DEFAULT 1,
+                        PRIMARY KEY (`Id`)
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+2026-08-27 18:59:58.611 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Birimler` AS `b`)
+2026-08-27 18:59:58.615 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `Malzemeler` AS `m`)
+2026-08-27 18:59:58.649 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Aciklama`, `m`.`Ad`, `m`.`Birim`, `m`.`IsActive`, `m`.`Kod`, `m`.`KritikStokSeviyesi`, `m`.`MalzemeGrubuId`, `m`.`MarkaModel`, `m`.`MaxStokSeviyesi`, `m`.`TeknikOzellik`
+FROM `Malzemeler` AS `m`
+WHERE (`m`.`MarkaModel` IS NULL OR (`m`.`MarkaModel` = '')) OR (`m`.`TeknikOzellik` IS NULL OR (`m`.`TeknikOzellik` = ''))
+2026-08-27 18:59:58.653 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM `HareketBasliklari` AS `h`)
+2026-08-27 18:59:58.745 +03:00 [INF] User profile is available. Using 'C:\Users\alica\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-08-27 18:59:59.781 +03:00 [INF] Now listening on: http://localhost:5078
+2026-08-27 18:59:59.784 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-27 18:59:59.784 +03:00 [INF] Hosting environment: Development
+2026-08-27 18:59:59.784 +03:00 [INF] Content root path: C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.API
