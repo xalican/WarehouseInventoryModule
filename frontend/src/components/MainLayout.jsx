@@ -743,7 +743,7 @@ const MainLayout = () => {
         </AppBar>
 
         {/* PAGE CONTENT OUTLET: INNER SCROLLABLE CONTAINER */}
-        <Box component="main" sx={{ p: 3, flexGrow: 1, overflowY: 'auto', boxSizing: 'border-box' }}>
+        <Box component="main" sx={{ p: 2, flexGrow: 1, overflowY: 'auto', boxSizing: 'border-box' }}>
           <Outlet />
         </Box>
       </Box>

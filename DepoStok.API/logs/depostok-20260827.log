@@ -8884,3 +8884,706 @@ SELECT EXISTS (
 2026-08-27 18:59:59.784 +03:00 [INF] Application started. Press Ctrl+C to shut down.
 2026-08-27 18:59:59.784 +03:00 [INF] Hosting environment: Development
 2026-08-27 18:59:59.784 +03:00 [INF] Content root path: C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.API
+2026-08-27 19:06:50.203 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler/stok-durum?page=1&pageSize=10 - null null
+2026-08-27 19:06:50.203 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler/stok-durum?pageSize=5000 - null null
+2026-08-27 19:06:50.203 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5078/api/malzemeler?pageSize=200 - null null
+2026-08-27 19:06:50.203 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=1 - null null
+2026-08-27 19:06:50.203 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5078/api/malzemeler/gruplar - null null
+2026-08-27 19:06:50.203 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5078/api/depolar - null null
+2026-08-27 19:06:50.252 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:50.252 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:50.252 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:50.252 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:50.252 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:50.252 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:50.257 +03:00 [INF] HTTP OPTIONS /api/hareketler/stok-durum responded 204 in 4.2284 ms
+2026-08-27 19:06:50.257 +03:00 [INF] HTTP OPTIONS /api/hareketler/stok-durum responded 204 in 4.2048 ms
+2026-08-27 19:06:50.257 +03:00 [INF] HTTP OPTIONS /api/malzemeler/gruplar responded 204 in 4.2176 ms
+2026-08-27 19:06:50.257 +03:00 [INF] HTTP OPTIONS /api/malzemeler responded 204 in 4.1723 ms
+2026-08-27 19:06:50.257 +03:00 [INF] HTTP OPTIONS /api/hareketler/stok-durum responded 204 in 4.2063 ms
+2026-08-27 19:06:50.257 +03:00 [INF] HTTP OPTIONS /api/depolar responded 204 in 4.1831 ms
+2026-08-27 19:06:50.264 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=1 - 204 null null 62.2105ms
+2026-08-27 19:06:50.264 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler/stok-durum?page=1&pageSize=10 - 204 null null 62.1941ms
+2026-08-27 19:06:50.264 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5078/api/depolar - 204 null null 62.2355ms
+2026-08-27 19:06:50.264 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5078/api/malzemeler?pageSize=200 - 204 null null 62.2406ms
+2026-08-27 19:06:50.264 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5078/api/malzemeler/gruplar - 204 null null 62.2392ms
+2026-08-27 19:06:50.264 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler/stok-durum?pageSize=5000 - 204 null null 62.2034ms
+2026-08-27 19:06:50.273 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler?pageSize=5 - null null
+2026-08-27 19:06:50.273 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler/stok-durum?page=1&pageSize=10 - null null
+2026-08-27 19:06:50.273 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=5 - null null
+2026-08-27 19:06:50.274 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler/stok-durum?pageSize=5000 - null null
+2026-08-27 19:06:50.275 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5078/api/depolar - null null
+2026-08-27 19:06:50.275 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:50.275 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:50.276 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:50.275 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:50.276 +03:00 [INF] HTTP OPTIONS /api/hareketler/stok-durum responded 204 in 0.5695 ms
+2026-08-27 19:06:50.275 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:50.276 +03:00 [INF] HTTP OPTIONS /api/hareketler responded 204 in 0.5452 ms
+2026-08-27 19:06:50.276 +03:00 [INF] HTTP OPTIONS /api/hareketler/stok-durum responded 204 in 0.7327 ms
+2026-08-27 19:06:50.276 +03:00 [INF] HTTP OPTIONS /api/hareketler/stok-durum responded 204 in 0.6806 ms
+2026-08-27 19:06:50.276 +03:00 [INF] HTTP OPTIONS /api/depolar responded 204 in 0.1448 ms
+2026-08-27 19:06:50.276 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler?pageSize=5 - 204 null null 2.6472ms
+2026-08-27 19:06:50.276 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5078/api/depolar - 204 null null 0.7241ms
+2026-08-27 19:06:50.276 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=5 - 204 null null 2.6596ms
+2026-08-27 19:06:50.276 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler/stok-durum?page=1&pageSize=10 - 204 null null 2.6977ms
+2026-08-27 19:06:50.276 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler/stok-durum?pageSize=5000 - 204 null null 1.9749ms
+2026-08-27 19:06:50.276 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5078/api/malzemeler/gruplar - null null
+2026-08-27 19:06:50.277 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:50.277 +03:00 [INF] HTTP OPTIONS /api/malzemeler/gruplar responded 204 in 0.1571 ms
+2026-08-27 19:06:50.277 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5078/api/malzemeler/gruplar - 204 null null 0.6122ms
+2026-08-27 19:06:50.283 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5078/api/malzemeler?pageSize=200 - null null
+2026-08-27 19:06:50.283 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=1 - null null
+2026-08-27 19:06:50.283 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:50.283 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:50.283 +03:00 [INF] HTTP OPTIONS /api/malzemeler responded 204 in 0.1100 ms
+2026-08-27 19:06:50.283 +03:00 [INF] HTTP OPTIONS /api/hareketler/stok-durum responded 204 in 0.1291 ms
+2026-08-27 19:06:50.283 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5078/api/malzemeler?pageSize=200 - 204 null null 0.4941ms
+2026-08-27 19:06:50.283 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=1 - 204 null null 0.461ms
+2026-08-27 19:06:50.283 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler?pageSize=5 - null null
+2026-08-27 19:06:50.284 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:50.284 +03:00 [INF] HTTP OPTIONS /api/hareketler responded 204 in 0.1305 ms
+2026-08-27 19:06:50.284 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler?pageSize=5 - 204 null null 0.4009ms
+2026-08-27 19:06:50.285 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=5 - null null
+2026-08-27 19:06:50.285 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:50.285 +03:00 [INF] HTTP OPTIONS /api/hareketler/stok-durum responded 204 in 0.1262 ms
+2026-08-27 19:06:50.285 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=5 - 204 null null 0.499ms
+2026-08-27 19:06:50.288 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=1 - null null
+2026-08-27 19:06:50.289 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?pageSize=5000 - null null
+2026-08-27 19:06:50.290 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/malzemeler/gruplar - null null
+2026-08-27 19:06:50.293 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:50.293 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:50.293 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:50.294 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/malzemeler?pageSize=200 - null null
+2026-08-27 19:06:50.295 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:50.295 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?page=1&pageSize=10 - null null
+2026-08-27 19:06:50.295 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:50.298 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/depolar - null null
+2026-08-27 19:06:50.298 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:50.395 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '27.08.2026 14:33:30', Current time (UTC): '27.08.2026 16:06:50'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-08-27 19:06:50.395 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '27.08.2026 14:33:30', Current time (UTC): '27.08.2026 16:06:50'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-08-27 19:06:50.395 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '27.08.2026 14:33:30', Current time (UTC): '27.08.2026 16:06:50'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-08-27 19:06:50.395 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '27.08.2026 14:33:30', Current time (UTC): '27.08.2026 16:06:50'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-08-27 19:06:50.395 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '27.08.2026 14:33:30', Current time (UTC): '27.08.2026 16:06:50'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-08-27 19:06:50.395 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '27.08.2026 14:33:30', Current time (UTC): '27.08.2026 16:06:50'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-08-27 19:06:50.413 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '27.08.2026 14:33:30', Current time (UTC): '27.08.2026 16:06:50'.
+2026-08-27 19:06:50.413 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '27.08.2026 14:33:30', Current time (UTC): '27.08.2026 16:06:50'.
+2026-08-27 19:06:50.413 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '27.08.2026 14:33:30', Current time (UTC): '27.08.2026 16:06:50'.
+2026-08-27 19:06:50.413 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '27.08.2026 14:33:30', Current time (UTC): '27.08.2026 16:06:50'.
+2026-08-27 19:06:50.413 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '27.08.2026 14:33:30', Current time (UTC): '27.08.2026 16:06:50'.
+2026-08-27 19:06:50.413 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '27.08.2026 14:33:30', Current time (UTC): '27.08.2026 16:06:50'.
+2026-08-27 19:06:50.420 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-08-27 19:06:50.420 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-08-27 19:06:50.420 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-08-27 19:06:50.420 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-08-27 19:06:50.420 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-08-27 19:06:50.420 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-08-27 19:06:50.425 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-08-27 19:06:50.425 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-08-27 19:06:50.425 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-08-27 19:06:50.425 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-08-27 19:06:50.425 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-08-27 19:06:50.425 +03:00 [INF] HTTP GET /api/depolar responded 401 in 126.7202 ms
+2026-08-27 19:06:50.425 +03:00 [INF] HTTP GET /api/hareketler/stok-durum responded 401 in 132.4203 ms
+2026-08-27 19:06:50.425 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-08-27 19:06:50.425 +03:00 [INF] HTTP GET /api/malzemeler responded 401 in 130.2012 ms
+2026-08-27 19:06:50.425 +03:00 [INF] HTTP GET /api/hareketler/stok-durum responded 401 in 129.6019 ms
+2026-08-27 19:06:50.425 +03:00 [INF] HTTP GET /api/malzemeler/gruplar responded 401 in 132.3537 ms
+2026-08-27 19:06:50.425 +03:00 [INF] HTTP GET /api/hareketler/stok-durum responded 401 in 132.3883 ms
+2026-08-27 19:06:50.425 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/depolar - 401 0 null 127.5651ms
+2026-08-27 19:06:50.425 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?pageSize=5000 - 401 0 null 136.6934ms
+2026-08-27 19:06:50.425 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=1 - 401 0 null 137.753ms
+2026-08-27 19:06:50.425 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?page=1&pageSize=10 - 401 0 null 130.2318ms
+2026-08-27 19:06:50.425 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/malzemeler?pageSize=200 - 401 0 null 131.0941ms
+2026-08-27 19:06:50.425 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/malzemeler/gruplar - 401 0 null 135.3285ms
+2026-08-27 19:06:50.433 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=5 - null null
+2026-08-27 19:06:50.433 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/hareketler?pageSize=5 - null null
+2026-08-27 19:06:50.433 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:50.433 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:50.433 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/malzemeler?pageSize=200 - null null
+2026-08-27 19:06:50.433 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:50.434 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?page=1&pageSize=10 - null null
+2026-08-27 19:06:50.434 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/malzemeler/gruplar - null null
+2026-08-27 19:06:50.434 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:50.434 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:50.434 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/depolar - null null
+2026-08-27 19:06:50.434 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '27.08.2026 14:33:30', Current time (UTC): '27.08.2026 16:06:50'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-08-27 19:06:50.434 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '27.08.2026 14:33:30', Current time (UTC): '27.08.2026 16:06:50'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-08-27 19:06:50.434 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '27.08.2026 14:33:30', Current time (UTC): '27.08.2026 16:06:50'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-08-27 19:06:50.434 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:50.435 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '27.08.2026 14:33:30', Current time (UTC): '27.08.2026 16:06:50'.
+2026-08-27 19:06:50.434 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '27.08.2026 14:33:30', Current time (UTC): '27.08.2026 16:06:50'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-08-27 19:06:50.435 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '27.08.2026 14:33:30', Current time (UTC): '27.08.2026 16:06:50'.
+2026-08-27 19:06:50.435 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '27.08.2026 14:33:30', Current time (UTC): '27.08.2026 16:06:50'.
+2026-08-27 19:06:50.436 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '27.08.2026 14:33:30', Current time (UTC): '27.08.2026 16:06:50'.
+2026-08-27 19:06:50.434 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '27.08.2026 14:33:30', Current time (UTC): '27.08.2026 16:06:50'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-08-27 19:06:50.436 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '27.08.2026 14:33:30', Current time (UTC): '27.08.2026 16:06:50'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-08-27 19:06:50.436 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '27.08.2026 14:33:30', Current time (UTC): '27.08.2026 16:06:50'.
+2026-08-27 19:06:50.437 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '27.08.2026 14:33:30', Current time (UTC): '27.08.2026 16:06:50'.
+2026-08-27 19:06:50.437 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-08-27 19:06:50.437 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-08-27 19:06:50.437 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-08-27 19:06:50.437 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-08-27 19:06:50.437 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-08-27 19:06:50.437 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-08-27 19:06:50.437 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-08-27 19:06:50.437 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-08-27 19:06:50.437 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-08-27 19:06:50.437 +03:00 [INF] HTTP GET /api/hareketler/stok-durum responded 401 in 3.2587 ms
+2026-08-27 19:06:50.437 +03:00 [INF] HTTP GET /api/malzemeler responded 401 in 4.1710 ms
+2026-08-27 19:06:50.437 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-08-27 19:06:50.437 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-08-27 19:06:50.437 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-08-27 19:06:50.438 +03:00 [INF] HTTP GET /api/malzemeler/gruplar responded 401 in 3.5182 ms
+2026-08-27 19:06:50.437 +03:00 [INF] HTTP GET /api/hareketler responded 401 in 4.3401 ms
+2026-08-27 19:06:50.437 +03:00 [INF] HTTP GET /api/depolar responded 401 in 3.0978 ms
+2026-08-27 19:06:50.437 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/malzemeler?pageSize=200 - 401 0 null 4.4188ms
+2026-08-27 19:06:50.438 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/depolar - 401 0 null 3.5659ms
+2026-08-27 19:06:50.438 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?page=1&pageSize=10 - 401 0 null 3.6392ms
+2026-08-27 19:06:50.438 +03:00 [INF] HTTP GET /api/hareketler/stok-durum responded 401 in 4.6373 ms
+2026-08-27 19:06:50.438 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/malzemeler/gruplar - 401 0 null 3.8664ms
+2026-08-27 19:06:50.438 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/hareketler?pageSize=5 - 401 0 null 5.0971ms
+2026-08-27 19:06:50.438 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=5 - 401 0 null 5.3783ms
+2026-08-27 19:06:50.443 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?pageSize=5000 - null null
+2026-08-27 19:06:50.443 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=1 - null null
+2026-08-27 19:06:50.444 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:50.444 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:50.444 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '27.08.2026 14:33:30', Current time (UTC): '27.08.2026 16:06:50'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-08-27 19:06:50.444 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '27.08.2026 14:33:30', Current time (UTC): '27.08.2026 16:06:50'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-08-27 19:06:50.445 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '27.08.2026 14:33:30', Current time (UTC): '27.08.2026 16:06:50'.
+2026-08-27 19:06:50.445 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '27.08.2026 14:33:30', Current time (UTC): '27.08.2026 16:06:50'.
+2026-08-27 19:06:50.445 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-08-27 19:06:50.445 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-08-27 19:06:50.445 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-08-27 19:06:50.445 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-08-27 19:06:50.445 +03:00 [INF] HTTP GET /api/hareketler/stok-durum responded 401 in 1.7542 ms
+2026-08-27 19:06:50.445 +03:00 [INF] HTTP GET /api/hareketler/stok-durum responded 401 in 1.8046 ms
+2026-08-27 19:06:50.445 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=1 - 401 0 null 2.2634ms
+2026-08-27 19:06:50.445 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?pageSize=5000 - 401 0 null 2.2666ms
+2026-08-27 19:06:50.447 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=5 - null null
+2026-08-27 19:06:50.447 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/hareketler?pageSize=5 - null null
+2026-08-27 19:06:50.447 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:50.447 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:50.448 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '27.08.2026 14:33:30', Current time (UTC): '27.08.2026 16:06:50'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-08-27 19:06:50.448 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '27.08.2026 14:33:30', Current time (UTC): '27.08.2026 16:06:50'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-08-27 19:06:50.449 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '27.08.2026 14:33:30', Current time (UTC): '27.08.2026 16:06:50'.
+2026-08-27 19:06:50.449 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '27.08.2026 14:33:30', Current time (UTC): '27.08.2026 16:06:50'.
+2026-08-27 19:06:50.449 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-08-27 19:06:50.449 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-08-27 19:06:50.449 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-08-27 19:06:50.449 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-08-27 19:06:50.450 +03:00 [INF] HTTP GET /api/hareketler/stok-durum responded 401 in 2.1381 ms
+2026-08-27 19:06:50.450 +03:00 [INF] HTTP GET /api/hareketler responded 401 in 2.0790 ms
+2026-08-27 19:06:50.450 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=5 - 401 0 null 2.5944ms
+2026-08-27 19:06:50.450 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/hareketler?pageSize=5 - 401 0 null 2.6211ms
+2026-08-27 19:06:53.727 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5078/api/auth/login - null null
+2026-08-27 19:06:53.728 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:53.728 +03:00 [INF] HTTP OPTIONS /api/auth/login responded 204 in 0.3850 ms
+2026-08-27 19:06:53.728 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5078/api/auth/login - 204 null null 1.4087ms
+2026-08-27 19:06:53.744 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5078/api/auth/login - application/json 45
+2026-08-27 19:06:53.746 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:53.749 +03:00 [INF] Executing endpoint 'DepoStok.API.Controllers.AuthController.Login (DepoStok.API)'
+2026-08-27 19:06:53.776 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(DepoStok.Application.LoginDto) on controller DepoStok.API.Controllers.AuthController (DepoStok.API).
+2026-08-27 19:06:54.090 +03:00 [INF] Executed DbCommand (33ms) [Parameters=[@__dto_KullaniciAdi_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`AdSoyad`, `u`.`CreatedAt`, `u`.`Email`, `u`.`IsActive`, `u`.`KullaniciAdi`, `u`.`ParolaHash`, `u`.`RoleId`, `r`.`Id`, `r`.`Aciklama`, `r`.`Ad`, `r`.`Kod`
+FROM `Users` AS `u`
+INNER JOIN `Roles` AS `r` ON `u`.`RoleId` = `r`.`Id`
+WHERE (`u`.`KullaniciAdi` = @__dto_KullaniciAdi_0) AND `u`.`IsActive`
+LIMIT 1
+2026-08-27 19:06:54.728 +03:00 [INF] Executing OkObjectResult, writing value of type 'DepoStok.Application.TokenDto'.
+2026-08-27 19:06:54.754 +03:00 [INF] Executed action DepoStok.API.Controllers.AuthController.Login (DepoStok.API) in 973.1951ms
+2026-08-27 19:06:54.754 +03:00 [INF] Executed endpoint 'DepoStok.API.Controllers.AuthController.Login (DepoStok.API)'
+2026-08-27 19:06:54.756 +03:00 [INF] HTTP POST /api/auth/login responded 200 in 1009.9240 ms
+2026-08-27 19:06:54.762 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5078/api/auth/login - 200 null application/json; charset=utf-8 1017.9201ms
+2026-08-27 19:06:55.032 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?page=1&pageSize=10 - null null
+2026-08-27 19:06:55.032 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:55.037 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?pageSize=5000 - null null
+2026-08-27 19:06:55.037 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:55.040 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/depolar - null null
+2026-08-27 19:06:55.040 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:55.041 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/malzemeler/gruplar - null null
+2026-08-27 19:06:55.042 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:55.042 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/malzemeler?pageSize=200 - null null
+2026-08-27 19:06:55.042 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:55.045 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=1 - null null
+2026-08-27 19:06:55.045 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:55.046 +03:00 [INF] Executing endpoint 'DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API)'
+2026-08-27 19:06:55.046 +03:00 [INF] Executing endpoint 'DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API)'
+2026-08-27 19:06:55.046 +03:00 [INF] Executing endpoint 'DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API)'
+2026-08-27 19:06:55.046 +03:00 [INF] Executing endpoint 'DepoStok.API.Controllers.DepolarController.GetDepolar (DepoStok.API)'
+2026-08-27 19:06:55.046 +03:00 [INF] Executing endpoint 'DepoStok.API.Controllers.MalzemelerController.GetGruplar (DepoStok.API)'
+2026-08-27 19:06:55.046 +03:00 [INF] Executing endpoint 'DepoStok.API.Controllers.MalzemelerController.GetMalzemeler (DepoStok.API)'
+2026-08-27 19:06:55.051 +03:00 [INF] Route matched with {action = "GetGruplar", controller = "Malzemeler"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DepoStok.Application.MalzemeGrubuDto]]] GetGruplar() on controller DepoStok.API.Controllers.MalzemelerController (DepoStok.API).
+2026-08-27 19:06:55.051 +03:00 [INF] Route matched with {action = "GetDepolar", controller = "Depolar"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DepoStok.Application.DepoDto]]] GetDepolar() on controller DepoStok.API.Controllers.DepolarController (DepoStok.API).
+2026-08-27 19:06:55.052 +03:00 [INF] Route matched with {action = "GetStokDurum", controller = "Hareketler"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DepoStok.Application.PagedResult`1[DepoStok.Application.StokDurumDto]]] GetStokDurum(System.Nullable`1[System.Int32], System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Boolean], Int32, Int32) on controller DepoStok.API.Controllers.HareketlerController (DepoStok.API).
+2026-08-27 19:06:55.052 +03:00 [INF] Route matched with {action = "GetMalzemeler", controller = "Malzemeler"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DepoStok.Application.PagedResult`1[DepoStok.Application.MalzemeDto]]] GetMalzemeler(System.Nullable`1[System.Int32], System.String, Int32, Int32) on controller DepoStok.API.Controllers.MalzemelerController (DepoStok.API).
+2026-08-27 19:06:55.052 +03:00 [INF] Route matched with {action = "GetStokDurum", controller = "Hareketler"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DepoStok.Application.PagedResult`1[DepoStok.Application.StokDurumDto]]] GetStokDurum(System.Nullable`1[System.Int32], System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Boolean], Int32, Int32) on controller DepoStok.API.Controllers.HareketlerController (DepoStok.API).
+2026-08-27 19:06:55.052 +03:00 [INF] Route matched with {action = "GetStokDurum", controller = "Hareketler"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DepoStok.Application.PagedResult`1[DepoStok.Application.StokDurumDto]]] GetStokDurum(System.Nullable`1[System.Int32], System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Boolean], Int32, Int32) on controller DepoStok.API.Controllers.HareketlerController (DepoStok.API).
+2026-08-27 19:06:55.157 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `d`.`Id`, `d`.`Ad`, `d`.`Bolge`, `d`.`IsActive`, `d`.`Kod`, `d`.`Sorumlu`
+FROM `Depolar` AS `d`
+ORDER BY `d`.`Kod`
+2026-08-27 19:06:55.159 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[DepoStok.Domain.Depo, DepoStok.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DepoStok.Application.DepoDto, DepoStok.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-27 19:06:55.164 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Aciklama`, `m`.`Ad`, `m`.`Birim`, `m`.`IsActive`, `m`.`Kod`, `m`.`KritikStokSeviyesi`, `m`.`MalzemeGrubuId`, `m`.`MarkaModel`, `m`.`MaxStokSeviyesi`, `m`.`TeknikOzellik`, `m0`.`Id`, `m0`.`Ad`, `m0`.`Kod`, `m0`.`ParentId`
+FROM `Malzemeler` AS `m`
+INNER JOIN `MalzemeGruplari` AS `m0` ON `m`.`MalzemeGrubuId` = `m0`.`Id`
+WHERE `m`.`IsActive`
+2026-08-27 19:06:55.178 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Malzemeler` AS `m`
+2026-08-27 19:06:55.178 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `d`.`Id`, `d`.`Ad`, `d`.`Bolge`, `d`.`IsActive`, `d`.`Kod`, `d`.`Sorumlu`
+FROM `Depolar` AS `d`
+WHERE `d`.`IsActive`
+2026-08-27 19:06:55.178 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Aciklama`, `m`.`Ad`, `m`.`Birim`, `m`.`IsActive`, `m`.`Kod`, `m`.`KritikStokSeviyesi`, `m`.`MalzemeGrubuId`, `m`.`MarkaModel`, `m`.`MaxStokSeviyesi`, `m`.`TeknikOzellik`, `m0`.`Id`, `m0`.`Ad`, `m0`.`Kod`, `m0`.`ParentId`
+FROM `Malzemeler` AS `m`
+INNER JOIN `MalzemeGruplari` AS `m0` ON `m`.`MalzemeGrubuId` = `m0`.`Id`
+WHERE `m`.`IsActive`
+2026-08-27 19:06:55.178 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Ad`, `m`.`Kod`, `m`.`ParentId`, `m0`.`Id`, `m0`.`Ad`, `m0`.`Kod`, `m0`.`ParentId`
+FROM `MalzemeGruplari` AS `m`
+LEFT JOIN `MalzemeGruplari` AS `m0` ON `m`.`ParentId` = `m0`.`Id`
+ORDER BY `m`.`Kod`
+2026-08-27 19:06:55.179 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Aciklama`, `m`.`Ad`, `m`.`Birim`, `m`.`IsActive`, `m`.`Kod`, `m`.`KritikStokSeviyesi`, `m`.`MalzemeGrubuId`, `m`.`MarkaModel`, `m`.`MaxStokSeviyesi`, `m`.`TeknikOzellik`, `m0`.`Id`, `m0`.`Ad`, `m0`.`Kod`, `m0`.`ParentId`
+FROM `Malzemeler` AS `m`
+INNER JOIN `MalzemeGruplari` AS `m0` ON `m`.`MalzemeGrubuId` = `m0`.`Id`
+WHERE `m`.`IsActive`
+2026-08-27 19:06:55.180 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[DepoStok.Domain.MalzemeGrubu, DepoStok.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DepoStok.Application.MalzemeGrubuDto, DepoStok.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-27 19:06:55.181 +03:00 [INF] Executed action DepoStok.API.Controllers.DepolarController.GetDepolar (DepoStok.API) in 129.6427ms
+2026-08-27 19:06:55.181 +03:00 [INF] Executed endpoint 'DepoStok.API.Controllers.DepolarController.GetDepolar (DepoStok.API)'
+2026-08-27 19:06:55.182 +03:00 [INF] HTTP GET /api/depolar responded 200 in 141.2620 ms
+2026-08-27 19:06:55.182 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/depolar - 200 null application/json; charset=utf-8 141.7458ms
+2026-08-27 19:06:55.183 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `d`.`Id`, `d`.`Ad`, `d`.`Bolge`, `d`.`IsActive`, `d`.`Kod`, `d`.`Sorumlu`
+FROM `Depolar` AS `d`
+WHERE `d`.`IsActive`
+2026-08-27 19:06:55.183 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `d`.`Id`, `d`.`Ad`, `d`.`Bolge`, `d`.`IsActive`, `d`.`Kod`, `d`.`Sorumlu`
+FROM `Depolar` AS `d`
+WHERE `d`.`IsActive`
+2026-08-27 19:06:55.191 +03:00 [INF] Executed action DepoStok.API.Controllers.MalzemelerController.GetGruplar (DepoStok.API) in 139.1733ms
+2026-08-27 19:06:55.191 +03:00 [INF] Executed endpoint 'DepoStok.API.Controllers.MalzemelerController.GetGruplar (DepoStok.API)'
+2026-08-27 19:06:55.191 +03:00 [INF] HTTP GET /api/malzemeler/gruplar responded 200 in 149.4097 ms
+2026-08-27 19:06:55.191 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/malzemeler/gruplar - 200 null application/json; charset=utf-8 150.0875ms
+2026-08-27 19:06:55.193 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/hareketler?pageSize=5 - null null
+2026-08-27 19:06:55.193 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:55.194 +03:00 [INF] Executing endpoint 'DepoStok.API.Controllers.HareketlerController.GetHareketler (DepoStok.API)'
+2026-08-27 19:06:55.200 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `m1`.`Id`, `m1`.`Aciklama`, `m1`.`Ad`, `m1`.`Birim`, `m1`.`IsActive`, `m1`.`Kod`, `m1`.`KritikStokSeviyesi`, `m1`.`MalzemeGrubuId`, `m1`.`MarkaModel`, `m1`.`MaxStokSeviyesi`, `m1`.`TeknikOzellik`, `m0`.`Id`, `m0`.`Ad`, `m0`.`Kod`, `m0`.`ParentId`
+FROM (
+    SELECT `m`.`Id`, `m`.`Aciklama`, `m`.`Ad`, `m`.`Birim`, `m`.`IsActive`, `m`.`Kod`, `m`.`KritikStokSeviyesi`, `m`.`MalzemeGrubuId`, `m`.`MarkaModel`, `m`.`MaxStokSeviyesi`, `m`.`TeknikOzellik`
+    FROM `Malzemeler` AS `m`
+    ORDER BY `m`.`Kod`
+    LIMIT @__p_1 OFFSET @__p_0
+) AS `m1`
+INNER JOIN `MalzemeGruplari` AS `m0` ON `m1`.`MalzemeGrubuId` = `m0`.`Id`
+ORDER BY `m1`.`Kod`
+2026-08-27 19:06:55.202 +03:00 [INF] Route matched with {action = "GetHareketler", controller = "Hareketler"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DepoStok.Application.PagedResult`1[DepoStok.Application.HareketBaslikDto]]] GetHareketler(System.Nullable`1[DepoStok.Domain.HareketTipiEnum], System.Nullable`1[System.Int32], System.Nullable`1[System.Int32], System.Nullable`1[System.DateTime], System.Nullable`1[System.DateTime], Int32, Int32) on controller DepoStok.API.Controllers.HareketlerController (DepoStok.API).
+2026-08-27 19:06:55.203 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=5 - null null
+2026-08-27 19:06:55.204 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:55.204 +03:00 [INF] Executing endpoint 'DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API)'
+2026-08-27 19:06:55.204 +03:00 [INF] Route matched with {action = "GetStokDurum", controller = "Hareketler"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DepoStok.Application.PagedResult`1[DepoStok.Application.StokDurumDto]]] GetStokDurum(System.Nullable`1[System.Int32], System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Boolean], Int32, Int32) on controller DepoStok.API.Controllers.HareketlerController (DepoStok.API).
+2026-08-27 19:06:55.205 +03:00 [INF] Executing OkObjectResult, writing value of type 'DepoStok.Application.PagedResult`1[[DepoStok.Application.MalzemeDto, DepoStok.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-27 19:06:55.218 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Aciklama`, `m`.`Ad`, `m`.`Birim`, `m`.`IsActive`, `m`.`Kod`, `m`.`KritikStokSeviyesi`, `m`.`MalzemeGrubuId`, `m`.`MarkaModel`, `m`.`MaxStokSeviyesi`, `m`.`TeknikOzellik`, `m0`.`Id`, `m0`.`Ad`, `m0`.`Kod`, `m0`.`ParentId`
+FROM `Malzemeler` AS `m`
+INNER JOIN `MalzemeGruplari` AS `m0` ON `m`.`MalzemeGrubuId` = `m0`.`Id`
+WHERE `m`.`IsActive`
+2026-08-27 19:06:55.218 +03:00 [INF] Executed action DepoStok.API.Controllers.MalzemelerController.GetMalzemeler (DepoStok.API) in 166.0184ms
+2026-08-27 19:06:55.218 +03:00 [INF] Executed endpoint 'DepoStok.API.Controllers.MalzemelerController.GetMalzemeler (DepoStok.API)'
+2026-08-27 19:06:55.218 +03:00 [INF] HTTP GET /api/malzemeler responded 200 in 176.4099 ms
+2026-08-27 19:06:55.219 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/malzemeler?pageSize=200 - 200 null application/json; charset=utf-8 176.7489ms
+2026-08-27 19:06:55.222 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `d`.`Id`, `d`.`Ad`, `d`.`Bolge`, `d`.`IsActive`, `d`.`Kod`, `d`.`Sorumlu`
+FROM `Depolar` AS `d`
+WHERE `d`.`IsActive`
+2026-08-27 19:06:55.227 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `HareketBasliklari` AS `h`
+2026-08-27 19:06:55.229 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`MalzemeId`, `h0`.`HedefDepoId` AS `DepoId`, COALESCE(SUM(`h`.`Miktar`), 0.0) AS `Toplam`
+FROM `HareketKalemleri` AS `h`
+INNER JOIN `HareketBasliklari` AS `h0` ON `h`.`HareketBaslikId` = `h0`.`Id`
+WHERE NOT (`h0`.`IsIptal`) AND (`h0`.`HedefDepoId` IS NOT NULL)
+GROUP BY `h`.`MalzemeId`, `h0`.`HedefDepoId`
+2026-08-27 19:06:55.229 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`MalzemeId`, `h0`.`HedefDepoId` AS `DepoId`, COALESCE(SUM(`h`.`Miktar`), 0.0) AS `Toplam`
+FROM `HareketKalemleri` AS `h`
+INNER JOIN `HareketBasliklari` AS `h0` ON `h`.`HareketBaslikId` = `h0`.`Id`
+WHERE NOT (`h0`.`IsIptal`) AND (`h0`.`HedefDepoId` IS NOT NULL)
+GROUP BY `h`.`MalzemeId`, `h0`.`HedefDepoId`
+2026-08-27 19:06:55.229 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`MalzemeId`, `h0`.`HedefDepoId` AS `DepoId`, COALESCE(SUM(`h`.`Miktar`), 0.0) AS `Toplam`
+FROM `HareketKalemleri` AS `h`
+INNER JOIN `HareketBasliklari` AS `h0` ON `h`.`HareketBaslikId` = `h0`.`Id`
+WHERE NOT (`h0`.`IsIptal`) AND (`h0`.`HedefDepoId` IS NOT NULL)
+GROUP BY `h`.`MalzemeId`, `h0`.`HedefDepoId`
+2026-08-27 19:06:55.229 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`MalzemeId`, `h0`.`HedefDepoId` AS `DepoId`, COALESCE(SUM(`h`.`Miktar`), 0.0) AS `Toplam`
+FROM `HareketKalemleri` AS `h`
+INNER JOIN `HareketBasliklari` AS `h0` ON `h`.`HareketBaslikId` = `h0`.`Id`
+WHERE NOT (`h0`.`IsIptal`) AND (`h0`.`HedefDepoId` IS NOT NULL)
+GROUP BY `h`.`MalzemeId`, `h0`.`HedefDepoId`
+2026-08-27 19:06:55.233 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/depolar - null null
+2026-08-27 19:06:55.233 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:55.234 +03:00 [INF] Executing endpoint 'DepoStok.API.Controllers.DepolarController.GetDepolar (DepoStok.API)'
+2026-08-27 19:06:55.234 +03:00 [INF] Route matched with {action = "GetDepolar", controller = "Depolar"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DepoStok.Application.DepoDto]]] GetDepolar() on controller DepoStok.API.Controllers.DepolarController (DepoStok.API).
+2026-08-27 19:06:55.242 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`MalzemeId`, `h0`.`KaynakDepoId` AS `DepoId`, COALESCE(SUM(`h`.`Miktar`), 0.0) AS `Toplam`
+FROM `HareketKalemleri` AS `h`
+INNER JOIN `HareketBasliklari` AS `h0` ON `h`.`HareketBaslikId` = `h0`.`Id`
+WHERE NOT (`h0`.`IsIptal`) AND (`h0`.`KaynakDepoId` IS NOT NULL)
+GROUP BY `h`.`MalzemeId`, `h0`.`KaynakDepoId`
+2026-08-27 19:06:55.242 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`MalzemeId`, `h0`.`KaynakDepoId` AS `DepoId`, COALESCE(SUM(`h`.`Miktar`), 0.0) AS `Toplam`
+FROM `HareketKalemleri` AS `h`
+INNER JOIN `HareketBasliklari` AS `h0` ON `h`.`HareketBaslikId` = `h0`.`Id`
+WHERE NOT (`h0`.`IsIptal`) AND (`h0`.`KaynakDepoId` IS NOT NULL)
+GROUP BY `h`.`MalzemeId`, `h0`.`KaynakDepoId`
+2026-08-27 19:06:55.242 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`MalzemeId`, `h0`.`KaynakDepoId` AS `DepoId`, COALESCE(SUM(`h`.`Miktar`), 0.0) AS `Toplam`
+FROM `HareketKalemleri` AS `h`
+INNER JOIN `HareketBasliklari` AS `h0` ON `h`.`HareketBaslikId` = `h0`.`Id`
+WHERE NOT (`h0`.`IsIptal`) AND (`h0`.`KaynakDepoId` IS NOT NULL)
+GROUP BY `h`.`MalzemeId`, `h0`.`KaynakDepoId`
+2026-08-27 19:06:55.242 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`MalzemeId`, `h0`.`KaynakDepoId` AS `DepoId`, COALESCE(SUM(`h`.`Miktar`), 0.0) AS `Toplam`
+FROM `HareketKalemleri` AS `h`
+INNER JOIN `HareketBasliklari` AS `h0` ON `h`.`HareketBaslikId` = `h0`.`Id`
+WHERE NOT (`h0`.`IsIptal`) AND (`h0`.`KaynakDepoId` IS NOT NULL)
+GROUP BY `h`.`MalzemeId`, `h0`.`KaynakDepoId`
+2026-08-27 19:06:55.245 +03:00 [INF] Executing OkObjectResult, writing value of type 'DepoStok.Application.PagedResult`1[[DepoStok.Application.StokDurumDto, DepoStok.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-27 19:06:55.245 +03:00 [INF] Executing OkObjectResult, writing value of type 'DepoStok.Application.PagedResult`1[[DepoStok.Application.StokDurumDto, DepoStok.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-27 19:06:55.245 +03:00 [INF] Executing OkObjectResult, writing value of type 'DepoStok.Application.PagedResult`1[[DepoStok.Application.StokDurumDto, DepoStok.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-27 19:06:55.245 +03:00 [INF] Executing OkObjectResult, writing value of type 'DepoStok.Application.PagedResult`1[[DepoStok.Application.StokDurumDto, DepoStok.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-27 19:06:55.248 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `d`.`Id`, `d`.`Ad`, `d`.`Bolge`, `d`.`IsActive`, `d`.`Kod`, `d`.`Sorumlu`
+FROM `Depolar` AS `d`
+ORDER BY `d`.`Kod`
+2026-08-27 19:06:55.248 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[DepoStok.Domain.Depo, DepoStok.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DepoStok.Application.DepoDto, DepoStok.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-27 19:06:55.249 +03:00 [INF] Executed action DepoStok.API.Controllers.DepolarController.GetDepolar (DepoStok.API) in 14.8768ms
+2026-08-27 19:06:55.249 +03:00 [INF] Executed endpoint 'DepoStok.API.Controllers.DepolarController.GetDepolar (DepoStok.API)'
+2026-08-27 19:06:55.249 +03:00 [INF] HTTP GET /api/depolar responded 200 in 15.6974 ms
+2026-08-27 19:06:55.249 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/depolar - 200 null application/json; charset=utf-8 16.0649ms
+2026-08-27 19:06:55.251 +03:00 [INF] Executed action DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API) in 198.3701ms
+2026-08-27 19:06:55.251 +03:00 [INF] Executed action DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API) in 46.4427ms
+2026-08-27 19:06:55.251 +03:00 [INF] Executed action DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API) in 198.5773ms
+2026-08-27 19:06:55.251 +03:00 [INF] Executed endpoint 'DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API)'
+2026-08-27 19:06:55.251 +03:00 [INF] Executed endpoint 'DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API)'
+2026-08-27 19:06:55.251 +03:00 [INF] Executed endpoint 'DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API)'
+2026-08-27 19:06:55.251 +03:00 [INF] HTTP GET /api/hareketler/stok-durum responded 200 in 218.7443 ms
+2026-08-27 19:06:55.251 +03:00 [INF] HTTP GET /api/hareketler/stok-durum responded 200 in 47.5417 ms
+2026-08-27 19:06:55.251 +03:00 [INF] HTTP GET /api/hareketler/stok-durum responded 200 in 206.2121 ms
+2026-08-27 19:06:55.251 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=1 - 200 null application/json; charset=utf-8 206.6763ms
+2026-08-27 19:06:55.251 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?page=1&pageSize=10 - 200 null application/json; charset=utf-8 219.7954ms
+2026-08-27 19:06:55.251 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=5 - 200 null application/json; charset=utf-8 47.9825ms
+2026-08-27 19:06:55.252 +03:00 [INF] Executed action DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API) in 199.8259ms
+2026-08-27 19:06:55.252 +03:00 [INF] Executed endpoint 'DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API)'
+2026-08-27 19:06:55.252 +03:00 [INF] HTTP GET /api/hareketler/stok-durum responded 200 in 215.3008 ms
+2026-08-27 19:06:55.252 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?pageSize=5000 - 200 null application/json; charset=utf-8 215.8402ms
+2026-08-27 19:06:55.258 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/malzemeler/gruplar - null null
+2026-08-27 19:06:55.258 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:55.259 +03:00 [INF] Executing endpoint 'DepoStok.API.Controllers.MalzemelerController.GetGruplar (DepoStok.API)'
+2026-08-27 19:06:55.259 +03:00 [INF] Route matched with {action = "GetGruplar", controller = "Malzemeler"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DepoStok.Application.MalzemeGrubuDto]]] GetGruplar() on controller DepoStok.API.Controllers.MalzemelerController (DepoStok.API).
+2026-08-27 19:06:55.262 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/malzemeler?pageSize=200 - null null
+2026-08-27 19:06:55.262 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=1 - null null
+2026-08-27 19:06:55.262 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:55.262 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:55.263 +03:00 [INF] Executing endpoint 'DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API)'
+2026-08-27 19:06:55.263 +03:00 [INF] Executing endpoint 'DepoStok.API.Controllers.MalzemelerController.GetMalzemeler (DepoStok.API)'
+2026-08-27 19:06:55.263 +03:00 [INF] Route matched with {action = "GetMalzemeler", controller = "Malzemeler"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DepoStok.Application.PagedResult`1[DepoStok.Application.MalzemeDto]]] GetMalzemeler(System.Nullable`1[System.Int32], System.String, Int32, Int32) on controller DepoStok.API.Controllers.MalzemelerController (DepoStok.API).
+2026-08-27 19:06:55.263 +03:00 [INF] Route matched with {action = "GetStokDurum", controller = "Hareketler"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DepoStok.Application.PagedResult`1[DepoStok.Application.StokDurumDto]]] GetStokDurum(System.Nullable`1[System.Int32], System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Boolean], Int32, Int32) on controller DepoStok.API.Controllers.HareketlerController (DepoStok.API).
+2026-08-27 19:06:55.263 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=5 - null null
+2026-08-27 19:06:55.263 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:55.264 +03:00 [INF] Executing endpoint 'DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API)'
+2026-08-27 19:06:55.264 +03:00 [INF] Route matched with {action = "GetStokDurum", controller = "Hareketler"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DepoStok.Application.PagedResult`1[DepoStok.Application.StokDurumDto]]] GetStokDurum(System.Nullable`1[System.Int32], System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Boolean], Int32, Int32) on controller DepoStok.API.Controllers.HareketlerController (DepoStok.API).
+2026-08-27 19:06:55.265 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?page=1&pageSize=10 - null null
+2026-08-27 19:06:55.265 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:55.265 +03:00 [INF] Executing endpoint 'DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API)'
+2026-08-27 19:06:55.266 +03:00 [INF] Route matched with {action = "GetStokDurum", controller = "Hareketler"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DepoStok.Application.PagedResult`1[DepoStok.Application.StokDurumDto]]] GetStokDurum(System.Nullable`1[System.Int32], System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Boolean], Int32, Int32) on controller DepoStok.API.Controllers.HareketlerController (DepoStok.API).
+2026-08-27 19:06:55.274 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Ad`, `m`.`Kod`, `m`.`ParentId`, `m0`.`Id`, `m0`.`Ad`, `m0`.`Kod`, `m0`.`ParentId`
+FROM `MalzemeGruplari` AS `m`
+LEFT JOIN `MalzemeGruplari` AS `m0` ON `m`.`ParentId` = `m0`.`Id`
+ORDER BY `m`.`Kod`
+2026-08-27 19:06:55.275 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[DepoStok.Domain.MalzemeGrubu, DepoStok.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DepoStok.Application.MalzemeGrubuDto, DepoStok.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-27 19:06:55.275 +03:00 [INF] Executed action DepoStok.API.Controllers.MalzemelerController.GetGruplar (DepoStok.API) in 16.379ms
+2026-08-27 19:06:55.275 +03:00 [INF] Executed endpoint 'DepoStok.API.Controllers.MalzemelerController.GetGruplar (DepoStok.API)'
+2026-08-27 19:06:55.275 +03:00 [INF] HTTP GET /api/malzemeler/gruplar responded 200 in 17.1678 ms
+2026-08-27 19:06:55.275 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/malzemeler/gruplar - 200 null application/json; charset=utf-8 17.5328ms
+2026-08-27 19:06:55.276 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Malzemeler` AS `m`
+2026-08-27 19:06:55.276 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Aciklama`, `m`.`Ad`, `m`.`Birim`, `m`.`IsActive`, `m`.`Kod`, `m`.`KritikStokSeviyesi`, `m`.`MalzemeGrubuId`, `m`.`MarkaModel`, `m`.`MaxStokSeviyesi`, `m`.`TeknikOzellik`, `m0`.`Id`, `m0`.`Ad`, `m0`.`Kod`, `m0`.`ParentId`
+FROM `Malzemeler` AS `m`
+INNER JOIN `MalzemeGruplari` AS `m0` ON `m`.`MalzemeGrubuId` = `m0`.`Id`
+WHERE `m`.`IsActive`
+2026-08-27 19:06:55.276 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Aciklama`, `m`.`Ad`, `m`.`Birim`, `m`.`IsActive`, `m`.`Kod`, `m`.`KritikStokSeviyesi`, `m`.`MalzemeGrubuId`, `m`.`MarkaModel`, `m`.`MaxStokSeviyesi`, `m`.`TeknikOzellik`, `m0`.`Id`, `m0`.`Ad`, `m0`.`Kod`, `m0`.`ParentId`
+FROM `Malzemeler` AS `m`
+INNER JOIN `MalzemeGruplari` AS `m0` ON `m`.`MalzemeGrubuId` = `m0`.`Id`
+WHERE `m`.`IsActive`
+2026-08-27 19:06:55.279 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `m1`.`Id`, `m1`.`Aciklama`, `m1`.`Ad`, `m1`.`Birim`, `m1`.`IsActive`, `m1`.`Kod`, `m1`.`KritikStokSeviyesi`, `m1`.`MalzemeGrubuId`, `m1`.`MarkaModel`, `m1`.`MaxStokSeviyesi`, `m1`.`TeknikOzellik`, `m0`.`Id`, `m0`.`Ad`, `m0`.`Kod`, `m0`.`ParentId`
+FROM (
+    SELECT `m`.`Id`, `m`.`Aciklama`, `m`.`Ad`, `m`.`Birim`, `m`.`IsActive`, `m`.`Kod`, `m`.`KritikStokSeviyesi`, `m`.`MalzemeGrubuId`, `m`.`MarkaModel`, `m`.`MaxStokSeviyesi`, `m`.`TeknikOzellik`
+    FROM `Malzemeler` AS `m`
+    ORDER BY `m`.`Kod`
+    LIMIT @__p_1 OFFSET @__p_0
+) AS `m1`
+INNER JOIN `MalzemeGruplari` AS `m0` ON `m1`.`MalzemeGrubuId` = `m0`.`Id`
+ORDER BY `m1`.`Kod`
+2026-08-27 19:06:55.280 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `d`.`Id`, `d`.`Ad`, `d`.`Bolge`, `d`.`IsActive`, `d`.`Kod`, `d`.`Sorumlu`
+FROM `Depolar` AS `d`
+WHERE `d`.`IsActive`
+2026-08-27 19:06:55.280 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `d`.`Id`, `d`.`Ad`, `d`.`Bolge`, `d`.`IsActive`, `d`.`Kod`, `d`.`Sorumlu`
+FROM `Depolar` AS `d`
+WHERE `d`.`IsActive`
+2026-08-27 19:06:55.280 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Aciklama`, `m`.`Ad`, `m`.`Birim`, `m`.`IsActive`, `m`.`Kod`, `m`.`KritikStokSeviyesi`, `m`.`MalzemeGrubuId`, `m`.`MarkaModel`, `m`.`MaxStokSeviyesi`, `m`.`TeknikOzellik`, `m0`.`Id`, `m0`.`Ad`, `m0`.`Kod`, `m0`.`ParentId`
+FROM `Malzemeler` AS `m`
+INNER JOIN `MalzemeGruplari` AS `m0` ON `m`.`MalzemeGrubuId` = `m0`.`Id`
+WHERE `m`.`IsActive`
+2026-08-27 19:06:55.282 +03:00 [INF] Executing OkObjectResult, writing value of type 'DepoStok.Application.PagedResult`1[[DepoStok.Application.MalzemeDto, DepoStok.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-27 19:06:55.283 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?pageSize=5000 - null null
+2026-08-27 19:06:55.283 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`MalzemeId`, `h0`.`HedefDepoId` AS `DepoId`, COALESCE(SUM(`h`.`Miktar`), 0.0) AS `Toplam`
+FROM `HareketKalemleri` AS `h`
+INNER JOIN `HareketBasliklari` AS `h0` ON `h`.`HareketBaslikId` = `h0`.`Id`
+WHERE NOT (`h0`.`IsIptal`) AND (`h0`.`HedefDepoId` IS NOT NULL)
+GROUP BY `h`.`MalzemeId`, `h0`.`HedefDepoId`
+2026-08-27 19:06:55.283 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`MalzemeId`, `h0`.`HedefDepoId` AS `DepoId`, COALESCE(SUM(`h`.`Miktar`), 0.0) AS `Toplam`
+FROM `HareketKalemleri` AS `h`
+INNER JOIN `HareketBasliklari` AS `h0` ON `h`.`HareketBaslikId` = `h0`.`Id`
+WHERE NOT (`h0`.`IsIptal`) AND (`h0`.`HedefDepoId` IS NOT NULL)
+GROUP BY `h`.`MalzemeId`, `h0`.`HedefDepoId`
+2026-08-27 19:06:55.283 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:55.284 +03:00 [INF] Executing endpoint 'DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API)'
+2026-08-27 19:06:55.284 +03:00 [INF] Executed action DepoStok.API.Controllers.MalzemelerController.GetMalzemeler (DepoStok.API) in 20.599ms
+2026-08-27 19:06:55.284 +03:00 [INF] Route matched with {action = "GetStokDurum", controller = "Hareketler"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DepoStok.Application.PagedResult`1[DepoStok.Application.StokDurumDto]]] GetStokDurum(System.Nullable`1[System.Int32], System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Boolean], Int32, Int32) on controller DepoStok.API.Controllers.HareketlerController (DepoStok.API).
+2026-08-27 19:06:55.284 +03:00 [INF] Executed endpoint 'DepoStok.API.Controllers.MalzemelerController.GetMalzemeler (DepoStok.API)'
+2026-08-27 19:06:55.284 +03:00 [INF] HTTP GET /api/malzemeler responded 200 in 21.6718 ms
+2026-08-27 19:06:55.284 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `d`.`Id`, `d`.`Ad`, `d`.`Bolge`, `d`.`IsActive`, `d`.`Kod`, `d`.`Sorumlu`
+FROM `Depolar` AS `d`
+WHERE `d`.`IsActive`
+2026-08-27 19:06:55.284 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/malzemeler?pageSize=200 - 200 null application/json; charset=utf-8 22.1036ms
+2026-08-27 19:06:55.285 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `h0`.`Id`, `h0`.`Aciklama`, `h0`.`CreatedAt`, `h0`.`FisNo`, `h0`.`HareketTipi`, `h0`.`HedefDepoId`, `h0`.`IptalNedeni`, `h0`.`IptalTarihi`, `h0`.`IsIptal`, `h0`.`KaynakDepoId`, `h0`.`OlusturanKullaniciId`, `h0`.`Tarih`, `d`.`Id`, `d`.`Ad`, `d`.`Bolge`, `d`.`IsActive`, `d`.`Kod`, `d`.`Sorumlu`, `d0`.`Id`, `d0`.`Ad`, `d0`.`Bolge`, `d0`.`IsActive`, `d0`.`Kod`, `d0`.`Sorumlu`, `u`.`Id`, `u`.`AdSoyad`, `u`.`CreatedAt`, `u`.`Email`, `u`.`IsActive`, `u`.`KullaniciAdi`, `u`.`ParolaHash`, `u`.`RoleId`, `s`.`Id`, `s`.`BirimFiyat`, `s`.`HareketBaslikId`, `s`.`Huycre`, `s`.`MalzemeDurumu`, `s`.`MalzemeId`, `s`.`Miktar`, `s`.`Raf`, `s`.`SatirAciklamasi`, `s`.`Id0`, `s`.`Aciklama`, `s`.`Ad`, `s`.`Birim`, `s`.`IsActive`, `s`.`Kod`, `s`.`KritikStokSeviyesi`, `s`.`MalzemeGrubuId`, `s`.`MarkaModel`, `s`.`MaxStokSeviyesi`, `s`.`TeknikOzellik`
+FROM (
+    SELECT `h`.`Id`, `h`.`Aciklama`, `h`.`CreatedAt`, `h`.`FisNo`, `h`.`HareketTipi`, `h`.`HedefDepoId`, `h`.`IptalNedeni`, `h`.`IptalTarihi`, `h`.`IsIptal`, `h`.`KaynakDepoId`, `h`.`OlusturanKullaniciId`, `h`.`Tarih`
+    FROM `HareketBasliklari` AS `h`
+    ORDER BY `h`.`Tarih` DESC, `h`.`Id` DESC
+    LIMIT @__p_1 OFFSET @__p_0
+) AS `h0`
+LEFT JOIN `Depolar` AS `d` ON `h0`.`KaynakDepoId` = `d`.`Id`
+LEFT JOIN `Depolar` AS `d0` ON `h0`.`HedefDepoId` = `d0`.`Id`
+INNER JOIN `Users` AS `u` ON `h0`.`OlusturanKullaniciId` = `u`.`Id`
+LEFT JOIN (
+    SELECT `h1`.`Id`, `h1`.`BirimFiyat`, `h1`.`HareketBaslikId`, `h1`.`Huycre`, `h1`.`MalzemeDurumu`, `h1`.`MalzemeId`, `h1`.`Miktar`, `h1`.`Raf`, `h1`.`SatirAciklamasi`, `m`.`Id` AS `Id0`, `m`.`Aciklama`, `m`.`Ad`, `m`.`Birim`, `m`.`IsActive`, `m`.`Kod`, `m`.`KritikStokSeviyesi`, `m`.`MalzemeGrubuId`, `m`.`MarkaModel`, `m`.`MaxStokSeviyesi`, `m`.`TeknikOzellik`
+    FROM `HareketKalemleri` AS `h1`
+    INNER JOIN `Malzemeler` AS `m` ON `h1`.`MalzemeId` = `m`.`Id`
+) AS `s` ON `h0`.`Id` = `s`.`HareketBaslikId`
+ORDER BY `h0`.`Tarih` DESC, `h0`.`Id` DESC, `d`.`Id`, `d0`.`Id`, `u`.`Id`, `s`.`Id`
+2026-08-27 19:06:55.287 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`MalzemeId`, `h0`.`KaynakDepoId` AS `DepoId`, COALESCE(SUM(`h`.`Miktar`), 0.0) AS `Toplam`
+FROM `HareketKalemleri` AS `h`
+INNER JOIN `HareketBasliklari` AS `h0` ON `h`.`HareketBaslikId` = `h0`.`Id`
+WHERE NOT (`h0`.`IsIptal`) AND (`h0`.`KaynakDepoId` IS NOT NULL)
+GROUP BY `h`.`MalzemeId`, `h0`.`KaynakDepoId`
+2026-08-27 19:06:55.287 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`MalzemeId`, `h0`.`KaynakDepoId` AS `DepoId`, COALESCE(SUM(`h`.`Miktar`), 0.0) AS `Toplam`
+FROM `HareketKalemleri` AS `h`
+INNER JOIN `HareketBasliklari` AS `h0` ON `h`.`HareketBaslikId` = `h0`.`Id`
+WHERE NOT (`h0`.`IsIptal`) AND (`h0`.`KaynakDepoId` IS NOT NULL)
+GROUP BY `h`.`MalzemeId`, `h0`.`KaynakDepoId`
+2026-08-27 19:06:55.288 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`MalzemeId`, `h0`.`HedefDepoId` AS `DepoId`, COALESCE(SUM(`h`.`Miktar`), 0.0) AS `Toplam`
+FROM `HareketKalemleri` AS `h`
+INNER JOIN `HareketBasliklari` AS `h0` ON `h`.`HareketBaslikId` = `h0`.`Id`
+WHERE NOT (`h0`.`IsIptal`) AND (`h0`.`HedefDepoId` IS NOT NULL)
+GROUP BY `h`.`MalzemeId`, `h0`.`HedefDepoId`
+2026-08-27 19:06:55.288 +03:00 [INF] Executing OkObjectResult, writing value of type 'DepoStok.Application.PagedResult`1[[DepoStok.Application.StokDurumDto, DepoStok.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-27 19:06:55.288 +03:00 [INF] Executing OkObjectResult, writing value of type 'DepoStok.Application.PagedResult`1[[DepoStok.Application.StokDurumDto, DepoStok.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-27 19:06:55.288 +03:00 [INF] Executed action DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API) in 24.2314ms
+2026-08-27 19:06:55.288 +03:00 [INF] Executed endpoint 'DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API)'
+2026-08-27 19:06:55.288 +03:00 [INF] HTTP GET /api/hareketler/stok-durum responded 200 in 25.1302 ms
+2026-08-27 19:06:55.288 +03:00 [INF] Executed action DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API) in 25.266ms
+2026-08-27 19:06:55.289 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=5 - 200 null application/json; charset=utf-8 25.4657ms
+2026-08-27 19:06:55.289 +03:00 [INF] Executed endpoint 'DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API)'
+2026-08-27 19:06:55.289 +03:00 [INF] HTTP GET /api/hareketler/stok-durum responded 200 in 26.5839 ms
+2026-08-27 19:06:55.289 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=1 - 200 null application/json; charset=utf-8 26.8342ms
+2026-08-27 19:06:55.292 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`MalzemeId`, `h0`.`KaynakDepoId` AS `DepoId`, COALESCE(SUM(`h`.`Miktar`), 0.0) AS `Toplam`
+FROM `HareketKalemleri` AS `h`
+INNER JOIN `HareketBasliklari` AS `h0` ON `h`.`HareketBaslikId` = `h0`.`Id`
+WHERE NOT (`h0`.`IsIptal`) AND (`h0`.`KaynakDepoId` IS NOT NULL)
+GROUP BY `h`.`MalzemeId`, `h0`.`KaynakDepoId`
+2026-08-27 19:06:55.293 +03:00 [INF] Executing OkObjectResult, writing value of type 'DepoStok.Application.PagedResult`1[[DepoStok.Application.StokDurumDto, DepoStok.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-27 19:06:55.293 +03:00 [INF] Executed action DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API) in 27.6124ms
+2026-08-27 19:06:55.293 +03:00 [INF] Executed endpoint 'DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API)'
+2026-08-27 19:06:55.293 +03:00 [INF] HTTP GET /api/hareketler/stok-durum responded 200 in 28.5126 ms
+2026-08-27 19:06:55.294 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?page=1&pageSize=10 - 200 null application/json; charset=utf-8 28.8471ms
+2026-08-27 19:06:55.299 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Aciklama`, `m`.`Ad`, `m`.`Birim`, `m`.`IsActive`, `m`.`Kod`, `m`.`KritikStokSeviyesi`, `m`.`MalzemeGrubuId`, `m`.`MarkaModel`, `m`.`MaxStokSeviyesi`, `m`.`TeknikOzellik`, `m0`.`Id`, `m0`.`Ad`, `m0`.`Kod`, `m0`.`ParentId`
+FROM `Malzemeler` AS `m`
+INNER JOIN `MalzemeGruplari` AS `m0` ON `m`.`MalzemeGrubuId` = `m0`.`Id`
+WHERE `m`.`IsActive`
+2026-08-27 19:06:55.302 +03:00 [INF] Executing OkObjectResult, writing value of type 'DepoStok.Application.PagedResult`1[[DepoStok.Application.HareketBaslikDto, DepoStok.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-27 19:06:55.303 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `d`.`Id`, `d`.`Ad`, `d`.`Bolge`, `d`.`IsActive`, `d`.`Kod`, `d`.`Sorumlu`
+FROM `Depolar` AS `d`
+WHERE `d`.`IsActive`
+2026-08-27 19:06:55.306 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`MalzemeId`, `h0`.`HedefDepoId` AS `DepoId`, COALESCE(SUM(`h`.`Miktar`), 0.0) AS `Toplam`
+FROM `HareketKalemleri` AS `h`
+INNER JOIN `HareketBasliklari` AS `h0` ON `h`.`HareketBaslikId` = `h0`.`Id`
+WHERE NOT (`h0`.`IsIptal`) AND (`h0`.`HedefDepoId` IS NOT NULL)
+GROUP BY `h`.`MalzemeId`, `h0`.`HedefDepoId`
+2026-08-27 19:06:55.310 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`MalzemeId`, `h0`.`KaynakDepoId` AS `DepoId`, COALESCE(SUM(`h`.`Miktar`), 0.0) AS `Toplam`
+FROM `HareketKalemleri` AS `h`
+INNER JOIN `HareketBasliklari` AS `h0` ON `h`.`HareketBaslikId` = `h0`.`Id`
+WHERE NOT (`h0`.`IsIptal`) AND (`h0`.`KaynakDepoId` IS NOT NULL)
+GROUP BY `h`.`MalzemeId`, `h0`.`KaynakDepoId`
+2026-08-27 19:06:55.312 +03:00 [INF] Executing OkObjectResult, writing value of type 'DepoStok.Application.PagedResult`1[[DepoStok.Application.StokDurumDto, DepoStok.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-27 19:06:55.314 +03:00 [INF] Executed action DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API) in 30.3313ms
+2026-08-27 19:06:55.314 +03:00 [INF] Executed endpoint 'DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API)'
+2026-08-27 19:06:55.314 +03:00 [INF] HTTP GET /api/hareketler/stok-durum responded 200 in 31.2722 ms
+2026-08-27 19:06:55.315 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?pageSize=5000 - 200 null application/json; charset=utf-8 31.8159ms
+2026-08-27 19:06:55.340 +03:00 [INF] Executed action DepoStok.API.Controllers.HareketlerController.GetHareketler (DepoStok.API) in 138.1157ms
+2026-08-27 19:06:55.341 +03:00 [INF] Executed endpoint 'DepoStok.API.Controllers.HareketlerController.GetHareketler (DepoStok.API)'
+2026-08-27 19:06:55.341 +03:00 [INF] HTTP GET /api/hareketler responded 200 in 147.1548 ms
+2026-08-27 19:06:55.341 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/hareketler?pageSize=5 - 200 null application/json; charset=utf-8 147.5862ms
+2026-08-27 19:06:55.351 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/hareketler?pageSize=5 - null null
+2026-08-27 19:06:55.351 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:06:55.351 +03:00 [INF] Executing endpoint 'DepoStok.API.Controllers.HareketlerController.GetHareketler (DepoStok.API)'
+2026-08-27 19:06:55.351 +03:00 [INF] Route matched with {action = "GetHareketler", controller = "Hareketler"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DepoStok.Application.PagedResult`1[DepoStok.Application.HareketBaslikDto]]] GetHareketler(System.Nullable`1[DepoStok.Domain.HareketTipiEnum], System.Nullable`1[System.Int32], System.Nullable`1[System.Int32], System.Nullable`1[System.DateTime], System.Nullable`1[System.DateTime], Int32, Int32) on controller DepoStok.API.Controllers.HareketlerController (DepoStok.API).
+2026-08-27 19:06:55.365 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `HareketBasliklari` AS `h`
+2026-08-27 19:06:55.368 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `h0`.`Id`, `h0`.`Aciklama`, `h0`.`CreatedAt`, `h0`.`FisNo`, `h0`.`HareketTipi`, `h0`.`HedefDepoId`, `h0`.`IptalNedeni`, `h0`.`IptalTarihi`, `h0`.`IsIptal`, `h0`.`KaynakDepoId`, `h0`.`OlusturanKullaniciId`, `h0`.`Tarih`, `d`.`Id`, `d`.`Ad`, `d`.`Bolge`, `d`.`IsActive`, `d`.`Kod`, `d`.`Sorumlu`, `d0`.`Id`, `d0`.`Ad`, `d0`.`Bolge`, `d0`.`IsActive`, `d0`.`Kod`, `d0`.`Sorumlu`, `u`.`Id`, `u`.`AdSoyad`, `u`.`CreatedAt`, `u`.`Email`, `u`.`IsActive`, `u`.`KullaniciAdi`, `u`.`ParolaHash`, `u`.`RoleId`, `s`.`Id`, `s`.`BirimFiyat`, `s`.`HareketBaslikId`, `s`.`Huycre`, `s`.`MalzemeDurumu`, `s`.`MalzemeId`, `s`.`Miktar`, `s`.`Raf`, `s`.`SatirAciklamasi`, `s`.`Id0`, `s`.`Aciklama`, `s`.`Ad`, `s`.`Birim`, `s`.`IsActive`, `s`.`Kod`, `s`.`KritikStokSeviyesi`, `s`.`MalzemeGrubuId`, `s`.`MarkaModel`, `s`.`MaxStokSeviyesi`, `s`.`TeknikOzellik`
+FROM (
+    SELECT `h`.`Id`, `h`.`Aciklama`, `h`.`CreatedAt`, `h`.`FisNo`, `h`.`HareketTipi`, `h`.`HedefDepoId`, `h`.`IptalNedeni`, `h`.`IptalTarihi`, `h`.`IsIptal`, `h`.`KaynakDepoId`, `h`.`OlusturanKullaniciId`, `h`.`Tarih`
+    FROM `HareketBasliklari` AS `h`
+    ORDER BY `h`.`Tarih` DESC, `h`.`Id` DESC
+    LIMIT @__p_1 OFFSET @__p_0
+) AS `h0`
+LEFT JOIN `Depolar` AS `d` ON `h0`.`KaynakDepoId` = `d`.`Id`
+LEFT JOIN `Depolar` AS `d0` ON `h0`.`HedefDepoId` = `d0`.`Id`
+INNER JOIN `Users` AS `u` ON `h0`.`OlusturanKullaniciId` = `u`.`Id`
+LEFT JOIN (
+    SELECT `h1`.`Id`, `h1`.`BirimFiyat`, `h1`.`HareketBaslikId`, `h1`.`Huycre`, `h1`.`MalzemeDurumu`, `h1`.`MalzemeId`, `h1`.`Miktar`, `h1`.`Raf`, `h1`.`SatirAciklamasi`, `m`.`Id` AS `Id0`, `m`.`Aciklama`, `m`.`Ad`, `m`.`Birim`, `m`.`IsActive`, `m`.`Kod`, `m`.`KritikStokSeviyesi`, `m`.`MalzemeGrubuId`, `m`.`MarkaModel`, `m`.`MaxStokSeviyesi`, `m`.`TeknikOzellik`
+    FROM `HareketKalemleri` AS `h1`
+    INNER JOIN `Malzemeler` AS `m` ON `h1`.`MalzemeId` = `m`.`Id`
+) AS `s` ON `h0`.`Id` = `s`.`HareketBaslikId`
+ORDER BY `h0`.`Tarih` DESC, `h0`.`Id` DESC, `d`.`Id`, `d0`.`Id`, `u`.`Id`, `s`.`Id`
+2026-08-27 19:06:55.369 +03:00 [INF] Executing OkObjectResult, writing value of type 'DepoStok.Application.PagedResult`1[[DepoStok.Application.HareketBaslikDto, DepoStok.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-27 19:06:55.370 +03:00 [INF] Executed action DepoStok.API.Controllers.HareketlerController.GetHareketler (DepoStok.API) in 18.3628ms
+2026-08-27 19:06:55.370 +03:00 [INF] Executed endpoint 'DepoStok.API.Controllers.HareketlerController.GetHareketler (DepoStok.API)'
+2026-08-27 19:06:55.370 +03:00 [INF] HTTP GET /api/hareketler responded 200 in 19.1652 ms
+2026-08-27 19:06:55.370 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/hareketler?pageSize=5 - 200 null application/json; charset=utf-8 19.5421ms

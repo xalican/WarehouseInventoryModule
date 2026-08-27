@@ -291,23 +291,23 @@ const DashboardStokDurumu = () => {
     <Box sx={{ width: '100%' }}>
       
       {/* Top Header Bar / Quick Actions */}
-      <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: 2, mb: 3 }}>
+      <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: 1.5, mb: 1.8 }}>
         <Box>
-          <Typography variant="h5" sx={{ fontWeight: 700, color: '#0f172a' }}>
+          <Typography variant="h5" sx={{ fontWeight: 700, color: '#0f172a', fontSize: '1.25rem' }}>
             {t('dashWelcomeTitle') || 'Stok & Depo Yönetim Paneli'}
           </Typography>
-          <Typography variant="body2" sx={{ color: '#64748b', mt: 0.3 }}>
+          <Typography variant="body2" sx={{ color: '#64748b', mt: 0.2, fontSize: '0.82rem' }}>
             {t('dashSubtitle') || 'Canlı depo envanter takibi, hareket analizleri ve kritik stok uyarı kontrolü.'}
           </Typography>
         </Box>
 
-        <Box sx={{ display: 'flex', gap: 1.5, flexWrap: 'wrap' }}>
+        <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap' }}>
           <Button
             variant="contained"
             color="primary"
             startIcon={<EntryIcon />}
             onClick={() => navigate('/fis-olustur')}
-            sx={{ textTransform: 'none', fontWeight: 700, borderRadius: 2.5, px: 2.5, py: 1 }}
+            sx={{ textTransform: 'none', fontWeight: 700, borderRadius: 2, px: 2, py: 0.6, fontSize: '0.85rem' }}
           >
             {t('quickNewInbound') || 'Yeni Giriş Fişi'}
           </Button>
@@ -317,7 +317,7 @@ const DashboardStokDurumu = () => {
             color="success"
             startIcon={<TransferIcon />}
             onClick={() => navigate('/fis-olustur')}
-            sx={{ textTransform: 'none', fontWeight: 700, borderRadius: 2.5, px: 2.5, py: 1 }}
+            sx={{ textTransform: 'none', fontWeight: 700, borderRadius: 2, px: 2, py: 0.6, fontSize: '0.85rem' }}
           >
             {t('quickTransfer') || 'Transfer Yap'}
           </Button>
@@ -327,7 +327,7 @@ const DashboardStokDurumu = () => {
             color="primary"
             startIcon={<AssessmentIcon />}
             onClick={() => navigate('/raporlar')}
-            sx={{ textTransform: 'none', fontWeight: 700, borderRadius: 2.5, px: 2.5, py: 1 }}
+            sx={{ textTransform: 'none', fontWeight: 700, borderRadius: 2, px: 2, py: 0.6, fontSize: '0.85rem' }}
           >
             {t('quickReports') || 'Analiz Raporları'}
           </Button>
@@ -339,24 +339,24 @@ const DashboardStokDurumu = () => {
         sx={{
           display: 'grid',
           gridTemplateColumns: { xs: '1fr', sm: 'repeat(2, 1fr)', lg: 'repeat(4, 1fr)' },
-          gap: 2.5,
-          mb: 3.5,
+          gap: 1.5,
+          mb: 2,
           width: '100%',
         }}
       >
         {/* 1. TOPLAM KALEM SAYISI */}
-        <Paper elevation={0} sx={{ p: 2.5, borderRadius: 3, border: '1px solid #e2e8f0', bgcolor: '#ffffff', width: '100%', boxSizing: 'border-box' }}>
+        <Paper elevation={0} sx={{ p: 1.8, borderRadius: 2.5, border: '1px solid #e2e8f0', bgcolor: '#ffffff', width: '100%', boxSizing: 'border-box' }}>
           <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <Typography variant="caption" sx={{ color: '#64748b', fontWeight: 600 }}>
               {t('totalItems') || 'TOPLAM KALEM SAYISI'}
             </Typography>
             <CategoryIcon color="primary" fontSize="small" />
           </Box>
-          <Box sx={{ display: 'flex', alignItems: 'baseline', gap: 1, mt: 0.8 }}>
-            <Typography variant="h4" sx={{ fontWeight: 650, color: '#0f172a' }}>
+          <Box sx={{ display: 'flex', alignItems: 'baseline', gap: 0.8, mt: 0.4 }}>
+            <Typography variant="h5" sx={{ fontWeight: 700, color: '#0f172a' }}>
               {totalCount}
             </Typography>
-            <Typography variant="subtitle2" sx={{ fontWeight: 600, color: '#64748b' }}>
+            <Typography variant="subtitle2" sx={{ fontWeight: 600, color: '#64748b', fontSize: '0.82rem' }}>
               {lang === 'en' ? 'Items' : 'Kalem'}
             </Typography>
           </Box>
@@ -370,8 +370,8 @@ const DashboardStokDurumu = () => {
             setPage(0);
           }}
           sx={{
-            p: 2.5,
-            borderRadius: 3,
+            p: 1.8,
+            borderRadius: 2.5,
             border: sadeceKritik ? '2.5px solid #dc2626' : '1.5px solid #fca5a5',
             bgcolor: sadeceKritik ? '#fef2f2' : '#ffffff',
             width: '100%',
@@ -392,49 +392,49 @@ const DashboardStokDurumu = () => {
             </Typography>
             <WarningIcon color="error" fontSize="small" />
           </Box>
-          <Box sx={{ display: 'flex', alignItems: 'baseline', gap: 1, mt: 0.8 }}>
-            <Typography variant="h4" sx={{ fontWeight: 650, color: '#dc2626' }}>
+          <Box sx={{ display: 'flex', alignItems: 'baseline', gap: 0.8, mt: 0.4 }}>
+            <Typography variant="h5" sx={{ fontWeight: 700, color: '#dc2626' }}>
               {criticalTotalCount}
             </Typography>
-            <Typography variant="subtitle2" sx={{ fontWeight: 600, color: '#dc2626' }}>
+            <Typography variant="subtitle2" sx={{ fontWeight: 600, color: '#dc2626', fontSize: '0.82rem' }}>
               {t('itemsUnit')}
             </Typography>
           </Box>
         </Paper>
 
         {/* 3. TAHMİNİ TOPLAM STOK DEĞERİ (₺ & $) */}
-        <Paper elevation={0} sx={{ p: 2.5, borderRadius: 3, border: '1px solid #e2e8f0', bgcolor: '#ffffff', width: '100%', boxSizing: 'border-box' }}>
+        <Paper elevation={0} sx={{ p: 1.8, borderRadius: 2.5, border: '1px solid #e2e8f0', bgcolor: '#ffffff', width: '100%', boxSizing: 'border-box' }}>
           <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <Typography variant="caption" sx={{ color: '#64748b', fontWeight: 600 }}>
               {t('totalStockValue')}
             </Typography>
             <AttachMoneyIcon color="success" fontSize="small" />
           </Box>
-          <Box sx={{ mt: 0.5 }}>
+          <Box sx={{ mt: 0.4 }}>
             {currency === 'USD' ? (
               <>
-                <Typography variant="h5" sx={{ fontWeight: 650, color: '#2563eb' }}>
+                <Typography variant="h6" sx={{ fontWeight: 700, color: '#2563eb' }}>
                   $ {estimatedTotalValueUSD.toLocaleString('en-US', { maximumFractionDigits: 0 })}
                 </Typography>
-                <Typography variant="caption" sx={{ fontWeight: 600, color: '#16a34a', display: 'block', mt: 0.2 }}>
+                <Typography variant="caption" sx={{ fontWeight: 600, color: '#16a34a', display: 'block', mt: 0.1 }}>
                   ₺ {estimatedTotalValueTRY.toLocaleString('tr-TR', { maximumFractionDigits: 0 })}
                 </Typography>
               </>
             ) : currency === 'EUR' ? (
               <>
-                <Typography variant="h5" sx={{ fontWeight: 650, color: '#2563eb' }}>
+                <Typography variant="h6" sx={{ fontWeight: 700, color: '#2563eb' }}>
                   € {(estimatedTotalValueTRY / (rates.EUR || 38.0)).toLocaleString('de-DE', { maximumFractionDigits: 0 })}
                 </Typography>
-                <Typography variant="caption" sx={{ fontWeight: 600, color: '#16a34a', display: 'block', mt: 0.2 }}>
+                <Typography variant="caption" sx={{ fontWeight: 600, color: '#16a34a', display: 'block', mt: 0.1 }}>
                   ₺ {estimatedTotalValueTRY.toLocaleString('tr-TR', { maximumFractionDigits: 0 })}
                 </Typography>
               </>
             ) : (
               <>
-                <Typography variant="h5" sx={{ fontWeight: 650, color: '#2563eb' }}>
+                <Typography variant="h6" sx={{ fontWeight: 700, color: '#2563eb' }}>
                   ₺ {estimatedTotalValueTRY.toLocaleString('tr-TR', { maximumFractionDigits: 0 })}
                 </Typography>
-                <Typography variant="caption" sx={{ fontWeight: 600, color: '#16a34a', display: 'block', mt: 0.2 }}>
+                <Typography variant="caption" sx={{ fontWeight: 600, color: '#16a34a', display: 'block', mt: 0.1 }}>
                   $ {estimatedTotalValueUSD.toLocaleString('en-US', { maximumFractionDigits: 0 })}
                 </Typography>
               </>
@@ -443,18 +443,18 @@ const DashboardStokDurumu = () => {
         </Paper>
 
         {/* 4. AKTİF DEPO SAYISI & FİZİKSEL BAKİYE */}
-        <Paper elevation={0} sx={{ p: 2.5, borderRadius: 3, border: '1px solid #e2e8f0', bgcolor: '#ffffff', width: '100%', boxSizing: 'border-box' }}>
+        <Paper elevation={0} sx={{ p: 1.8, borderRadius: 2.5, border: '1px solid #e2e8f0', bgcolor: '#ffffff', width: '100%', boxSizing: 'border-box' }}>
           <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <Typography variant="caption" sx={{ color: '#64748b', fontWeight: 600 }}>
               {t('activeDepotAndBalance')}
             </Typography>
             <WarehouseIcon color="primary" fontSize="small" />
           </Box>
-          <Box sx={{ display: 'flex', alignItems: 'baseline', gap: 1, mt: 0.8 }}>
-            <Typography variant="h4" sx={{ fontWeight: 650, color: '#0f172a' }}>
+          <Box sx={{ display: 'flex', alignItems: 'baseline', gap: 0.8, mt: 0.4 }}>
+            <Typography variant="h5" sx={{ fontWeight: 700, color: '#0f172a' }}>
               {depolar.length}
             </Typography>
-            <Typography variant="subtitle2" sx={{ fontWeight: 600, color: '#2563eb' }}>
+            <Typography variant="subtitle2" sx={{ fontWeight: 600, color: '#2563eb', fontSize: '0.82rem' }}>
               {t('depotUnit')} ({toplamBakiye.toLocaleString('tr-TR')} {t('pcsUnit')})
             </Typography>
           </Box>
@@ -462,12 +462,13 @@ const DashboardStokDurumu = () => {
       </Box>
 
       {/* EXECUTIVE HCI TAB NAVIGATION */}
-      <Box sx={{ borderBottom: 1, borderColor: 'divider', mb: 3 }}>
+      <Box sx={{ borderBottom: 1, borderColor: 'divider', mb: 2 }}>
         <Tabs
           value={activeTab}
           onChange={(e, v) => setActiveTab(v)}
           sx={{
-            '& .MuiTab-root': { textTransform: 'none', fontWeight: 700, fontSize: '0.95rem' },
+            minHeight: 40,
+            '& .MuiTab-root': { textTransform: 'none', fontWeight: 700, fontSize: '0.88rem', minHeight: 40, py: 0.8 },
           }}
         >
           <Tab icon={<DashboardIcon fontSize="small" />} iconPosition="start" label={t('tabStockListSearch')} />
@@ -676,10 +677,10 @@ const DashboardStokDurumu = () => {
       {/* FILTER BAR & STOCK TABLE - ACTIVE ON TAB 0 */}
       {activeTab === 0 && (
         <>
-          <Card elevation={0} sx={{ mb: 3, borderRadius: 3, border: '1px solid #e2e8f0', bgcolor: '#ffffff', width: '100%', boxSizing: 'border-box' }}>
-            <CardContent sx={{ p: 3 }}>
-          <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 2 }}>
-            <Typography variant="subtitle1" sx={{ fontWeight: 600, color: '#0f172a' }}>
+          <Card elevation={0} sx={{ mb: 2, borderRadius: 2.5, border: '1px solid #e2e8f0', bgcolor: '#ffffff', width: '100%', boxSizing: 'border-box' }}>
+            <CardContent sx={{ p: 2 }}>
+          <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 1.5 }}>
+            <Typography variant="subtitle1" sx={{ fontWeight: 650, color: '#0f172a', fontSize: '0.95rem' }}>
               {t('searchPanelTitle')}
             </Typography>
             <Button
@@ -687,20 +688,20 @@ const DashboardStokDurumu = () => {
               color="success"
               startIcon={<DownloadIcon />}
               onClick={handleExportExcel}
-              sx={{ textTransform: 'none', borderRadius: 2, fontWeight: 600, px: 3, py: 1 }}
+              sx={{ textTransform: 'none', borderRadius: 2, fontWeight: 600, px: 2.5, py: 0.6, fontSize: '0.85rem' }}
             >
               {t('exportExcel')}
             </Button>
           </Box>
 
           {/* BÖLGESEL DEPO LOKASYON FİLTRESİ (2-TIER REGIONAL DEPOT FILTER - 100+ DEPO İÇİN ÖLÇEKLENEBİLİR) */}
-          <Box sx={{ mb: 2.5, p: 2, bgcolor: '#f8fafc', borderRadius: 2.5, border: '1px solid #e2e8f0' }}>
-            <Typography variant="caption" sx={{ fontWeight: 650, color: '#64748b', display: 'block', mb: 1.2 }}>
+          <Box sx={{ mb: 1.5, p: 1.5, bgcolor: '#f8fafc', borderRadius: 2, border: '1px solid #e2e8f0' }}>
+            <Typography variant="caption" sx={{ fontWeight: 650, color: '#64748b', display: 'block', mb: 1 }}>
               🏢 {t('depotLocationFilterLabel')}
             </Typography>
 
             {/* AŞAMA 1: BÖLGE SEÇİMİ CHIP'LERİ */}
-            <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1, mb: selectedBolge ? 1.5 : 0 }}>
+            <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.8, mb: selectedBolge ? 1 : 0 }}>
               <Chip
                 label={`🏢 ${t('allWarehousesAndRegions')}`}
                 clickable
@@ -711,31 +712,35 @@ const DashboardStokDurumu = () => {
                   setSelectedDepo(null);
                   setPage(0);
                 }}
-                sx={{ fontWeight: 600, borderRadius: 2 }}
+                sx={{ fontWeight: 600, borderRadius: 1.8, height: 28, fontSize: '0.8rem' }}
               />
 
               {regionalWarehouseDistribution.map((reg, idx) => (
                 <Chip
                   key={idx}
-                  icon={<LocationIcon fontSize="small" />}
-                  label={`${translateRegionName(reg.regionName, lang)} (${reg.depots.length})`}
+                  label={`📍 ${translateRegionName(reg.regionName, lang)} (${reg.depots.length})`}
                   clickable
                   color={selectedBolge === reg.regionName ? 'primary' : 'default'}
                   variant={selectedBolge === reg.regionName ? 'filled' : 'outlined'}
                   onClick={() => {
-                    setSelectedBolge(reg.regionName);
-                    setSelectedDepo(null);
+                    if (selectedBolge === reg.regionName) {
+                      setSelectedBolge(null);
+                      setSelectedDepo(null);
+                    } else {
+                      setSelectedBolge(reg.regionName);
+                      setSelectedDepo(null);
+                    }
                     setPage(0);
                   }}
-                  sx={{ fontWeight: 600, borderRadius: 2 }}
+                  sx={{ fontWeight: 600, borderRadius: 1.8, height: 28, fontSize: '0.8rem' }}
                 />
               ))}
             </Box>
 
             {/* AŞAMA 2: SEÇİLEN BÖLGEYE AİT DEPOLAR */}
             {selectedBolge && (
-              <Box sx={{ pt: 1.2, borderTop: '1px dashed #cbd5e1', display: 'flex', flexWrap: 'wrap', gap: 1 }}>
-                <Typography variant="caption" sx={{ width: '100%', fontWeight: 600, color: '#2563eb', mb: 0.5 }}>
+              <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.8, mt: 1, pt: 1, borderTop: '1px solid #e2e8f0' }}>
+                <Typography variant="caption" sx={{ width: '100%', fontWeight: 700, color: '#2563eb', fontSize: '0.75rem' }}>
                   📍 {translateRegionName(selectedBolge, lang)} {t('regionInDepots')}
                 </Typography>
                 {regionalWarehouseDistribution
@@ -753,7 +758,7 @@ const DashboardStokDurumu = () => {
                         setSelectedDepo(targetDepo || null);
                         setPage(0);
                       }}
-                      sx={{ fontWeight: 600, borderRadius: 2 }}
+                      sx={{ fontWeight: 600, borderRadius: 1.8, height: 28, fontSize: '0.8rem' }}
                     />
                   ))}
               </Box>
@@ -764,7 +769,7 @@ const DashboardStokDurumu = () => {
             sx={{
               display: 'flex',
               flexWrap: 'wrap',
-              gap: 2.5,
+              gap: 1.5,
               alignItems: 'center',
               width: '100%',
             }}
