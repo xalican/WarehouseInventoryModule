@@ -179,67 +179,71 @@ export default function Profil() {
 
   if (profileLoading) {
     return (
-      <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: 400 }}>
+      <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: 300 }}>
         <CircularProgress />
       </Box>
     );
   }
 
   return (
-    <Box sx={{ width: '100%', pb: 4 }}>
+    <Box sx={{ width: '100%', pb: 2 }}>
       {/* PROFIL BANNER & USER IDENTITY CARD */}
       <Paper
         elevation={0}
         sx={{
-          p: 3.5,
-          mb: 3.5,
-          borderRadius: 4,
+          p: 2.5,
+          mb: 2,
+          borderRadius: 3,
           background: 'linear-gradient(135deg, #1e293b 0%, #0f172a 100%)',
           color: '#ffffff',
-          boxShadow: '0 10px 25px rgba(15,23,42,0.15)',
+          boxShadow: '0 4px 16px rgba(15,23,42,0.12)',
         }}
       >
-        <Grid container spacing={3} alignItems="center">
+        <Grid container spacing={2} alignItems="center">
           <Grid item>
             <Avatar
               sx={{
-                width: 92,
-                height: 92,
+                width: 68,
+                height: 68,
                 bgcolor: '#2563eb',
-                fontSize: '2.2rem',
-                fontWeight: 800,
-                boxShadow: '0 4px 16px rgba(37,99,235,0.4)',
-                border: '3px solid #ffffff',
+                fontSize: '1.5rem',
+                fontWeight: 650,
+                boxShadow: '0 3px 12px rgba(37,99,235,0.3)',
+                border: '2px solid #ffffff',
               }}
             >
               {getInitials(adSoyad || kullaniciAdi)}
             </Avatar>
           </Grid>
           <Grid item xs>
-            <Typography variant="h4" sx={{ fontWeight: 800, color: '#ffffff', mb: 0.5 }}>
+            <Typography variant="h6" sx={{ fontWeight: 650, color: '#ffffff', mb: 0.3, fontSize: '1.2rem' }}>
               {adSoyad || kullaniciAdi}
             </Typography>
-            <Box sx={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 1.5, mt: 1 }}>
+            <Box sx={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 1, mt: 0.5 }}>
               <Chip
-                icon={<BadgeIcon sx={{ color: '#60a5fa !important', fontSize: '1rem' }} />}
+                icon={<BadgeIcon sx={{ color: '#60a5fa !important', fontSize: '0.9rem' }} />}
                 label={`@${kullaniciAdi}`}
-                sx={{ bgcolor: 'rgba(255,255,255,0.1)', color: '#93c5fd', fontWeight: 700 }}
+                size="small"
+                sx={{ bgcolor: 'rgba(255,255,255,0.1)', color: '#93c5fd', fontWeight: 600, fontSize: '0.78rem' }}
               />
               <Chip
-                icon={<ShieldIcon sx={{ color: '#34d399 !important', fontSize: '1rem' }} />}
+                icon={<ShieldIcon sx={{ color: '#34d399 !important', fontSize: '0.9rem' }} />}
                 label={rolAd || (lang === 'en' ? 'Admin' : 'Yönetici')}
-                sx={{ bgcolor: 'rgba(52,211,153,0.15)', color: '#6ee7b7', fontWeight: 800 }}
+                size="small"
+                sx={{ bgcolor: 'rgba(52,211,153,0.15)', color: '#6ee7b7', fontWeight: 600, fontSize: '0.78rem' }}
               />
               {createdAt && (
                 <Chip
-                  icon={<CalendarIcon sx={{ color: '#cbd5e1 !important', fontSize: '0.9rem' }} />}
+                  icon={<CalendarIcon sx={{ color: '#cbd5e1 !important', fontSize: '0.85rem' }} />}
                   label={`${t('createdDateLabel')} ${createdAt}`}
-                  sx={{ bgcolor: 'rgba(255,255,255,0.08)', color: '#cbd5e1', fontSize: '0.78rem' }}
+                  size="small"
+                  sx={{ bgcolor: 'rgba(255,255,255,0.08)', color: '#cbd5e1', fontSize: '0.75rem' }}
                 />
               )}
               <Chip
                 label={`🟢 ${t('activeSession')}`}
-                sx={{ bgcolor: 'rgba(16,185,129,0.2)', color: '#34d399', fontWeight: 800, fontSize: '0.75rem' }}
+                size="small"
+                sx={{ bgcolor: 'rgba(16,185,129,0.2)', color: '#34d399', fontWeight: 600, fontSize: '0.75rem' }}
               />
             </Box>
           </Grid>
@@ -247,25 +251,26 @@ export default function Profil() {
       </Paper>
 
       {/* 2 SÜTUNLU ZENGİN PROFİL DASHBOARD DÜZENİ */}
-      <Grid container spacing={3.5}>
+      <Grid container spacing={2}>
         
         {/* SOL SÜTUN (Kişisel Bilgiler & Hızlı Not Defteri) */}
         <Grid item xs={12} md={7}>
-          <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3.5 }}>
+          <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
             
             {/* Kart 1: Kişisel Bilgiler */}
-            <Card elevation={0} sx={{ borderRadius: 3, border: '1px solid #e2e8f0', bgcolor: '#ffffff' }}>
-              <CardContent sx={{ p: 3.5 }}>
-                <Typography variant="h6" sx={{ fontWeight: 800, color: '#0f172a', display: 'flex', alignItems: 'center', gap: 1, mb: 3 }}>
-                  <PersonIcon color="primary" /> {t('profileTitle')}
+            <Card elevation={0} sx={{ borderRadius: 2.5, border: '1px solid #e2e8f0', bgcolor: '#ffffff' }}>
+              <CardContent sx={{ p: 2 }}>
+                <Typography variant="subtitle1" sx={{ fontWeight: 650, color: '#0f172a', display: 'flex', alignItems: 'center', gap: 1, mb: 2 }}>
+                  <PersonIcon color="primary" fontSize="small" /> {t('profileTitle')}
                 </Typography>
 
-                {profileSuccess && <Alert severity="success" sx={{ mb: 2.5, borderRadius: 2 }}>{profileSuccess}</Alert>}
-                {profileError && <Alert severity="error" sx={{ mb: 2.5, borderRadius: 2 }}>{profileError}</Alert>}
+                {profileSuccess && <Alert severity="success" sx={{ mb: 2, py: 0.5, borderRadius: 2 }}>{profileSuccess}</Alert>}
+                {profileError && <Alert severity="error" sx={{ mb: 2, py: 0.5, borderRadius: 2 }}>{profileError}</Alert>}
 
-                <Box component="form" onSubmit={handleUpdateProfile} sx={{ display: 'flex', flexDirection: 'column', gap: 2.5 }}>
+                <Box component="form" onSubmit={handleUpdateProfile} sx={{ display: 'flex', flexDirection: 'column', gap: 1.8 }}>
                   <TextField
                     fullWidth
+                    size="small"
                     label={t('fullNameLabel')}
                     value={adSoyad}
                     onChange={(e) => setAdSoyad(e.target.value)}
@@ -275,7 +280,7 @@ export default function Profil() {
                       input: {
                         startAdornment: (
                           <InputAdornment position="start">
-                            <PersonIcon sx={{ color: '#64748b' }} />
+                            <PersonIcon sx={{ color: '#64748b' }} fontSize="small" />
                           </InputAdornment>
                         ),
                       },
@@ -284,6 +289,7 @@ export default function Profil() {
 
                   <TextField
                     fullWidth
+                    size="small"
                     label={t('emailAddressLabel')}
                     type="email"
                     value={email}
@@ -293,17 +299,18 @@ export default function Profil() {
                       input: {
                         startAdornment: (
                           <InputAdornment position="start">
-                            <EmailIcon sx={{ color: '#64748b' }} />
+                            <EmailIcon sx={{ color: '#64748b' }} fontSize="small" />
                           </InputAdornment>
                         ),
                       },
                     }}
                   />
 
-                  <Grid container spacing={2}>
+                  <Grid container spacing={1.5}>
                     <Grid item xs={6}>
                       <TextField
                         fullWidth
+                        size="small"
                         label={t('username')}
                         value={kullaniciAdi}
                         disabled
@@ -313,6 +320,7 @@ export default function Profil() {
                     <Grid item xs={6}>
                       <TextField
                         fullWidth
+                        size="small"
                         label={t('systemRoleLabel')}
                         value={rolAd}
                         disabled
@@ -320,14 +328,14 @@ export default function Profil() {
                     </Grid>
                   </Grid>
 
-                  <Box sx={{ pt: 1 }}>
+                  <Box sx={{ pt: 0.5 }}>
                     <Button
                       type="submit"
                       variant="contained"
                       color="primary"
-                      startIcon={profileSubmitting ? <CircularProgress size={20} color="inherit" /> : <SaveIcon />}
+                      startIcon={profileSubmitting ? <CircularProgress size={18} color="inherit" /> : <SaveIcon />}
                       disabled={profileSubmitting}
-                      sx={{ py: 1.2, px: 3.5, borderRadius: 2.5, textTransform: 'none', fontWeight: 800, fontSize: '0.95rem' }}
+                      sx={{ py: 0.8, px: 3, borderRadius: 2, textTransform: 'none', fontWeight: 600, fontSize: '0.88rem' }}
                     >
                       {profileSubmitting ? (lang === 'en' ? 'Saving...' : 'Kaydediliyor...') : t('updateProfileBtn')}
                     </Button>
@@ -337,29 +345,29 @@ export default function Profil() {
             </Card>
 
             {/* Kart 2: Kullanıcı Hızlı Not Defteri & Hatırlatıcı */}
-            <Card elevation={0} sx={{ borderRadius: 3, border: '1px solid #e2e8f0', bgcolor: '#ffffff' }}>
-              <CardContent sx={{ p: 3.5 }}>
-                <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 2 }}>
-                  <Typography variant="h6" sx={{ fontWeight: 800, color: '#0f172a', display: 'flex', alignItems: 'center', gap: 1 }}>
-                    <NoteIcon sx={{ color: '#d97706' }} /> {t('quickNotesTitle')}
+            <Card elevation={0} sx={{ borderRadius: 2.5, border: '1px solid #e2e8f0', bgcolor: '#ffffff' }}>
+              <CardContent sx={{ p: 2 }}>
+                <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 1.5 }}>
+                  <Typography variant="subtitle1" sx={{ fontWeight: 650, color: '#0f172a', display: 'flex', alignItems: 'center', gap: 1 }}>
+                    <NoteIcon sx={{ color: '#d97706' }} fontSize="small" /> {t('quickNotesTitle')}
                   </Typography>
                   {noteSavedMessage && (
-                    <Chip label={`✓ ${t('noteSavedBadge')}`} size="small" color="success" sx={{ fontWeight: 700 }} />
+                    <Chip label={`✓ ${t('noteSavedBadge')}`} size="small" color="success" sx={{ fontWeight: 600, height: 24, fontSize: '0.75rem' }} />
                   )}
                 </Box>
 
-                <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
+                <Typography variant="body2" color="text.secondary" sx={{ mb: 1.5, fontSize: '0.82rem' }}>
                   {t('quickNotesSub')}
                 </Typography>
 
                 <TextField
                   fullWidth
                   multiline
-                  rows={4}
+                  rows={3}
                   placeholder={t('quickNotesPlaceholder')}
                   value={userNotes}
                   onChange={(e) => setUserNotes(e.target.value)}
-                  sx={{ mb: 2 }}
+                  sx={{ mb: 1.5 }}
                 />
 
                 <Button
@@ -367,7 +375,7 @@ export default function Profil() {
                   color="warning"
                   startIcon={<SaveIcon />}
                   onClick={handleSaveNotes}
-                  sx={{ textTransform: 'none', fontWeight: 800, borderRadius: 2.5, px: 3 }}
+                  sx={{ textTransform: 'none', fontWeight: 600, borderRadius: 2, px: 2.5, py: 0.6, fontSize: '0.85rem' }}
                 >
                   {t('saveNoteBtn')}
                 </Button>
@@ -379,21 +387,22 @@ export default function Profil() {
 
         {/* SAĞ SÜTUN (Parola Değiştirme, Sistem Metrikleri & Tercihler) */}
         <Grid item xs={12} md={5}>
-          <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3.5 }}>
+          <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
             
             {/* Kart 3: Parola & Güvenlik Ayarları */}
-            <Card elevation={0} sx={{ borderRadius: 3, border: '1px solid #e2e8f0', bgcolor: '#ffffff' }}>
-              <CardContent sx={{ p: 3.5 }}>
-                <Typography variant="h6" sx={{ fontWeight: 800, color: '#0f172a', display: 'flex', alignItems: 'center', gap: 1, mb: 3 }}>
-                  <LockIcon color="secondary" /> {t('passSecurityTitle')}
+            <Card elevation={0} sx={{ borderRadius: 2.5, border: '1px solid #e2e8f0', bgcolor: '#ffffff' }}>
+              <CardContent sx={{ p: 2 }}>
+                <Typography variant="subtitle1" sx={{ fontWeight: 650, color: '#0f172a', display: 'flex', alignItems: 'center', gap: 1, mb: 2 }}>
+                  <LockIcon color="secondary" fontSize="small" /> {t('passSecurityTitle')}
                 </Typography>
 
-                {passSuccess && <Alert severity="success" sx={{ mb: 2.5, borderRadius: 2 }}>{passSuccess}</Alert>}
-                {passError && <Alert severity="error" sx={{ mb: 2.5, borderRadius: 2 }}>{passError}</Alert>}
+                {passSuccess && <Alert severity="success" sx={{ mb: 2, py: 0.5, borderRadius: 2 }}>{passSuccess}</Alert>}
+                {passError && <Alert severity="error" sx={{ mb: 2, py: 0.5, borderRadius: 2 }}>{passError}</Alert>}
 
-                <Box component="form" onSubmit={handleChangePassword} sx={{ display: 'flex', flexDirection: 'column', gap: 2.5 }}>
+                <Box component="form" onSubmit={handleChangePassword} sx={{ display: 'flex', flexDirection: 'column', gap: 1.8 }}>
                   <TextField
                     fullWidth
+                    size="small"
                     type={showMevcut ? 'text' : 'password'}
                     label={t('currentPassLabel')}
                     value={mevcutParola}
@@ -403,13 +412,13 @@ export default function Profil() {
                       input: {
                         startAdornment: (
                           <InputAdornment position="start">
-                            <LockIcon sx={{ color: '#64748b' }} />
+                            <LockIcon sx={{ color: '#64748b' }} fontSize="small" />
                           </InputAdornment>
                         ),
                         endAdornment: (
                           <InputAdornment position="end">
-                            <IconButton onClick={() => setShowMevcut(!showMevcut)} edge="end">
-                              {showMevcut ? <VisibilityOff /> : <Visibility />}
+                            <IconButton onClick={() => setShowMevcut(!showMevcut)} edge="end" size="small">
+                              {showMevcut ? <VisibilityOff fontSize="small" /> : <Visibility fontSize="small" />}
                             </IconButton>
                           </InputAdornment>
                         ),
@@ -417,10 +426,11 @@ export default function Profil() {
                     }}
                   />
 
-                  <Divider sx={{ my: 0.5 }} />
+                  <Divider sx={{ my: 0.2 }} />
 
                   <TextField
                     fullWidth
+                    size="small"
                     type={showYeni ? 'text' : 'password'}
                     label={t('newPassLabel')}
                     value={yeniParola}
@@ -431,13 +441,13 @@ export default function Profil() {
                       input: {
                         startAdornment: (
                           <InputAdornment position="start">
-                            <LockIcon sx={{ color: '#2563eb' }} />
+                            <LockIcon sx={{ color: '#2563eb' }} fontSize="small" />
                           </InputAdornment>
                         ),
                         endAdornment: (
                           <InputAdornment position="end">
-                            <IconButton onClick={() => setShowYeni(!showYeni)} edge="end">
-                              {showYeni ? <VisibilityOff /> : <Visibility />}
+                            <IconButton onClick={() => setShowYeni(!showYeni)} edge="end" size="small">
+                              {showYeni ? <VisibilityOff fontSize="small" /> : <Visibility fontSize="small" />}
                             </IconButton>
                           </InputAdornment>
                         ),
@@ -447,6 +457,7 @@ export default function Profil() {
 
                   <TextField
                     fullWidth
+                    size="small"
                     type={showYeniTekrar ? 'text' : 'password'}
                     label={t('confirmNewPassLabel')}
                     value={yeniParolaTekrar}
@@ -456,13 +467,13 @@ export default function Profil() {
                       input: {
                         startAdornment: (
                           <InputAdornment position="start">
-                            <CheckIcon sx={{ color: yeniParola && yeniParola === yeniParolaTekrar ? '#059669' : '#64748b' }} />
+                            <CheckIcon sx={{ color: yeniParola && yeniParola === yeniParolaTekrar ? '#059669' : '#64748b' }} fontSize="small" />
                           </InputAdornment>
                         ),
                         endAdornment: (
                           <InputAdornment position="end">
-                            <IconButton onClick={() => setShowYeniTekrar(!showYeniTekrar)} edge="end">
-                              {showYeniTekrar ? <VisibilityOff /> : <Visibility />}
+                            <IconButton onClick={() => setShowYeniTekrar(!showYeniTekrar)} edge="end" size="small">
+                              {showYeniTekrar ? <VisibilityOff fontSize="small" /> : <Visibility fontSize="small" />}
                             </IconButton>
                           </InputAdornment>
                         ),
@@ -470,14 +481,14 @@ export default function Profil() {
                     }}
                   />
 
-                  <Box sx={{ pt: 1 }}>
+                  <Box sx={{ pt: 0.5 }}>
                     <Button
                       type="submit"
                       variant="contained"
                       color="secondary"
-                      startIcon={passSubmitting ? <CircularProgress size={20} color="inherit" /> : <LockIcon />}
+                      startIcon={passSubmitting ? <CircularProgress size={18} color="inherit" /> : <LockIcon />}
                       disabled={passSubmitting}
-                      sx={{ py: 1.2, px: 3, borderRadius: 2.5, textTransform: 'none', fontWeight: 800, fontSize: '0.95rem' }}
+                      sx={{ py: 0.8, px: 2.5, borderRadius: 2, textTransform: 'none', fontWeight: 600, fontSize: '0.88rem' }}
                     >
                       {passSubmitting ? (lang === 'en' ? 'Updating...' : 'Güncelleniyor...') : t('changePassBtn')}
                     </Button>
@@ -487,50 +498,50 @@ export default function Profil() {
             </Card>
 
             {/* Kart 4: Sistem & Güvenlik Metrikleri */}
-            <Card elevation={0} sx={{ borderRadius: 3, border: '1px solid #e2e8f0', bgcolor: '#ffffff' }}>
-              <CardContent sx={{ p: 3.5 }}>
-                <Typography variant="h6" sx={{ fontWeight: 800, color: '#0f172a', display: 'flex', alignItems: 'center', gap: 1, mb: 2 }}>
-                  <SecurityIcon sx={{ color: '#059669' }} /> {t('sessionSecurityTitle')}
+            <Card elevation={0} sx={{ borderRadius: 2.5, border: '1px solid #e2e8f0', bgcolor: '#ffffff' }}>
+              <CardContent sx={{ p: 2 }}>
+                <Typography variant="subtitle1" sx={{ fontWeight: 650, color: '#0f172a', display: 'flex', alignItems: 'center', gap: 1, mb: 1.5 }}>
+                  <SecurityIcon sx={{ color: '#059669' }} fontSize="small" /> {t('sessionSecurityTitle')}
                 </Typography>
 
-                <List disablePadding sx={{ '& .MuiListItem-root': { py: 1, px: 0 } }}>
+                <List disablePadding sx={{ '& .MuiListItem-root': { py: 0.6, px: 0 } }}>
                   <ListItem>
-                    <ListItemIcon sx={{ minWidth: 36 }}><SpeedIcon sx={{ color: '#2563eb' }} /></ListItemIcon>
+                    <ListItemIcon sx={{ minWidth: 32 }}><SpeedIcon sx={{ color: '#2563eb' }} fontSize="small" /></ListItemIcon>
                     <ListItemText
                       primary={t('sessionTypeTitle')}
                       secondary={t('sessionTypeDesc')}
-                      primaryTypographyProps={{ fontWeight: 700, fontSize: '0.86rem' }}
-                      secondaryTypographyProps={{ fontSize: '0.78rem' }}
+                      primaryTypographyProps={{ fontWeight: 600, fontSize: '0.82rem' }}
+                      secondaryTypographyProps={{ fontSize: '0.75rem' }}
                     />
                   </ListItem>
                   <Divider />
                   <ListItem>
-                    <ListItemIcon sx={{ minWidth: 36 }}><StorageIcon sx={{ color: '#d97706' }} /></ListItemIcon>
+                    <ListItemIcon sx={{ minWidth: 32 }}><StorageIcon sx={{ color: '#d97706' }} fontSize="small" /></ListItemIcon>
                     <ListItemText
                       primary={t('dbEncryptTitle')}
                       secondary={t('dbEncryptDesc')}
-                      primaryTypographyProps={{ fontWeight: 700, fontSize: '0.86rem' }}
-                      secondaryTypographyProps={{ fontSize: '0.78rem' }}
+                      primaryTypographyProps={{ fontWeight: 600, fontSize: '0.82rem' }}
+                      secondaryTypographyProps={{ fontSize: '0.75rem' }}
                     />
                   </ListItem>
                   <Divider />
                   <ListItem>
-                    <ListItemIcon sx={{ minWidth: 36 }}><WarehouseIcon sx={{ color: '#059669' }} /></ListItemIcon>
+                    <ListItemIcon sx={{ minWidth: 32 }}><WarehouseIcon sx={{ color: '#059669' }} fontSize="small" /></ListItemIcon>
                     <ListItemText
                       primary={t('authRegionsTitle')}
                       secondary={t('authRegionsDesc')}
-                      primaryTypographyProps={{ fontWeight: 700, fontSize: '0.86rem' }}
-                      secondaryTypographyProps={{ fontSize: '0.78rem' }}
+                      primaryTypographyProps={{ fontWeight: 600, fontSize: '0.82rem' }}
+                      secondaryTypographyProps={{ fontSize: '0.75rem' }}
                     />
                   </ListItem>
                   <Divider />
                   <ListItem>
-                    <ListItemIcon sx={{ minWidth: 36 }}><LanguageIcon sx={{ color: '#7c3aed' }} /></ListItemIcon>
+                    <ListItemIcon sx={{ minWidth: 32 }}><LanguageIcon sx={{ color: '#7c3aed' }} fontSize="small" /></ListItemIcon>
                     <ListItemText
                       primary={t('activeLangCurrTitle')}
                       secondary={`${lang === 'tr' ? 'Türkçe' : 'English'} | ${currency}`}
-                      primaryTypographyProps={{ fontWeight: 700, fontSize: '0.86rem' }}
-                      secondaryTypographyProps={{ fontSize: '0.78rem' }}
+                      primaryTypographyProps={{ fontWeight: 600, fontSize: '0.82rem' }}
+                      secondaryTypographyProps={{ fontSize: '0.75rem' }}
                     />
                   </ListItem>
                 </List>
