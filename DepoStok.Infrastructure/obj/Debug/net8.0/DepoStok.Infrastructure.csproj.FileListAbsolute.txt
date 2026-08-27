@@ -13,3 +13,4 @@ C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Infrastructur
 C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Infrastructure\obj\Debug\net8.0\refint\DepoStok.Infrastructure.dll
 C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Infrastructure\obj\Debug\net8.0\DepoStok.Infrastructure.pdb
 C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Infrastructure\obj\Debug\net8.0\ref\DepoStok.Infrastructure.dll
+C:\Users\alica\.gemini\antigravity\scratch\DepoStokModulu\DepoStok.Infrastructure\obj\Debug\net8.0\DepoStok.Infrastructure.sourcelink.json

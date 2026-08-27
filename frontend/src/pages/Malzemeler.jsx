@@ -519,7 +519,7 @@ const Malzemeler = () => {
             onClick={() => setAddGrupOpen(true)}
             sx={{ textTransform: 'none', borderRadius: 2, fontWeight: 700, px: 2.5 }}
           >
-            ➕ Yeni Kategori / Alt Kategori Ekle
+            Yeni Kategori / Alt Kategori Ekle
           </Button>
 
           <Button
@@ -1048,7 +1048,7 @@ const Malzemeler = () => {
         fullWidth
       >
         <DialogTitle sx={{ fontWeight: 600, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          ➕ Yeni Ölçü Birimi Tanımla
+          Yeni Ölçü Birimi Tanımla
           <IconButton size="small" onClick={() => setAddBirimOpen(false)}>
             <CloseIcon fontSize="small" />
           </IconButton>
@@ -1099,7 +1099,7 @@ const Malzemeler = () => {
         fullWidth
       >
         <DialogTitle sx={{ fontWeight: 600, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          ➕ Yeni Kategori veya Alt Kategori Ekle
+          Yeni Kategori veya Alt Kategori Ekle
           <IconButton size="small" onClick={() => setAddGrupOpen(false)}>
             <CloseIcon fontSize="small" />
           </IconButton>
