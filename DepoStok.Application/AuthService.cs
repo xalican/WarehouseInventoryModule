@@ -1,5 +1,7 @@
 using System;
+using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,6 +24,11 @@ namespace DepoStok.Application
             _configuration = configuration;
         }
 
+        public async Task<IEnumerable<Role>> GetRolesAsync()
+        {
+            return await _context.Roles.AsNoTracking().OrderBy(r => r.Id).ToListAsync();
+        }
+
         public async Task<TokenDto?> LoginAsync(LoginDto dto)
         {
             var user = await _context.Users
@@ -42,6 +49,7 @@ namespace DepoStok.Application
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey));
             var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
+            // Veritabanındaki Role ilişkisinden Kod çekilir, veritabanında yoksa Enum/Constant dönüşümü yapılır
             var roleCode = user.Role?.Kod ?? RoleConstants.GetRoleCode(user.RoleId);
 
             var claims = new[]
@@ -84,6 +92,7 @@ namespace DepoStok.Application
         public async Task<object?> GetProfileAsync(int userId)
         {
             var user = await _context.Users
+                .AsNoTracking()
                 .Include(u => u.Role)
                 .FirstOrDefaultAsync(u => u.Id == userId);
             if (user == null) return null;
@@ -97,6 +106,7 @@ namespace DepoStok.Application
                 user.CreatedAt,
                 user.IsActive,
                 RolId = user.RoleId,
+                // Dinamik olarak Veritabanındaki Roles tablosundan çekilir
                 Rol = user.Role?.Kod ?? RoleConstants.GetRoleCode(user.RoleId),
                 RolAd = user.Role?.Ad ?? RoleConstants.GetRoleName(user.RoleId)
             };

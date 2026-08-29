@@ -18,6 +18,13 @@ namespace DepoStok.API.Controllers
             _authService = authService;
         }
 
+        [HttpGet("roles")]
+        public async Task<IActionResult> GetRoles()
+        {
+            var roles = await _authService.GetRolesAsync();
+            return Ok(roles);
+        }
+
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginDto dto)
         {

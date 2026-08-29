@@ -10532,3 +10532,429 @@ LIMIT 1
 2026-08-27 19:11:40.269 +03:00 [INF] Executed endpoint 'DepoStok.API.Controllers.AuthController.GetMe (DepoStok.API)'
 2026-08-27 19:11:40.269 +03:00 [INF] HTTP GET /api/auth/me responded 200 in 12.9885 ms
 2026-08-27 19:11:40.269 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/auth/me - 200 null application/json; charset=utf-8 13.213ms
+2026-08-27 19:13:15.556 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler/stok-durum?page=1&pageSize=10 - null null
+2026-08-27 19:13:15.556 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:13:15.557 +03:00 [INF] HTTP OPTIONS /api/hareketler/stok-durum responded 204 in 0.7967 ms
+2026-08-27 19:13:15.557 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler/stok-durum?page=1&pageSize=10 - 204 null null 1.0021ms
+2026-08-27 19:13:15.559 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler/stok-durum?pageSize=5000 - null null
+2026-08-27 19:13:15.559 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:13:15.559 +03:00 [INF] HTTP OPTIONS /api/hareketler/stok-durum responded 204 in 0.0447 ms
+2026-08-27 19:13:15.559 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler/stok-durum?pageSize=5000 - 204 null null 0.1883ms
+2026-08-27 19:13:15.563 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5078/api/depolar - null null
+2026-08-27 19:13:15.563 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5078/api/malzemeler/gruplar - null null
+2026-08-27 19:13:15.563 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:13:15.563 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:13:15.563 +03:00 [INF] HTTP OPTIONS /api/malzemeler/gruplar responded 204 in 0.0602 ms
+2026-08-27 19:13:15.563 +03:00 [INF] HTTP OPTIONS /api/depolar responded 204 in 0.0605 ms
+2026-08-27 19:13:15.564 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5078/api/depolar - 204 null null 0.2485ms
+2026-08-27 19:13:15.564 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5078/api/malzemeler/gruplar - 204 null null 0.2479ms
+2026-08-27 19:13:15.566 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5078/api/malzemeler?pageSize=200 - null null
+2026-08-27 19:13:15.567 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:13:15.567 +03:00 [INF] HTTP OPTIONS /api/malzemeler responded 204 in 0.0680 ms
+2026-08-27 19:13:15.567 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5078/api/malzemeler?pageSize=200 - 204 null null 0.2806ms
+2026-08-27 19:13:15.567 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=1 - null null
+2026-08-27 19:13:15.567 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:13:15.567 +03:00 [INF] HTTP OPTIONS /api/hareketler/stok-durum responded 204 in 0.0499 ms
+2026-08-27 19:13:15.567 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=1 - 204 null null 0.1747ms
+2026-08-27 19:13:15.569 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler?pageSize=5 - null null
+2026-08-27 19:13:15.569 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:13:15.569 +03:00 [INF] HTTP OPTIONS /api/hareketler responded 204 in 0.0532 ms
+2026-08-27 19:13:15.569 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler?pageSize=5 - 204 null null 0.1694ms
+2026-08-27 19:13:15.571 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=5 - null null
+2026-08-27 19:13:15.571 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:13:15.571 +03:00 [INF] HTTP OPTIONS /api/hareketler/stok-durum responded 204 in 0.0982 ms
+2026-08-27 19:13:15.571 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=5 - 204 null null 0.2944ms
+2026-08-27 19:13:15.574 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler/stok-durum?page=1&pageSize=10 - null null
+2026-08-27 19:13:15.574 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:13:15.574 +03:00 [INF] HTTP OPTIONS /api/hareketler/stok-durum responded 204 in 0.0490 ms
+2026-08-27 19:13:15.574 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler/stok-durum?page=1&pageSize=10 - 204 null null 0.2478ms
+2026-08-27 19:13:15.574 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler/stok-durum?pageSize=5000 - null null
+2026-08-27 19:13:15.574 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:13:15.574 +03:00 [INF] HTTP OPTIONS /api/hareketler/stok-durum responded 204 in 0.0241 ms
+2026-08-27 19:13:15.574 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler/stok-durum?pageSize=5000 - 204 null null 0.1101ms
+2026-08-27 19:13:15.577 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5078/api/depolar - null null
+2026-08-27 19:13:15.577 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:13:15.577 +03:00 [INF] HTTP OPTIONS /api/depolar responded 204 in 0.0921 ms
+2026-08-27 19:13:15.578 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5078/api/depolar - 204 null null 0.3765ms
+2026-08-27 19:13:15.578 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5078/api/malzemeler/gruplar - null null
+2026-08-27 19:13:15.578 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:13:15.579 +03:00 [INF] HTTP OPTIONS /api/malzemeler/gruplar responded 204 in 0.0774 ms
+2026-08-27 19:13:15.579 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5078/api/malzemeler/gruplar - 204 null null 0.2226ms
+2026-08-27 19:13:15.579 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5078/api/malzemeler?pageSize=200 - null null
+2026-08-27 19:13:15.579 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:13:15.580 +03:00 [INF] HTTP OPTIONS /api/malzemeler responded 204 in 0.0544 ms
+2026-08-27 19:13:15.580 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5078/api/malzemeler?pageSize=200 - 204 null null 0.2289ms
+2026-08-27 19:13:15.581 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=1 - null null
+2026-08-27 19:13:15.581 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:13:15.581 +03:00 [INF] HTTP OPTIONS /api/hareketler/stok-durum responded 204 in 0.0577 ms
+2026-08-27 19:13:15.581 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=1 - 204 null null 0.2255ms
+2026-08-27 19:13:15.584 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler?pageSize=5 - null null
+2026-08-27 19:13:15.584 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:13:15.584 +03:00 [INF] HTTP OPTIONS /api/hareketler responded 204 in 0.0610 ms
+2026-08-27 19:13:15.584 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5078/api/hareketler?pageSize=5 - 204 null null 0.2395ms
+2026-08-27 19:13:15.585 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?page=1&pageSize=10 - null null
+2026-08-27 19:13:15.585 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:13:15.586 +03:00 [INF] Executing endpoint 'DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API)'
+2026-08-27 19:13:15.586 +03:00 [INF] Route matched with {action = "GetStokDurum", controller = "Hareketler"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DepoStok.Application.PagedResult`1[DepoStok.Application.StokDurumDto]]] GetStokDurum(System.Nullable`1[System.Int32], System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Boolean], Int32, Int32) on controller DepoStok.API.Controllers.HareketlerController (DepoStok.API).
+2026-08-27 19:13:15.591 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?pageSize=5000 - null null
+2026-08-27 19:13:15.591 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:13:15.591 +03:00 [INF] Executing endpoint 'DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API)'
+2026-08-27 19:13:15.591 +03:00 [INF] Route matched with {action = "GetStokDurum", controller = "Hareketler"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DepoStok.Application.PagedResult`1[DepoStok.Application.StokDurumDto]]] GetStokDurum(System.Nullable`1[System.Int32], System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Boolean], Int32, Int32) on controller DepoStok.API.Controllers.HareketlerController (DepoStok.API).
+2026-08-27 19:13:15.591 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/depolar - null null
+2026-08-27 19:13:15.591 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:13:15.592 +03:00 [INF] Executing endpoint 'DepoStok.API.Controllers.DepolarController.GetDepolar (DepoStok.API)'
+2026-08-27 19:13:15.592 +03:00 [INF] Route matched with {action = "GetDepolar", controller = "Depolar"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DepoStok.Application.DepoDto]]] GetDepolar() on controller DepoStok.API.Controllers.DepolarController (DepoStok.API).
+2026-08-27 19:13:15.598 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/malzemeler/gruplar - null null
+2026-08-27 19:13:15.598 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:13:15.599 +03:00 [INF] Executing endpoint 'DepoStok.API.Controllers.MalzemelerController.GetGruplar (DepoStok.API)'
+2026-08-27 19:13:15.599 +03:00 [INF] Route matched with {action = "GetGruplar", controller = "Malzemeler"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DepoStok.Application.MalzemeGrubuDto]]] GetGruplar() on controller DepoStok.API.Controllers.MalzemelerController (DepoStok.API).
+2026-08-27 19:13:15.600 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/malzemeler?pageSize=200 - null null
+2026-08-27 19:13:15.600 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:13:15.600 +03:00 [INF] Executing endpoint 'DepoStok.API.Controllers.MalzemelerController.GetMalzemeler (DepoStok.API)'
+2026-08-27 19:13:15.600 +03:00 [INF] Route matched with {action = "GetMalzemeler", controller = "Malzemeler"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DepoStok.Application.PagedResult`1[DepoStok.Application.MalzemeDto]]] GetMalzemeler(System.Nullable`1[System.Int32], System.String, Int32, Int32) on controller DepoStok.API.Controllers.MalzemelerController (DepoStok.API).
+2026-08-27 19:13:15.602 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=1 - null null
+2026-08-27 19:13:15.603 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:13:15.603 +03:00 [INF] Executing endpoint 'DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API)'
+2026-08-27 19:13:15.603 +03:00 [INF] Route matched with {action = "GetStokDurum", controller = "Hareketler"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DepoStok.Application.PagedResult`1[DepoStok.Application.StokDurumDto]]] GetStokDurum(System.Nullable`1[System.Int32], System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Boolean], Int32, Int32) on controller DepoStok.API.Controllers.HareketlerController (DepoStok.API).
+2026-08-27 19:13:15.605 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `d`.`Id`, `d`.`Ad`, `d`.`Bolge`, `d`.`IsActive`, `d`.`Kod`, `d`.`Sorumlu`
+FROM `Depolar` AS `d`
+ORDER BY `d`.`Kod`
+2026-08-27 19:13:15.605 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[DepoStok.Domain.Depo, DepoStok.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DepoStok.Application.DepoDto, DepoStok.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-27 19:13:15.605 +03:00 [INF] Executed action DepoStok.API.Controllers.DepolarController.GetDepolar (DepoStok.API) in 13.4971ms
+2026-08-27 19:13:15.605 +03:00 [INF] Executed endpoint 'DepoStok.API.Controllers.DepolarController.GetDepolar (DepoStok.API)'
+2026-08-27 19:13:15.605 +03:00 [INF] HTTP GET /api/depolar responded 200 in 13.9513 ms
+2026-08-27 19:13:15.606 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/depolar - 200 null application/json; charset=utf-8 14.1104ms
+2026-08-27 19:13:15.606 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Aciklama`, `m`.`Ad`, `m`.`Birim`, `m`.`IsActive`, `m`.`Kod`, `m`.`KritikStokSeviyesi`, `m`.`MalzemeGrubuId`, `m`.`MarkaModel`, `m`.`MaxStokSeviyesi`, `m`.`TeknikOzellik`, `m0`.`Id`, `m0`.`Ad`, `m0`.`Kod`, `m0`.`ParentId`
+FROM `Malzemeler` AS `m`
+INNER JOIN `MalzemeGruplari` AS `m0` ON `m`.`MalzemeGrubuId` = `m0`.`Id`
+WHERE `m`.`IsActive`
+2026-08-27 19:13:15.612 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `d`.`Id`, `d`.`Ad`, `d`.`Bolge`, `d`.`IsActive`, `d`.`Kod`, `d`.`Sorumlu`
+FROM `Depolar` AS `d`
+WHERE `d`.`IsActive`
+2026-08-27 19:13:15.612 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Malzemeler` AS `m`
+2026-08-27 19:13:15.613 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Aciklama`, `m`.`Ad`, `m`.`Birim`, `m`.`IsActive`, `m`.`Kod`, `m`.`KritikStokSeviyesi`, `m`.`MalzemeGrubuId`, `m`.`MarkaModel`, `m`.`MaxStokSeviyesi`, `m`.`TeknikOzellik`, `m0`.`Id`, `m0`.`Ad`, `m0`.`Kod`, `m0`.`ParentId`
+FROM `Malzemeler` AS `m`
+INNER JOIN `MalzemeGruplari` AS `m0` ON `m`.`MalzemeGrubuId` = `m0`.`Id`
+WHERE `m`.`IsActive`
+2026-08-27 19:13:15.614 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `m1`.`Id`, `m1`.`Aciklama`, `m1`.`Ad`, `m1`.`Birim`, `m1`.`IsActive`, `m1`.`Kod`, `m1`.`KritikStokSeviyesi`, `m1`.`MalzemeGrubuId`, `m1`.`MarkaModel`, `m1`.`MaxStokSeviyesi`, `m1`.`TeknikOzellik`, `m0`.`Id`, `m0`.`Ad`, `m0`.`Kod`, `m0`.`ParentId`
+FROM (
+    SELECT `m`.`Id`, `m`.`Aciklama`, `m`.`Ad`, `m`.`Birim`, `m`.`IsActive`, `m`.`Kod`, `m`.`KritikStokSeviyesi`, `m`.`MalzemeGrubuId`, `m`.`MarkaModel`, `m`.`MaxStokSeviyesi`, `m`.`TeknikOzellik`
+    FROM `Malzemeler` AS `m`
+    ORDER BY `m`.`Kod`
+    LIMIT @__p_1 OFFSET @__p_0
+) AS `m1`
+INNER JOIN `MalzemeGruplari` AS `m0` ON `m1`.`MalzemeGrubuId` = `m0`.`Id`
+ORDER BY `m1`.`Kod`
+2026-08-27 19:13:15.615 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `d`.`Id`, `d`.`Ad`, `d`.`Bolge`, `d`.`IsActive`, `d`.`Kod`, `d`.`Sorumlu`
+FROM `Depolar` AS `d`
+WHERE `d`.`IsActive`
+2026-08-27 19:13:15.615 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`MalzemeId`, `h0`.`HedefDepoId` AS `DepoId`, COALESCE(SUM(`h`.`Miktar`), 0.0) AS `Toplam`
+FROM `HareketKalemleri` AS `h`
+INNER JOIN `HareketBasliklari` AS `h0` ON `h`.`HareketBaslikId` = `h0`.`Id`
+WHERE NOT (`h0`.`IsIptal`) AND (`h0`.`HedefDepoId` IS NOT NULL)
+GROUP BY `h`.`MalzemeId`, `h0`.`HedefDepoId`
+2026-08-27 19:13:15.615 +03:00 [INF] Executing OkObjectResult, writing value of type 'DepoStok.Application.PagedResult`1[[DepoStok.Application.MalzemeDto, DepoStok.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-27 19:13:15.616 +03:00 [INF] Executed action DepoStok.API.Controllers.MalzemelerController.GetMalzemeler (DepoStok.API) in 15.3012ms
+2026-08-27 19:13:15.616 +03:00 [INF] Executed endpoint 'DepoStok.API.Controllers.MalzemelerController.GetMalzemeler (DepoStok.API)'
+2026-08-27 19:13:15.616 +03:00 [INF] HTTP GET /api/malzemeler responded 200 in 15.9878 ms
+2026-08-27 19:13:15.616 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/malzemeler?pageSize=200 - 200 null application/json; charset=utf-8 16.2415ms
+2026-08-27 19:13:15.616 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Ad`, `m`.`Kod`, `m`.`ParentId`, `m0`.`Id`, `m0`.`Ad`, `m0`.`Kod`, `m0`.`ParentId`
+FROM `MalzemeGruplari` AS `m`
+LEFT JOIN `MalzemeGruplari` AS `m0` ON `m`.`ParentId` = `m0`.`Id`
+ORDER BY `m`.`Kod`
+2026-08-27 19:13:15.617 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Aciklama`, `m`.`Ad`, `m`.`Birim`, `m`.`IsActive`, `m`.`Kod`, `m`.`KritikStokSeviyesi`, `m`.`MalzemeGrubuId`, `m`.`MarkaModel`, `m`.`MaxStokSeviyesi`, `m`.`TeknikOzellik`, `m0`.`Id`, `m0`.`Ad`, `m0`.`Kod`, `m0`.`ParentId`
+FROM `Malzemeler` AS `m`
+INNER JOIN `MalzemeGruplari` AS `m0` ON `m`.`MalzemeGrubuId` = `m0`.`Id`
+WHERE `m`.`IsActive`
+2026-08-27 19:13:15.617 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[DepoStok.Domain.MalzemeGrubu, DepoStok.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DepoStok.Application.MalzemeGrubuDto, DepoStok.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-27 19:13:15.617 +03:00 [INF] Executed action DepoStok.API.Controllers.MalzemelerController.GetGruplar (DepoStok.API) in 18.3645ms
+2026-08-27 19:13:15.617 +03:00 [INF] Executed endpoint 'DepoStok.API.Controllers.MalzemelerController.GetGruplar (DepoStok.API)'
+2026-08-27 19:13:15.617 +03:00 [INF] HTTP GET /api/malzemeler/gruplar responded 200 in 18.9539 ms
+2026-08-27 19:13:15.617 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/malzemeler/gruplar - 200 null application/json; charset=utf-8 19.1752ms
+2026-08-27 19:13:15.617 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/hareketler?pageSize=5 - null null
+2026-08-27 19:13:15.618 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:13:15.618 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`MalzemeId`, `h0`.`KaynakDepoId` AS `DepoId`, COALESCE(SUM(`h`.`Miktar`), 0.0) AS `Toplam`
+FROM `HareketKalemleri` AS `h`
+INNER JOIN `HareketBasliklari` AS `h0` ON `h`.`HareketBaslikId` = `h0`.`Id`
+WHERE NOT (`h0`.`IsIptal`) AND (`h0`.`KaynakDepoId` IS NOT NULL)
+GROUP BY `h`.`MalzemeId`, `h0`.`KaynakDepoId`
+2026-08-27 19:13:15.618 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`MalzemeId`, `h0`.`HedefDepoId` AS `DepoId`, COALESCE(SUM(`h`.`Miktar`), 0.0) AS `Toplam`
+FROM `HareketKalemleri` AS `h`
+INNER JOIN `HareketBasliklari` AS `h0` ON `h`.`HareketBaslikId` = `h0`.`Id`
+WHERE NOT (`h0`.`IsIptal`) AND (`h0`.`HedefDepoId` IS NOT NULL)
+GROUP BY `h`.`MalzemeId`, `h0`.`HedefDepoId`
+2026-08-27 19:13:15.618 +03:00 [INF] Executing endpoint 'DepoStok.API.Controllers.HareketlerController.GetHareketler (DepoStok.API)'
+2026-08-27 19:13:15.618 +03:00 [INF] Route matched with {action = "GetHareketler", controller = "Hareketler"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DepoStok.Application.PagedResult`1[DepoStok.Application.HareketBaslikDto]]] GetHareketler(System.Nullable`1[DepoStok.Domain.HareketTipiEnum], System.Nullable`1[System.Int32], System.Nullable`1[System.Int32], System.Nullable`1[System.DateTime], System.Nullable`1[System.DateTime], Int32, Int32) on controller DepoStok.API.Controllers.HareketlerController (DepoStok.API).
+2026-08-27 19:13:15.618 +03:00 [INF] Executing OkObjectResult, writing value of type 'DepoStok.Application.PagedResult`1[[DepoStok.Application.StokDurumDto, DepoStok.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-27 19:13:15.618 +03:00 [INF] Executed action DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API) in 27.2137ms
+2026-08-27 19:13:15.618 +03:00 [INF] Executed endpoint 'DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API)'
+2026-08-27 19:13:15.619 +03:00 [INF] HTTP GET /api/hareketler/stok-durum responded 200 in 27.7566 ms
+2026-08-27 19:13:15.619 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?pageSize=5000 - 200 null application/json; charset=utf-8 27.9577ms
+2026-08-27 19:13:15.619 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `d`.`Id`, `d`.`Ad`, `d`.`Bolge`, `d`.`IsActive`, `d`.`Kod`, `d`.`Sorumlu`
+FROM `Depolar` AS `d`
+WHERE `d`.`IsActive`
+2026-08-27 19:13:15.620 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`MalzemeId`, `h0`.`KaynakDepoId` AS `DepoId`, COALESCE(SUM(`h`.`Miktar`), 0.0) AS `Toplam`
+FROM `HareketKalemleri` AS `h`
+INNER JOIN `HareketBasliklari` AS `h0` ON `h`.`HareketBaslikId` = `h0`.`Id`
+WHERE NOT (`h0`.`IsIptal`) AND (`h0`.`KaynakDepoId` IS NOT NULL)
+GROUP BY `h`.`MalzemeId`, `h0`.`KaynakDepoId`
+2026-08-27 19:13:15.621 +03:00 [INF] Executing OkObjectResult, writing value of type 'DepoStok.Application.PagedResult`1[[DepoStok.Application.StokDurumDto, DepoStok.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-27 19:13:15.621 +03:00 [INF] Executed action DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API) in 34.8023ms
+2026-08-27 19:13:15.621 +03:00 [INF] Executed endpoint 'DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API)'
+2026-08-27 19:13:15.621 +03:00 [INF] HTTP GET /api/hareketler/stok-durum responded 200 in 35.5252 ms
+2026-08-27 19:13:15.621 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?page=1&pageSize=10 - 200 null application/json; charset=utf-8 35.728ms
+2026-08-27 19:13:15.622 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`MalzemeId`, `h0`.`HedefDepoId` AS `DepoId`, COALESCE(SUM(`h`.`Miktar`), 0.0) AS `Toplam`
+FROM `HareketKalemleri` AS `h`
+INNER JOIN `HareketBasliklari` AS `h0` ON `h`.`HareketBaslikId` = `h0`.`Id`
+WHERE NOT (`h0`.`IsIptal`) AND (`h0`.`HedefDepoId` IS NOT NULL)
+GROUP BY `h`.`MalzemeId`, `h0`.`HedefDepoId`
+2026-08-27 19:13:15.626 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`MalzemeId`, `h0`.`KaynakDepoId` AS `DepoId`, COALESCE(SUM(`h`.`Miktar`), 0.0) AS `Toplam`
+FROM `HareketKalemleri` AS `h`
+INNER JOIN `HareketBasliklari` AS `h0` ON `h`.`HareketBaslikId` = `h0`.`Id`
+WHERE NOT (`h0`.`IsIptal`) AND (`h0`.`KaynakDepoId` IS NOT NULL)
+GROUP BY `h`.`MalzemeId`, `h0`.`KaynakDepoId`
+2026-08-27 19:13:15.626 +03:00 [INF] Executing OkObjectResult, writing value of type 'DepoStok.Application.PagedResult`1[[DepoStok.Application.StokDurumDto, DepoStok.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-27 19:13:15.626 +03:00 [INF] Executed action DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API) in 23.139ms
+2026-08-27 19:13:15.626 +03:00 [INF] Executed endpoint 'DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API)'
+2026-08-27 19:13:15.626 +03:00 [INF] HTTP GET /api/hareketler/stok-durum responded 200 in 23.7908 ms
+2026-08-27 19:13:15.626 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=1 - 200 null application/json; charset=utf-8 24.0146ms
+2026-08-27 19:13:15.627 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=5 - null null
+2026-08-27 19:13:15.627 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:13:15.627 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/depolar - null null
+2026-08-27 19:13:15.627 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:13:15.627 +03:00 [INF] Executing endpoint 'DepoStok.API.Controllers.DepolarController.GetDepolar (DepoStok.API)'
+2026-08-27 19:13:15.627 +03:00 [INF] Executing endpoint 'DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API)'
+2026-08-27 19:13:15.627 +03:00 [INF] Route matched with {action = "GetDepolar", controller = "Depolar"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DepoStok.Application.DepoDto]]] GetDepolar() on controller DepoStok.API.Controllers.DepolarController (DepoStok.API).
+2026-08-27 19:13:15.627 +03:00 [INF] Route matched with {action = "GetStokDurum", controller = "Hareketler"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DepoStok.Application.PagedResult`1[DepoStok.Application.StokDurumDto]]] GetStokDurum(System.Nullable`1[System.Int32], System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Boolean], Int32, Int32) on controller DepoStok.API.Controllers.HareketlerController (DepoStok.API).
+2026-08-27 19:13:15.629 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `HareketBasliklari` AS `h`
+2026-08-27 19:13:15.630 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/malzemeler?pageSize=200 - null null
+2026-08-27 19:13:15.630 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:13:15.631 +03:00 [INF] Executing endpoint 'DepoStok.API.Controllers.MalzemelerController.GetMalzemeler (DepoStok.API)'
+2026-08-27 19:13:15.631 +03:00 [INF] Route matched with {action = "GetMalzemeler", controller = "Malzemeler"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DepoStok.Application.PagedResult`1[DepoStok.Application.MalzemeDto]]] GetMalzemeler(System.Nullable`1[System.Int32], System.String, Int32, Int32) on controller DepoStok.API.Controllers.MalzemelerController (DepoStok.API).
+2026-08-27 19:13:15.632 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `h0`.`Id`, `h0`.`Aciklama`, `h0`.`CreatedAt`, `h0`.`FisNo`, `h0`.`HareketTipi`, `h0`.`HedefDepoId`, `h0`.`IptalNedeni`, `h0`.`IptalTarihi`, `h0`.`IsIptal`, `h0`.`KaynakDepoId`, `h0`.`OlusturanKullaniciId`, `h0`.`Tarih`, `d`.`Id`, `d`.`Ad`, `d`.`Bolge`, `d`.`IsActive`, `d`.`Kod`, `d`.`Sorumlu`, `d0`.`Id`, `d0`.`Ad`, `d0`.`Bolge`, `d0`.`IsActive`, `d0`.`Kod`, `d0`.`Sorumlu`, `u`.`Id`, `u`.`AdSoyad`, `u`.`CreatedAt`, `u`.`Email`, `u`.`IsActive`, `u`.`KullaniciAdi`, `u`.`ParolaHash`, `u`.`RoleId`, `s`.`Id`, `s`.`BirimFiyat`, `s`.`HareketBaslikId`, `s`.`Huycre`, `s`.`MalzemeDurumu`, `s`.`MalzemeId`, `s`.`Miktar`, `s`.`Raf`, `s`.`SatirAciklamasi`, `s`.`Id0`, `s`.`Aciklama`, `s`.`Ad`, `s`.`Birim`, `s`.`IsActive`, `s`.`Kod`, `s`.`KritikStokSeviyesi`, `s`.`MalzemeGrubuId`, `s`.`MarkaModel`, `s`.`MaxStokSeviyesi`, `s`.`TeknikOzellik`
+FROM (
+    SELECT `h`.`Id`, `h`.`Aciklama`, `h`.`CreatedAt`, `h`.`FisNo`, `h`.`HareketTipi`, `h`.`HedefDepoId`, `h`.`IptalNedeni`, `h`.`IptalTarihi`, `h`.`IsIptal`, `h`.`KaynakDepoId`, `h`.`OlusturanKullaniciId`, `h`.`Tarih`
+    FROM `HareketBasliklari` AS `h`
+    ORDER BY `h`.`Tarih` DESC, `h`.`Id` DESC
+    LIMIT @__p_1 OFFSET @__p_0
+) AS `h0`
+LEFT JOIN `Depolar` AS `d` ON `h0`.`KaynakDepoId` = `d`.`Id`
+LEFT JOIN `Depolar` AS `d0` ON `h0`.`HedefDepoId` = `d0`.`Id`
+INNER JOIN `Users` AS `u` ON `h0`.`OlusturanKullaniciId` = `u`.`Id`
+LEFT JOIN (
+    SELECT `h1`.`Id`, `h1`.`BirimFiyat`, `h1`.`HareketBaslikId`, `h1`.`Huycre`, `h1`.`MalzemeDurumu`, `h1`.`MalzemeId`, `h1`.`Miktar`, `h1`.`Raf`, `h1`.`SatirAciklamasi`, `m`.`Id` AS `Id0`, `m`.`Aciklama`, `m`.`Ad`, `m`.`Birim`, `m`.`IsActive`, `m`.`Kod`, `m`.`KritikStokSeviyesi`, `m`.`MalzemeGrubuId`, `m`.`MarkaModel`, `m`.`MaxStokSeviyesi`, `m`.`TeknikOzellik`
+    FROM `HareketKalemleri` AS `h1`
+    INNER JOIN `Malzemeler` AS `m` ON `h1`.`MalzemeId` = `m`.`Id`
+) AS `s` ON `h0`.`Id` = `s`.`HareketBaslikId`
+ORDER BY `h0`.`Tarih` DESC, `h0`.`Id` DESC, `d`.`Id`, `d0`.`Id`, `u`.`Id`, `s`.`Id`
+2026-08-27 19:13:15.633 +03:00 [INF] Executing OkObjectResult, writing value of type 'DepoStok.Application.PagedResult`1[[DepoStok.Application.HareketBaslikDto, DepoStok.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-27 19:13:15.633 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/malzemeler/gruplar - null null
+2026-08-27 19:13:15.633 +03:00 [INF] Executed action DepoStok.API.Controllers.HareketlerController.GetHareketler (DepoStok.API) in 15.3437ms
+2026-08-27 19:13:15.633 +03:00 [INF] Executed endpoint 'DepoStok.API.Controllers.HareketlerController.GetHareketler (DepoStok.API)'
+2026-08-27 19:13:15.633 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:13:15.634 +03:00 [INF] HTTP GET /api/hareketler responded 200 in 15.9691 ms
+2026-08-27 19:13:15.634 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/hareketler?pageSize=5 - 200 null application/json; charset=utf-8 16.1996ms
+2026-08-27 19:13:15.634 +03:00 [INF] Executing endpoint 'DepoStok.API.Controllers.MalzemelerController.GetGruplar (DepoStok.API)'
+2026-08-27 19:13:15.634 +03:00 [INF] Route matched with {action = "GetGruplar", controller = "Malzemeler"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[DepoStok.Application.MalzemeGrubuDto]]] GetGruplar() on controller DepoStok.API.Controllers.MalzemelerController (DepoStok.API).
+2026-08-27 19:13:15.638 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `d`.`Id`, `d`.`Ad`, `d`.`Bolge`, `d`.`IsActive`, `d`.`Kod`, `d`.`Sorumlu`
+FROM `Depolar` AS `d`
+ORDER BY `d`.`Kod`
+2026-08-27 19:13:15.638 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[DepoStok.Domain.Depo, DepoStok.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DepoStok.Application.DepoDto, DepoStok.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-27 19:13:15.639 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Aciklama`, `m`.`Ad`, `m`.`Birim`, `m`.`IsActive`, `m`.`Kod`, `m`.`KritikStokSeviyesi`, `m`.`MalzemeGrubuId`, `m`.`MarkaModel`, `m`.`MaxStokSeviyesi`, `m`.`TeknikOzellik`, `m0`.`Id`, `m0`.`Ad`, `m0`.`Kod`, `m0`.`ParentId`
+FROM `Malzemeler` AS `m`
+INNER JOIN `MalzemeGruplari` AS `m0` ON `m`.`MalzemeGrubuId` = `m0`.`Id`
+WHERE `m`.`IsActive`
+2026-08-27 19:13:15.639 +03:00 [INF] Executed action DepoStok.API.Controllers.DepolarController.GetDepolar (DepoStok.API) in 11.5736ms
+2026-08-27 19:13:15.639 +03:00 [INF] Executed endpoint 'DepoStok.API.Controllers.DepolarController.GetDepolar (DepoStok.API)'
+2026-08-27 19:13:15.639 +03:00 [INF] HTTP GET /api/depolar responded 200 in 11.9977 ms
+2026-08-27 19:13:15.639 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/depolar - 200 null application/json; charset=utf-8 12.1162ms
+2026-08-27 19:13:15.640 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `d`.`Id`, `d`.`Ad`, `d`.`Bolge`, `d`.`IsActive`, `d`.`Kod`, `d`.`Sorumlu`
+FROM `Depolar` AS `d`
+WHERE `d`.`IsActive`
+2026-08-27 19:13:15.640 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?pageSize=5000 - null null
+2026-08-27 19:13:15.640 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:13:15.641 +03:00 [INF] Executing endpoint 'DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API)'
+2026-08-27 19:13:15.641 +03:00 [INF] Route matched with {action = "GetStokDurum", controller = "Hareketler"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DepoStok.Application.PagedResult`1[DepoStok.Application.StokDurumDto]]] GetStokDurum(System.Nullable`1[System.Int32], System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Boolean], Int32, Int32) on controller DepoStok.API.Controllers.HareketlerController (DepoStok.API).
+2026-08-27 19:13:15.641 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Malzemeler` AS `m`
+2026-08-27 19:13:15.643 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`MalzemeId`, `h0`.`HedefDepoId` AS `DepoId`, COALESCE(SUM(`h`.`Miktar`), 0.0) AS `Toplam`
+FROM `HareketKalemleri` AS `h`
+INNER JOIN `HareketBasliklari` AS `h0` ON `h`.`HareketBaslikId` = `h0`.`Id`
+WHERE NOT (`h0`.`IsIptal`) AND (`h0`.`HedefDepoId` IS NOT NULL)
+GROUP BY `h`.`MalzemeId`, `h0`.`HedefDepoId`
+2026-08-27 19:13:15.643 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?page=1&pageSize=10 - null null
+2026-08-27 19:13:15.643 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:13:15.644 +03:00 [INF] Executing endpoint 'DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API)'
+2026-08-27 19:13:15.644 +03:00 [INF] Route matched with {action = "GetStokDurum", controller = "Hareketler"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DepoStok.Application.PagedResult`1[DepoStok.Application.StokDurumDto]]] GetStokDurum(System.Nullable`1[System.Int32], System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Boolean], Int32, Int32) on controller DepoStok.API.Controllers.HareketlerController (DepoStok.API).
+2026-08-27 19:13:15.645 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `m1`.`Id`, `m1`.`Aciklama`, `m1`.`Ad`, `m1`.`Birim`, `m1`.`IsActive`, `m1`.`Kod`, `m1`.`KritikStokSeviyesi`, `m1`.`MalzemeGrubuId`, `m1`.`MarkaModel`, `m1`.`MaxStokSeviyesi`, `m1`.`TeknikOzellik`, `m0`.`Id`, `m0`.`Ad`, `m0`.`Kod`, `m0`.`ParentId`
+FROM (
+    SELECT `m`.`Id`, `m`.`Aciklama`, `m`.`Ad`, `m`.`Birim`, `m`.`IsActive`, `m`.`Kod`, `m`.`KritikStokSeviyesi`, `m`.`MalzemeGrubuId`, `m`.`MarkaModel`, `m`.`MaxStokSeviyesi`, `m`.`TeknikOzellik`
+    FROM `Malzemeler` AS `m`
+    ORDER BY `m`.`Kod`
+    LIMIT @__p_1 OFFSET @__p_0
+) AS `m1`
+INNER JOIN `MalzemeGruplari` AS `m0` ON `m1`.`MalzemeGrubuId` = `m0`.`Id`
+ORDER BY `m1`.`Kod`
+2026-08-27 19:13:15.646 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`MalzemeId`, `h0`.`KaynakDepoId` AS `DepoId`, COALESCE(SUM(`h`.`Miktar`), 0.0) AS `Toplam`
+FROM `HareketKalemleri` AS `h`
+INNER JOIN `HareketBasliklari` AS `h0` ON `h`.`HareketBaslikId` = `h0`.`Id`
+WHERE NOT (`h0`.`IsIptal`) AND (`h0`.`KaynakDepoId` IS NOT NULL)
+GROUP BY `h`.`MalzemeId`, `h0`.`KaynakDepoId`
+2026-08-27 19:13:15.646 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Ad`, `m`.`Kod`, `m`.`ParentId`, `m0`.`Id`, `m0`.`Ad`, `m0`.`Kod`, `m0`.`ParentId`
+FROM `MalzemeGruplari` AS `m`
+LEFT JOIN `MalzemeGruplari` AS `m0` ON `m`.`ParentId` = `m0`.`Id`
+ORDER BY `m`.`Kod`
+2026-08-27 19:13:15.646 +03:00 [INF] Executing OkObjectResult, writing value of type 'DepoStok.Application.PagedResult`1[[DepoStok.Application.StokDurumDto, DepoStok.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-27 19:13:15.646 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[DepoStok.Domain.MalzemeGrubu, DepoStok.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DepoStok.Application.MalzemeGrubuDto, DepoStok.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-27 19:13:15.647 +03:00 [INF] Executed action DepoStok.API.Controllers.MalzemelerController.GetGruplar (DepoStok.API) in 12.4397ms
+2026-08-27 19:13:15.647 +03:00 [INF] Executed endpoint 'DepoStok.API.Controllers.MalzemelerController.GetGruplar (DepoStok.API)'
+2026-08-27 19:13:15.647 +03:00 [INF] HTTP GET /api/malzemeler/gruplar responded 200 in 13.1884 ms
+2026-08-27 19:13:15.647 +03:00 [INF] Executing OkObjectResult, writing value of type 'DepoStok.Application.PagedResult`1[[DepoStok.Application.MalzemeDto, DepoStok.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-27 19:13:15.647 +03:00 [INF] Executed action DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API) in 19.7239ms
+2026-08-27 19:13:15.647 +03:00 [INF] Executed endpoint 'DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API)'
+2026-08-27 19:13:15.647 +03:00 [INF] HTTP GET /api/hareketler/stok-durum responded 200 in 20.2408 ms
+2026-08-27 19:13:15.647 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=5 - 200 null application/json; charset=utf-8 20.7267ms
+2026-08-27 19:13:15.647 +03:00 [INF] Executed action DepoStok.API.Controllers.MalzemelerController.GetMalzemeler (DepoStok.API) in 16.5798ms
+2026-08-27 19:13:15.647 +03:00 [INF] Executed endpoint 'DepoStok.API.Controllers.MalzemelerController.GetMalzemeler (DepoStok.API)'
+2026-08-27 19:13:15.647 +03:00 [INF] HTTP GET /api/malzemeler responded 200 in 17.0493 ms
+2026-08-27 19:13:15.647 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/malzemeler?pageSize=200 - 200 null application/json; charset=utf-8 17.2477ms
+2026-08-27 19:13:15.647 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/malzemeler/gruplar - 200 null application/json; charset=utf-8 13.5659ms
+2026-08-27 19:13:15.651 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=1 - null null
+2026-08-27 19:13:15.651 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:13:15.652 +03:00 [INF] Executing endpoint 'DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API)'
+2026-08-27 19:13:15.652 +03:00 [INF] Route matched with {action = "GetStokDurum", controller = "Hareketler"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DepoStok.Application.PagedResult`1[DepoStok.Application.StokDurumDto]]] GetStokDurum(System.Nullable`1[System.Int32], System.Nullable`1[System.Int32], System.String, System.Nullable`1[System.Boolean], Int32, Int32) on controller DepoStok.API.Controllers.HareketlerController (DepoStok.API).
+2026-08-27 19:13:15.653 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Aciklama`, `m`.`Ad`, `m`.`Birim`, `m`.`IsActive`, `m`.`Kod`, `m`.`KritikStokSeviyesi`, `m`.`MalzemeGrubuId`, `m`.`MarkaModel`, `m`.`MaxStokSeviyesi`, `m`.`TeknikOzellik`, `m0`.`Id`, `m0`.`Ad`, `m0`.`Kod`, `m0`.`ParentId`
+FROM `Malzemeler` AS `m`
+INNER JOIN `MalzemeGruplari` AS `m0` ON `m`.`MalzemeGrubuId` = `m0`.`Id`
+WHERE `m`.`IsActive`
+2026-08-27 19:13:15.655 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Aciklama`, `m`.`Ad`, `m`.`Birim`, `m`.`IsActive`, `m`.`Kod`, `m`.`KritikStokSeviyesi`, `m`.`MalzemeGrubuId`, `m`.`MarkaModel`, `m`.`MaxStokSeviyesi`, `m`.`TeknikOzellik`, `m0`.`Id`, `m0`.`Ad`, `m0`.`Kod`, `m0`.`ParentId`
+FROM `Malzemeler` AS `m`
+INNER JOIN `MalzemeGruplari` AS `m0` ON `m`.`MalzemeGrubuId` = `m0`.`Id`
+WHERE `m`.`IsActive`
+2026-08-27 19:13:15.655 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `d`.`Id`, `d`.`Ad`, `d`.`Bolge`, `d`.`IsActive`, `d`.`Kod`, `d`.`Sorumlu`
+FROM `Depolar` AS `d`
+WHERE `d`.`IsActive`
+2026-08-27 19:13:15.657 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `d`.`Id`, `d`.`Ad`, `d`.`Bolge`, `d`.`IsActive`, `d`.`Kod`, `d`.`Sorumlu`
+FROM `Depolar` AS `d`
+WHERE `d`.`IsActive`
+2026-08-27 19:13:15.658 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`MalzemeId`, `h0`.`HedefDepoId` AS `DepoId`, COALESCE(SUM(`h`.`Miktar`), 0.0) AS `Toplam`
+FROM `HareketKalemleri` AS `h`
+INNER JOIN `HareketBasliklari` AS `h0` ON `h`.`HareketBaslikId` = `h0`.`Id`
+WHERE NOT (`h0`.`IsIptal`) AND (`h0`.`HedefDepoId` IS NOT NULL)
+GROUP BY `h`.`MalzemeId`, `h0`.`HedefDepoId`
+2026-08-27 19:13:15.658 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5078/api/hareketler?pageSize=5 - null null
+2026-08-27 19:13:15.658 +03:00 [INF] CORS policy execution successful.
+2026-08-27 19:13:15.658 +03:00 [INF] Executing endpoint 'DepoStok.API.Controllers.HareketlerController.GetHareketler (DepoStok.API)'
+2026-08-27 19:13:15.659 +03:00 [INF] Route matched with {action = "GetHareketler", controller = "Hareketler"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DepoStok.Application.PagedResult`1[DepoStok.Application.HareketBaslikDto]]] GetHareketler(System.Nullable`1[DepoStok.Domain.HareketTipiEnum], System.Nullable`1[System.Int32], System.Nullable`1[System.Int32], System.Nullable`1[System.DateTime], System.Nullable`1[System.DateTime], Int32, Int32) on controller DepoStok.API.Controllers.HareketlerController (DepoStok.API).
+2026-08-27 19:13:15.659 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`MalzemeId`, `h0`.`HedefDepoId` AS `DepoId`, COALESCE(SUM(`h`.`Miktar`), 0.0) AS `Toplam`
+FROM `HareketKalemleri` AS `h`
+INNER JOIN `HareketBasliklari` AS `h0` ON `h`.`HareketBaslikId` = `h0`.`Id`
+WHERE NOT (`h0`.`IsIptal`) AND (`h0`.`HedefDepoId` IS NOT NULL)
+GROUP BY `h`.`MalzemeId`, `h0`.`HedefDepoId`
+2026-08-27 19:13:15.661 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`MalzemeId`, `h0`.`KaynakDepoId` AS `DepoId`, COALESCE(SUM(`h`.`Miktar`), 0.0) AS `Toplam`
+FROM `HareketKalemleri` AS `h`
+INNER JOIN `HareketBasliklari` AS `h0` ON `h`.`HareketBaslikId` = `h0`.`Id`
+WHERE NOT (`h0`.`IsIptal`) AND (`h0`.`KaynakDepoId` IS NOT NULL)
+GROUP BY `h`.`MalzemeId`, `h0`.`KaynakDepoId`
+2026-08-27 19:13:15.661 +03:00 [INF] Executing OkObjectResult, writing value of type 'DepoStok.Application.PagedResult`1[[DepoStok.Application.StokDurumDto, DepoStok.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-27 19:13:15.662 +03:00 [INF] Executed action DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API) in 21.174ms
+2026-08-27 19:13:15.662 +03:00 [INF] Executed endpoint 'DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API)'
+2026-08-27 19:13:15.662 +03:00 [INF] HTTP GET /api/hareketler/stok-durum responded 200 in 21.6385 ms
+2026-08-27 19:13:15.662 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?pageSize=5000 - 200 null application/json; charset=utf-8 21.8728ms
+2026-08-27 19:13:15.662 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`MalzemeId`, `h0`.`KaynakDepoId` AS `DepoId`, COALESCE(SUM(`h`.`Miktar`), 0.0) AS `Toplam`
+FROM `HareketKalemleri` AS `h`
+INNER JOIN `HareketBasliklari` AS `h0` ON `h`.`HareketBaslikId` = `h0`.`Id`
+WHERE NOT (`h0`.`IsIptal`) AND (`h0`.`KaynakDepoId` IS NOT NULL)
+GROUP BY `h`.`MalzemeId`, `h0`.`KaynakDepoId`
+2026-08-27 19:13:15.663 +03:00 [INF] Executing OkObjectResult, writing value of type 'DepoStok.Application.PagedResult`1[[DepoStok.Application.StokDurumDto, DepoStok.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-27 19:13:15.663 +03:00 [INF] Executed action DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API) in 19.2194ms
+2026-08-27 19:13:15.663 +03:00 [INF] Executed endpoint 'DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API)'
+2026-08-27 19:13:15.663 +03:00 [INF] HTTP GET /api/hareketler/stok-durum responded 200 in 19.8545 ms
+2026-08-27 19:13:15.663 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?page=1&pageSize=10 - 200 null application/json; charset=utf-8 20.101ms
+2026-08-27 19:13:15.664 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `m`.`Id`, `m`.`Aciklama`, `m`.`Ad`, `m`.`Birim`, `m`.`IsActive`, `m`.`Kod`, `m`.`KritikStokSeviyesi`, `m`.`MalzemeGrubuId`, `m`.`MarkaModel`, `m`.`MaxStokSeviyesi`, `m`.`TeknikOzellik`, `m0`.`Id`, `m0`.`Ad`, `m0`.`Kod`, `m0`.`ParentId`
+FROM `Malzemeler` AS `m`
+INNER JOIN `MalzemeGruplari` AS `m0` ON `m`.`MalzemeGrubuId` = `m0`.`Id`
+WHERE `m`.`IsActive`
+2026-08-27 19:13:15.666 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `d`.`Id`, `d`.`Ad`, `d`.`Bolge`, `d`.`IsActive`, `d`.`Kod`, `d`.`Sorumlu`
+FROM `Depolar` AS `d`
+WHERE `d`.`IsActive`
+2026-08-27 19:13:15.669 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`MalzemeId`, `h0`.`HedefDepoId` AS `DepoId`, COALESCE(SUM(`h`.`Miktar`), 0.0) AS `Toplam`
+FROM `HareketKalemleri` AS `h`
+INNER JOIN `HareketBasliklari` AS `h0` ON `h`.`HareketBaslikId` = `h0`.`Id`
+WHERE NOT (`h0`.`IsIptal`) AND (`h0`.`HedefDepoId` IS NOT NULL)
+GROUP BY `h`.`MalzemeId`, `h0`.`HedefDepoId`
+2026-08-27 19:13:15.669 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `HareketBasliklari` AS `h`
+2026-08-27 19:13:15.672 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `h`.`MalzemeId`, `h0`.`KaynakDepoId` AS `DepoId`, COALESCE(SUM(`h`.`Miktar`), 0.0) AS `Toplam`
+FROM `HareketKalemleri` AS `h`
+INNER JOIN `HareketBasliklari` AS `h0` ON `h`.`HareketBaslikId` = `h0`.`Id`
+WHERE NOT (`h0`.`IsIptal`) AND (`h0`.`KaynakDepoId` IS NOT NULL)
+GROUP BY `h`.`MalzemeId`, `h0`.`KaynakDepoId`
+2026-08-27 19:13:15.672 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `h0`.`Id`, `h0`.`Aciklama`, `h0`.`CreatedAt`, `h0`.`FisNo`, `h0`.`HareketTipi`, `h0`.`HedefDepoId`, `h0`.`IptalNedeni`, `h0`.`IptalTarihi`, `h0`.`IsIptal`, `h0`.`KaynakDepoId`, `h0`.`OlusturanKullaniciId`, `h0`.`Tarih`, `d`.`Id`, `d`.`Ad`, `d`.`Bolge`, `d`.`IsActive`, `d`.`Kod`, `d`.`Sorumlu`, `d0`.`Id`, `d0`.`Ad`, `d0`.`Bolge`, `d0`.`IsActive`, `d0`.`Kod`, `d0`.`Sorumlu`, `u`.`Id`, `u`.`AdSoyad`, `u`.`CreatedAt`, `u`.`Email`, `u`.`IsActive`, `u`.`KullaniciAdi`, `u`.`ParolaHash`, `u`.`RoleId`, `s`.`Id`, `s`.`BirimFiyat`, `s`.`HareketBaslikId`, `s`.`Huycre`, `s`.`MalzemeDurumu`, `s`.`MalzemeId`, `s`.`Miktar`, `s`.`Raf`, `s`.`SatirAciklamasi`, `s`.`Id0`, `s`.`Aciklama`, `s`.`Ad`, `s`.`Birim`, `s`.`IsActive`, `s`.`Kod`, `s`.`KritikStokSeviyesi`, `s`.`MalzemeGrubuId`, `s`.`MarkaModel`, `s`.`MaxStokSeviyesi`, `s`.`TeknikOzellik`
+FROM (
+    SELECT `h`.`Id`, `h`.`Aciklama`, `h`.`CreatedAt`, `h`.`FisNo`, `h`.`HareketTipi`, `h`.`HedefDepoId`, `h`.`IptalNedeni`, `h`.`IptalTarihi`, `h`.`IsIptal`, `h`.`KaynakDepoId`, `h`.`OlusturanKullaniciId`, `h`.`Tarih`
+    FROM `HareketBasliklari` AS `h`
+    ORDER BY `h`.`Tarih` DESC, `h`.`Id` DESC
+    LIMIT @__p_1 OFFSET @__p_0
+) AS `h0`
+LEFT JOIN `Depolar` AS `d` ON `h0`.`KaynakDepoId` = `d`.`Id`
+LEFT JOIN `Depolar` AS `d0` ON `h0`.`HedefDepoId` = `d0`.`Id`
+INNER JOIN `Users` AS `u` ON `h0`.`OlusturanKullaniciId` = `u`.`Id`
+LEFT JOIN (
+    SELECT `h1`.`Id`, `h1`.`BirimFiyat`, `h1`.`HareketBaslikId`, `h1`.`Huycre`, `h1`.`MalzemeDurumu`, `h1`.`MalzemeId`, `h1`.`Miktar`, `h1`.`Raf`, `h1`.`SatirAciklamasi`, `m`.`Id` AS `Id0`, `m`.`Aciklama`, `m`.`Ad`, `m`.`Birim`, `m`.`IsActive`, `m`.`Kod`, `m`.`KritikStokSeviyesi`, `m`.`MalzemeGrubuId`, `m`.`MarkaModel`, `m`.`MaxStokSeviyesi`, `m`.`TeknikOzellik`
+    FROM `HareketKalemleri` AS `h1`
+    INNER JOIN `Malzemeler` AS `m` ON `h1`.`MalzemeId` = `m`.`Id`
+) AS `s` ON `h0`.`Id` = `s`.`HareketBaslikId`
+ORDER BY `h0`.`Tarih` DESC, `h0`.`Id` DESC, `d`.`Id`, `d0`.`Id`, `u`.`Id`, `s`.`Id`
+2026-08-27 19:13:15.673 +03:00 [INF] Executing OkObjectResult, writing value of type 'DepoStok.Application.PagedResult`1[[DepoStok.Application.StokDurumDto, DepoStok.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-27 19:13:15.673 +03:00 [INF] Executing OkObjectResult, writing value of type 'DepoStok.Application.PagedResult`1[[DepoStok.Application.HareketBaslikDto, DepoStok.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-27 19:13:15.673 +03:00 [INF] Executed action DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API) in 21.2909ms
+2026-08-27 19:13:15.673 +03:00 [INF] Executed endpoint 'DepoStok.API.Controllers.HareketlerController.GetStokDurum (DepoStok.API)'
+2026-08-27 19:13:15.673 +03:00 [INF] Executed action DepoStok.API.Controllers.HareketlerController.GetHareketler (DepoStok.API) in 14.5214ms
+2026-08-27 19:13:15.673 +03:00 [INF] HTTP GET /api/hareketler/stok-durum responded 200 in 21.7498 ms
+2026-08-27 19:13:15.673 +03:00 [INF] Executed endpoint 'DepoStok.API.Controllers.HareketlerController.GetHareketler (DepoStok.API)'
+2026-08-27 19:13:15.673 +03:00 [INF] HTTP GET /api/hareketler responded 200 in 14.9980 ms
+2026-08-27 19:13:15.673 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/hareketler/stok-durum?kritik=true&pageSize=1 - 200 null application/json; charset=utf-8 21.9747ms
+2026-08-27 19:13:15.673 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5078/api/hareketler?pageSize=5 - 200 null application/json; charset=utf-8 15.141ms

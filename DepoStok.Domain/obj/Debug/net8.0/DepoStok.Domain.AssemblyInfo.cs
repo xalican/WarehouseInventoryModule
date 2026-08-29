@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DepoStok.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ddf7924903442ee9d77f78c5051ebaaeeff15c9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+065661408c85aadb704ce86f6f2055133e1e5155")]
 [assembly: System.Reflection.AssemblyProductAttribute("DepoStok.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DepoStok.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
